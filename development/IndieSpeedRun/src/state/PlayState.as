@@ -74,6 +74,7 @@ package state
 			//inventoryItem.y = 0;
 			//add(inventoryItem);
 			
+			
 			for (var i:int = 0; i < 10; i++) {
 				var inventoryItem:InventoryItem = new InventoryItem("key_" + i, 
 						Math.random() < 0.5 ? [[1, 1], [1, 1]] :
@@ -92,7 +93,22 @@ package state
 			}
 			
 			
+			Core.control.addEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
+			
 			super.create();
+		}
+		
+		private function createNewItem(e:InventoryISREvent):void 
+		{
+			
+			var inventoryItem:InventoryItem = e.item;
+			
+			add(inventoryItem);
+			/*
+			inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
+			inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
+			inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
+			*/
 		}
 		
 		private function removeItemFromInventory(e:InventoryISREvent):void 
