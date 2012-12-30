@@ -9,10 +9,12 @@ package inventory.elements
 	public class InventoryISREvent extends Event 
 	{
 		static public const DROP_ITEM:String = "dropItem";
+		static public const COLLECT_ITEM:String = "collectItem";
 		static public const MOVING_ITEM:String = "movingItem";
 		static public const PICKUP_ITEM:String = "pickupItem";
 		static public const REJECT_ITEM:String = "rejectItem";
 		static public const ACCEPT_ITEM:String = "acceptItem";
+		
 		public var item:InventoryItem;
 		
 		public function InventoryISREvent(type:String,item:InventoryItem) 
