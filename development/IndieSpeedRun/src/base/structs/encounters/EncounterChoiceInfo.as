@@ -1,5 +1,8 @@
 package base.structs.encounters 
 {
+	import entities.Player;
+	import org.flixel.FlxG;
+	import state.PlayState;
 	/**
 	 * ...
 	 * @author Duncan Saunders - PlayerThree 2012
@@ -8,37 +11,66 @@ package base.structs.encounters
 	{
 		
 		protected var _buttonText:String = "";
-		
-		
-		protected var _itemRequires:Array;
-		protected var _healthRequires:int = -1;
+		protected var _isPossible:Boolean
 		
 		protected var _resultText:String = "some result copy";
-
+		protected var _requires:Vector.<EncounterRequiresInfo>;
+		
 		protected var _resultItemAdd:Vector.<String>;
 		protected var _resultItemRemove:Vector.<String>;
 		protected var _resultHealthChange:int;
 		
 		public function EncounterChoiceInfo() 
 		{
+			_requires = new Vector.<EncounterRequiresInfo> ();
 			//_itemRequires = new Vector.<String> ();
+		}
+		
+		public function init ():void
+		{
+			_isPossible = false;
 		}
 		
 		public function deserialize ($xml:XML):void
 		{
 			_buttonText = $xml.TEXT.@description;
 			_resultText = $xml.RESULT.TEXT.@body;
-			for each (var item:XML in $xml.REQUIRES)
+			if ($xml.hasOwnProperty("REQUIRES"))
 			{
-				if (item.hasOwnProperty("@itemKeys"))
+				for each (var item:XML in $xml.REQUIRES)
 				{
-					_itemRequires = item.@itemKeys.split(",");
-				}
-				if (item.hasOwnProperty("health"))
-				{
-					_healthRequires = item.@health;
+					var newRequire:EncounterRequiresInfo = new EncounterRequiresInfo ();
+					newRequire.deserialize(item)
+					_requires.push(newRequire);
 				}
 			}
+			else
+			{
+				_isPossible = true;
+			}
+			
+		}
+		
+		public function validate ($player:Player):Boolean
+		{
+			
+			for each (var rec:EncounterRequiresInfo in _requires)
+			{
+				var checkHealth:Boolean = true;
+				var checkItems:Boolean = true;
+				if (rec.health > 0)
+				{
+					checkHealth = $player.health > rec.health;
+				}
+				if (rec.itemKeys && rec.itemKeys.length > 0)
+				{
+					//checkItems = $player.invView.hasItem(_itemRequires);
+				}
+				_isPossible = checkHealth && checkItems;
+				if (_isPossible) break;
+			}
+			
+			return _isPossible;
 		}
 		
 		public function get resultText():String 
@@ -49,6 +81,11 @@ package base.structs.encounters
 		public function get buttonText():String 
 		{
 			return _buttonText;
+		}
+		
+		public function get isPossible():Boolean 
+		{
+			return _isPossible;
 		}
 		
 

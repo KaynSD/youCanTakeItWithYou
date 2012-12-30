@@ -201,6 +201,11 @@ package state
 		
 		public function get hud():HUDScreen { return _hud; }
 		
+		public function get inventory():InventoryView 
+		{
+			return _inventory;
+		}
+		
 	}
 
 }

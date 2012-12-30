@@ -1,5 +1,6 @@
 package entities.marker 
 {
+	import base.structs.encounters.EncounterInfo;
 	import entities.Player;
 	/**
 	 * ...
@@ -28,7 +29,9 @@ package entities.marker
 			super.onTouch($player);
 			if (_eventList && _eventList.length > 0)
 			{
-				Core.control.startEncounter(_eventList[0]);
+				var enc:EncounterInfo = Core.control.encManager.getEncounter(_eventList[0]);
+				enc.validate($player);
+				Core.control.startEncounter(enc);
 			}
 			
 		}

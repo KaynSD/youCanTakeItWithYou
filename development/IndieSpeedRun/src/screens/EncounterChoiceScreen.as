@@ -3,6 +3,7 @@ package screens
 	import base.events.GameEvent;
 	import base.structs.encounters.EncounterChoiceInfo;
 	import base.structs.encounters.EncounterInfo;
+	import entities.Player;
 	import flash.display.MovieClip;
 	import gfx.ClipPanelButton;
 	import gfx.ClipPanelEncounter;
@@ -38,8 +39,16 @@ package screens
 				var choice:EncounterChoiceInfo =  $encounter.choices[i];
 				if (choice)
 				{
+					
 					button.txt_copy.text = choice.buttonText;
-					addButton(button, onClickChoiceButton);
+					if (!choice.isPossible)
+					{
+						button.txt_copy.textColor = 0x626262;
+					}
+					else
+					{
+						addButton(button, onClickChoiceButton);
+					}
 					button.choice = choice;
 				}
 				else
