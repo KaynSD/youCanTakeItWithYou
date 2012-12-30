@@ -2,6 +2,7 @@ package
 {
 	import base.components.*;
 	import base.components.managers.AchivementManager;
+	import base.components.managers.ItemManager;
 	import base.components.managers.MissionManager;
 	import base.components.managers.MouseInputManager;
 	import base.components.managers.TutorialManager;
@@ -27,6 +28,7 @@ package
 		static private var 	_net:Net;
 		static private var 	_cheats:FlxCheats;
 		static private var 	_cache:LocalCache;
+		static private var 	_items:ItemManager;
 
 		static private var 	_screen_manager:P3ScreenManager;
 		static private var 	_achivements:AchivementManager;
@@ -76,6 +78,7 @@ package
 				_achivements = new AchivementManager ();
 				_cache = new LocalCache ();
 				_stats = new StatManager();
+				_items = new ItemManager ();
 				_initOnce = true;
 			}
 		}
@@ -108,6 +111,8 @@ package
 		static public function get achivements():AchivementManager { return _achivements; }
 		
 		static public function get stats():StatManager { return _stats; }
+		
+		static public function get items():ItemManager 	{ return _items;	}
 		
 	}
 

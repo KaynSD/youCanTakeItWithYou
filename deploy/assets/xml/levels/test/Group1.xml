@@ -165,6 +165,32 @@
 			<PROPS>				
 			</PROPS>
 		</COIN_BAG>
+		<MARKER_EVENT>
+			<START x="352.000" y="432.000"/>
+			<ID link_id="null" guid="41F831B9-BCAA-7752-7C0A-241287BBE1AB"/>
+			<CLASS name="MARKER_EVENT"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_EVENT>
+		<MARKER_EVENT>
+			<START x="592.000" y="432.000"/>
+			<ID link_id="null" guid="5FD8AC05-6523-5F84-3547-7DBB12B25D0E"/>
+			<CLASS name="MARKER_EVENT"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_EVENT>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

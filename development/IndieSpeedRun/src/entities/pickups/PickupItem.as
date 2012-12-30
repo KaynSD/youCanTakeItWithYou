@@ -23,7 +23,7 @@ package entities.pickups
 			super();
 			_mousePos = new FlxPoint ();
 			_isCollision = false;
-			_invItem =  new InventoryItem ("TEMP", [[1]]);
+			_invItem =  Core.items.createItem("TEMP");
 		}
 		
 		override public function init($world:World):void 
@@ -32,7 +32,7 @@ package entities.pickups
 			loadNativeGraphics(false, false);
 		}
 		
-		public function setItem ($invItem:InventoryItem)
+		public function setItem ($invItem:InventoryItem):void
 		{
 			_invItem = $invItem;
 		}
