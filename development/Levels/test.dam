@@ -8,10 +8,21 @@
     <group name="Markers" idx="1" open="true">
       <sprite name="MARKER_START" idx="2" className="MARKER_START" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png" width="16" height="16" preview="0" anchorX="0" anchorY="0" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1"/>
     </group>
-    <sprite name="PLAYER" idx="3" className="PLAYER" image="../../deploy/assets/graphics/entities/player.png" width="16" height="32" preview="0" anchorX="0" anchorY="16" boundsX="0" boundsY="16" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" selected="true">
-      <properties>
-        <type typeof="String" name="name" value="bob" hidden="false"/>
-      </properties>
+    <sprite name="PLAYER" idx="3" className="PLAYER" image="../../deploy/assets/graphics/player.png" width="64" height="64" preview="0" anchorX="28" anchorY="32" centerAnchor="false" boundsX="12" boundsY="0" boundsWidth="32" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false">
+      <anims>
+        <anim name="idle" fps="10" loops="true">0,0</anim>
+        <anim name="walk" fps="10" loops="true">30,31,32,32,33,34,35</anim>
+        <anim name="run" fps="10" loops="true">40,41,42,43,44,45</anim>
+        <anim name="sprint" fps="10" loops="true">50,51,52,53,54,55,56,57</anim>
+        <anim name="jump" fps="10" loops="false">10,11,12,13</anim>
+        <anim name="land" fps="10" loops="false">15,12,10,7</anim>
+        <anim name="fall" fps="10" loops="false">15,16</anim>
+        <anim name="climb" fps="10" loops="true">60,61,62,63,64,65</anim>
+        <anim name="crouch" fps="6" loops="false">1,10,7,9</anim>
+        <anim name="uncrouch" fps="8.5" loops="false">8,7,10</anim>
+        <anim name="death" fps="10" loops="true">26,26</anim>
+        <anim name="stun" fps="10" loops="true">27,28,29</anim>
+      </anims>
     </sprite>
   </spriteEntries>
   <layers>
