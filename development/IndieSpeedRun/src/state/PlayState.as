@@ -13,6 +13,8 @@ package state
 	import gui.game.UIGame;
 	import gui.HUD;
 	import inventory.elements.InventoryCell;
+	import inventory.elements.InventoryISREvent;
+	import inventory.elements.InventoryItem;
 	import inventory.InventoryView;
 	import org.flixel.FlxG;
 	import org.flixel.FlxState;
@@ -56,20 +58,45 @@ package state
 		
 		override public function create():void 
 		{
+			/*
 			trace("create play state");
 			_levelStarted = false;
 			if (!_hud) _hud = new HUDScreen();
 			if (!_world) _world = new World ();
 			add(_world); 
 			//Core.screen_manager.addScreen(_hud, {});
-			
+			*/
 			// The Inventory!!
-			var inventoryView:InventoryView = new InventoryView() ;// add(new InventoryView());
-			add(inventoryView);
+			_inventory = new InventoryView(0,0) ;// add(new InventoryView());
+			add(_inventory);
+			
+			var inventoryItem:InventoryItem = new InventoryItem("key", [[1,0,1],[1,1,1]]);
+			inventoryItem.x = 0;
+			inventoryItem.y = 0;
+			add(inventoryItem);
+			
+			inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
+			inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
+			inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
 			
 			
 			
 			super.create();
+		}
+		
+		private function removeItemFromInventory(e:InventoryISREvent):void 
+		{
+			_inventory.removeItem(e.item);
+		}
+		
+		private function positionItemInInventory(e:InventoryISREvent):void 
+		{
+			_inventory.addItem(e.item);
+		}
+		
+		private function checkSpacesInInventory(e:InventoryISREvent):void 
+		{
+			_inventory.checkItemPositions(e.item);
 		}
 		
 		override public function update():void 
