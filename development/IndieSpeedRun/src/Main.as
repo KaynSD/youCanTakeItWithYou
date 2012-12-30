@@ -14,7 +14,7 @@ package {
 		
 		public function Main()
 		{
-			super(640, 480, InitState, 1, 30, 30, true);
+			super(960, 540, InitState, 1, 30, 30, true);
 			trace("main init");
 			Core.init();
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
