@@ -60,12 +60,14 @@ package state
 			_levelStarted = false;
 			if (!_hud) _hud = new HUDScreen();
 			if (!_world) _world = new World ();
-//add(_world); 
+			add(_world); 
 			//Core.screen_manager.addScreen(_hud, {});
 			
 			// The Inventory!!
 			var inventoryView:InventoryView = new InventoryView() ;// add(new InventoryView());
 			add(inventoryView);
+			
+			
 			
 			super.create();
 		}

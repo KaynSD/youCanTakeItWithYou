@@ -45,7 +45,7 @@ function exportMapCSV( mapLayer, layerFileName, depth )
 	mapText = mapText..xmlProp ("y_unit",		as3.tolua(mapLayer.map.y) / as3.tolua(mapLayer.tileHeight))	
 	mapText = mapText..xmlProp ("scroll_x",		as3.tolua(mapLayer.xScroll))
 	mapText = mapText..xmlProp ("scroll_y",		as3.tolua(mapLayer.yScroll))	
-	mapText = mapText..xmlProp ("tile_path",as3.tolua(DAME.GetRelativePath(assetDir, mapLayer.imageFile)))
+	mapText = mapText..xmlProp ("tile_path",as3.tolua(DAME.GetRelativePath(assetsDir, mapLayer.imageFile)))
 	
 	if (as3.tolua(mapLayer.HasHits)) then mapText = mapText..xmlProp ("collide","true") end;
 	-- then end
@@ -112,9 +112,17 @@ end
 
 function exportClassResourcePathsXML ()
 	spriteName = "%name%"
-	resourcePathText = tab2.."<"..spriteName.." path=\"%imagefilerelative%\" width=\"%width%\" height=\"%height%\"/>\n"
-	returnText = as3.tolua(DAME.CreateTextForSpriteClasses(resourcePathText,resourcePathText,"","","","",null,assetsDir))	--
+	spriteText = tab2.."<"..spriteName.." path=\"%imagefilerelative%\""..">\n" 
+	spriteText = spriteText..tab3.."<SIZE width=\"%width%\" height=\"%height%\"/>\n"
+	spriteText = spriteText..tab3.."<BOUNDS x=\"%boundsx%\" y=\"%boundsy%\" width=\"%boundswidth%\" height=\"%boundsheight%\"/>\n"
+	spriteText = spriteText..tab3.."<ANCHOR x=\"%anchorx%\" y=\"%anchory%\"/>\n"
+	spriteText = spriteText.."%%if spriteanims%%"..tab3.."<ANIMS>\n"
+	spriteText = spriteText.."%%spriteanimloop%%"..tab4.."<ANIM animnum=\"%animnum%\" fps=\"%fps%\" name=\"%animname%\" numframes=\"%numframes%\" looped=\"%looped%\" frames=\"%%animframeloop%%%tileid%%separator:,%%%animframeloopend%%\"/>\n %%spriteanimloopend%%"
+	spriteText = spriteText..tab3.."</ANIMS>\n %%endif spriteanims%%"
+	spriteText = spriteText..tab2.."</"..spriteName..">\n"
+	returnText = as3.tolua(DAME.CreateTextForSpriteClasses(spriteText,spriteText,"","","","",null,assetsDir));
 	return returnText;
+	--return creationText;
 end
 
 function exportTilemapResourcePathsXML ()
@@ -160,7 +168,7 @@ for groupIndex = 0,groupCount do
 	
 	layerCount = as3.tolua(group.children.length) - 1
 	
-	fileText = "<level>\n"
+	fileText = "<AREA>\n"
 	fileText = fileText..tab1.."<INFO key=\""..levelName.."\" />\n" 
 	
 	-- Go through each layer and store some tables for the different layer types.
@@ -189,6 +197,7 @@ for groupIndex = 0,groupCount do
 	--OBJECTS/SPRITES
 	fileText = fileText..tab1.."<OBJECTS>\n"
 	for i,v in ipairs(spriteLayers) do
+		print(spriteLayers[i][1].children);
 		fileText = fileText..exportObjectXML(spriteLayers[i][1],spriteLayers[i][2]);
 	end
 	fileText = fileText..tab1.."</OBJECTS>\n"
@@ -211,7 +220,7 @@ for groupIndex = 0,groupCount do
 	fileText = fileText..as3.tolua(DAME.GetTextForProperties(layerProps, group.properties));
 	fileText = fileText..tab1.."</PROPS>\n"; 
 	
-	fileText = fileText.."</level>\n"
+	fileText = fileText.."</AREA>\n"
 	
 	-- Save the file!
 	if (useIndex) then DAME.WriteFile(exportDir.."/"..levelPre.."/"..levelName..".xml", fileText )
