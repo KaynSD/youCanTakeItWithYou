@@ -5,6 +5,7 @@ package inventory.elements
 	import de.polygonal.ds.Array2;
 	import entities.Entity;
 	import flash.events.MouseEvent;
+	import org.flixel.FlxCamera;
 	import org.flixel.FlxG;
 	import org.flixel.FlxPoint;
 	/**
@@ -15,6 +16,7 @@ package inventory.elements
 	{
 		private var offPoint:FlxPoint;
 		private var _identifierS:String;
+		private var cellSize:int;
 		public var directlyGiveUserControl:Boolean = false;
 		
 		protected var _dimensions:Array
@@ -31,6 +33,7 @@ package inventory.elements
 		{
 			
 			super(0, 0, graphic);
+			this.cellSize = cellSize;
 			
 			_identifierS = identifier;
 			this.scrollFactor = new FlxPoint();
@@ -65,8 +68,8 @@ package inventory.elements
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.DROP_ITEM, this));
 				} else {
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.MOVING_ITEM, this));
-					this.x = mseXY.x + offPoint.x;
-					this.y = mseXY.y + offPoint.y;
+					this.x = mseXY.x - 16
+					this.y = mseXY.y - 16;
 				}
 			} else {
 				// Check if we're going to pick up the object
@@ -75,7 +78,7 @@ package inventory.elements
 					
 					var scrXY:FlxPoint = this.getScreenXY();
 					
-					offPoint = directlyGiveUserControl ? new FlxPoint() : new FlxPoint(scrXY.x - mseXY.x, scrXY.y - mseXY.y);
+					//offPoint = directlyGiveUserControl ? new FlxPoint() : new FlxPoint(mseXY.x - scrXY.x, mseXY.y - scrXY.y);
 
 					super.update();
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.PICKUP_ITEM, this));
@@ -85,6 +88,25 @@ package inventory.elements
 			
 			if (orD != _isDragging) super.update();
 			
+		}
+		
+		override public function overlapsPoint(Point:FlxPoint, InScreenSpace:Boolean = false, Camera:FlxCamera = null):Boolean 
+		{
+			var position:FlxPoint = this.getScreenXY();
+			
+			for (var i:int = 0; i < dimensions.length; i++) {
+				for (var j:int = 0; j < dimensions[i].length; j++) {
+					
+					if (dimensions[i][j] == 1) if (Point.x >= position.x + (cellSize * j) && Point.x < position.x + (cellSize * (j + 1))  -1
+												&& Point.y >= position.y + (cellSize * i) && Point.y < position.y + (cellSize * (i + 1))  -1) {
+													return true; 
+												}
+												
+				}
+			}
+			
+			return false; 
+			//return super.overlapsPoint(Point, InScreenSpace, Camera);
 		}
 		
 		override public function draw():void 
