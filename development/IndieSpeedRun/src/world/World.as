@@ -138,6 +138,7 @@ package world
 			_flx_point = new FlxPoint;
 			addListeners();
 			init();
+			_pickupItems = new Dictionary ();
 			if (_level&& _level.isLoaded) onLevelLoaded();
 			else Core.control.addEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
 		}
@@ -254,7 +255,7 @@ package world
 		
 		private function onItemDroppedInWorld(e:InventoryISREvent):void 
 		{
-			var pickup:PickupItem = _pickupItems[e.item]
+			//var pickup:PickupItem = _pickupItems[e.item]
 		}
 		
 		private function onLevelRestart(e:GameEvent):void 

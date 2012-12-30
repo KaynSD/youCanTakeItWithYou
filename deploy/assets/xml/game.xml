@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-<EXTERNALS>
-	<BASE_PLANTING_TIME>1</BASE_PLANTING_TIME>
-	<BASE_HARVEST_TIME>2</BASE_HARVEST_TIME>
-	<BASE_POINTS_PER_TILE>100</BASE_POINTS_PER_TILE>
-	<MAX_POINTERS>10</MAX_POINTERS>
-	<HOME_BASE_RANGE>128</HOME_BASE_RANGE>
-	<DISTANCE_TIME_INVERAL>1.0</DISTANCE_TIME_INVERAL>
-	<TIME_COST_PER_100_PX>0.5</TIME_COST_PER_100_PX>
-</EXTERNALS>
-<PLANTS>
-	<POD_PLANT>
-		<HARVEST_TIME>2</HARVEST_TIME>
-	</POD_PLANT>
-	<CORRUPT_PLANT>
-		<HARVEST_TIME>10</HARVEST_TIME>
-	</CORRUPT_PLANT>
-</PLANTS>
+	<ENCOUNTERS>
+		<ENCOUNTER key="TEST" title="A Test Event" >
+			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
+			<CHOICE>
+				<TEXT description="Ignore this and carry on" />
+				<RESULT>
+					<TEXT body="Nothing happens" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Make a grue joke" />
+				<RESULT>
+					<TEXT body="The Grue is not amused" />
+					<HEALTH_CHANGE value="-50" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="The decscription on the button" />
+				<REQUIRES itemKeys="LIGHT,KEY"/>
+				<REQUIRES itemKeys="JEWEL"/>
+				<RESULT>
+					<TEXT body="The text that appears after you have confirmed your choice" />
+					<ITEM_ADD itemKey="MAD_HACKS"/>
+					<ITEM_REMOVE itemKey="LIGHT"/>
+					<HEALTH_CHANGE value="-50" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Make a grue joke" />
+				<REQUIRES health="25"/>
+				<RESULT>
+					<TEXT body="The Grue is not amused" />
+					<HEALTH_CHANGE value="-50" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+	</ENCOUNTERS>
 </data>

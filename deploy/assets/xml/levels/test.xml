@@ -1,13 +1,48 @@
-<INDEX key="test" source="test" date="12/30/12 15:50:43" >
+<INDEX key="test" source="test" date="12/30/12 17:54:24" >
 	<AREAS>
 		<AREA>Group1</AREA>
 	</AREAS>
 	<ASSETS>
-		<COIN_BAG path="graphics/pickups/entity/backpack.png">
+		<Items path="%imagefilerelative%">
+			<SIZE width="0" height="0"/>
+			<BOUNDS x="0" y="0" width="1" height="1"/>
+			<ANCHOR x="0" y="0"/>
+		</Items>
+		<ANKH path="graphics/pickups/entity/backpack.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
-		</COIN_BAG>
+		</ANKH>
+		<BOOKOFTHEDEAD path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</BOOKOFTHEDEAD>
+		<CRYSTALSKULL path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CRYSTALSKULL>
+		<JEWEL path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</JEWEL>
+		<KEY path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</KEY>
+		<TORCH path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</TORCH>
+		<MONEY_BAG path="graphics/pickups/entity/backpack.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</MONEY_BAG>
 		<BG_PLACEHOLDER path="graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>
@@ -28,6 +63,11 @@
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_EVENT>
+		<MARKER_ITEM_SPAWNER path="graphics/built_in/marker_tiles/marker_launcher.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_ITEM_SPAWNER>
 		<PLAYER path="graphics/player.png">
 			<SIZE width="64" height="64"/>
 			<BOUNDS x="12" y="0" width="32" height="64"/>

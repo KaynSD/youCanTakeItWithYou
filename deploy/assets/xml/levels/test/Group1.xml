@@ -126,7 +126,7 @@
 			<PROPS>				
 			</PROPS>
 		</PLAYER>
-		<COIN_BAG>
+		<ANKH>
 			<START x="208.000" y="416.000"/>
 			<ID link_id="null" guid="172C0618-549E-F77B-1EFF-A84758302CCF"/>
 			<CLASS name="PICKUP_ITEM"/>
@@ -138,8 +138,8 @@
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</COIN_BAG>
-		<COIN_BAG>
+		</ANKH>
+		<ANKH>
 			<START x="464.000" y="416.000"/>
 			<ID link_id="null" guid="FECAD536-4119-3A66-52B7-0D5DD57C5133"/>
 			<CLASS name="PICKUP_ITEM"/>
@@ -151,8 +151,8 @@
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</COIN_BAG>
-		<COIN_BAG>
+		</ANKH>
+		<ANKH>
 			<START x="688.000" y="416.000"/>
 			<ID link_id="null" guid="37C4A530-B83A-871F-0B36-7BF952C1AB80"/>
 			<CLASS name="PICKUP_ITEM"/>
@@ -164,7 +164,7 @@
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</COIN_BAG>
+		</ANKH>
 		<MARKER_EVENT>
 			<START x="352.000" y="432.000"/>
 			<ID link_id="null" guid="41F831B9-BCAA-7752-7C0A-241287BBE1AB"/>
@@ -191,6 +191,136 @@
 			<PROPS>				
 			</PROPS>
 		</MARKER_EVENT>
+		<MARKER_ITEM_SPAWNER>
+			<START x="912.000" y="432.000"/>
+			<ID link_id="null" guid="61D47377-12A1-CB71-10D9-B096FFB1AAC1"/>
+			<CLASS name="MARKER_ITEM_SPAWNER"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_ITEM_SPAWNER>
+		<MARKER_ITEM_SPAWNER>
+			<START x="416.000" y="432.000"/>
+			<ID link_id="null" guid="48D49ED8-DDFF-B4A7-2BC6-7114435E1EF9"/>
+			<CLASS name="MARKER_ITEM_SPAWNER"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_ITEM_SPAWNER>
+		<MONEY_BAG>
+			<START x="-688.000" y="-288.000"/>
+			<ID link_id="null" guid="E2BAB642-56C1-C283-ADE9-EA428C854B76"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MONEY_BAG>
+		<ANKH>
+			<START x="272.000" y="416.000"/>
+			<ID link_id="null" guid="E15F9D61-D9B6-0CB9-9834-73326277436F"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</ANKH>
+		<BOOKOFTHEDEAD>
+			<START x="528.000" y="416.000"/>
+			<ID link_id="null" guid="9A1CD900-143C-B963-134C-11EF10DE2107"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BOOKOFTHEDEAD>
+		<CRYSTALSKULL>
+			<START x="736.000" y="416.000"/>
+			<ID link_id="null" guid="2B504E8B-6716-ABE8-F16D-63A1061ECE2F"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</CRYSTALSKULL>
+		<JEWEL>
+			<START x="832.000" y="416.000"/>
+			<ID link_id="null" guid="D00ED30D-883A-C667-F2D6-6AB19A4C3FD9"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</JEWEL>
+		<KEY>
+			<START x="144.000" y="416.000"/>
+			<ID link_id="null" guid="57AA9E88-D6A0-BA53-6264-DD8FE552FA2E"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</KEY>
+		<TORCH>
+			<START x="624.000" y="416.000"/>
+			<ID link_id="null" guid="C9E500A3-07B7-BE21-09AF-389632F1392D"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</TORCH>
+		<MONEY_BAG>
+			<START x="784.000" y="416.000"/>
+			<ID link_id="null" guid="4FB3469F-4104-F1AF-871B-10F1C2BA6E44"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MONEY_BAG>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

@@ -2,11 +2,18 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="287" y="229"/>
+  <viewPos x="173" y="229"/>
   <firstLayersTop>false</firstLayersTop>
-  <spriteEntries currentId="10">
-    <group name="Pickups" idx="1" open="false">
-      <tileEntry name="COIN_BAG" idx="2" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+  <spriteEntries currentId="18">
+    <group name="Items" idx="11" open="false"/>
+    <group name="Pickups" idx="1" open="true">
+      <tileEntry name="ANKH" idx="2" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="BOOKOFTHEDEAD" idx="12" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="CRYSTALSKULL" idx="13" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="JEWEL" idx="14" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="KEY" idx="15" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="TORCH" idx="16" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="MONEY_BAG" idx="17" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/backpack.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false" selected="true"/>
     </group>
     <group name="Background" idx="3" open="false">
       <tileEntry name="BG_PLACEHOLDER" idx="4" className="BACKGROUND" image="../../deploy/assets/graphics/background/background_back.png" offsetX="0" offsetY="0" width="128" height="128" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="128" boundsHeight="128" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
@@ -14,9 +21,10 @@
     </group>
     <group name="Markers" idx="6" open="true">
       <sprite name="MARKER_START" idx="7" className="MARKER_START" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png" width="16" height="16" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false"/>
-      <tileEntry name="MARKER_EVENT" idx="9" className="MARKER_EVENT" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false" selected="true"/>
+      <tileEntry name="MARKER_EVENT" idx="8" className="MARKER_EVENT" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="MARKER_ITEM_SPAWNER" idx="10" className="MARKER_ITEM_SPAWNER" image="../../deploy/assets/graphics/built_in/marker_tiles/marker_launcher.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
     </group>
-    <sprite name="PLAYER" idx="8" className="PLAYER" image="../../deploy/assets/graphics/player.png" width="64" height="64" preview="0" anchorX="28" anchorY="32" centerAnchor="false" boundsX="12" boundsY="0" boundsWidth="32" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false">
+    <sprite name="PLAYER" idx="9" className="PLAYER" image="../../deploy/assets/graphics/player.png" width="64" height="64" preview="0" anchorX="28" anchorY="32" centerAnchor="false" boundsX="12" boundsY="0" boundsWidth="32" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false">
       <anims>
         <anim name="idle" fps="10" loops="true">0,0</anim>
         <anim name="walk" fps="10" loops="true">30,31,32,33,34,35</anim>
@@ -35,7 +43,7 @@
   </spriteEntries>
   <layers>
     <group name="Group1" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
-      <spritelayer name="Background" id="0" xScroll="0.5" yScroll="1" visible="false" locked="false" exports="true" aligned="false" sort="false">
+      <spritelayer name="Background" id="0" xScroll="0.5" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
         <sprite guid="3305B802-A3DF-096B-0AA9-3675C1A4E042" x="160" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="4"/>
         <sprite guid="B57C5724-D933-23D9-F7FE-6A69250491E6" x="288" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="4"/>
         <sprite guid="7E2DD60D-95C0-C6EE-441E-3B2B0CE79FAB" x="416" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="4"/>
@@ -67,12 +75,22 @@
       </maplayer>
       <spritelayer name="Layer1" id="2" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false" selected="true">
         <sprite guid="A4BB0601-C8DC-62CF-2C7B-A9B7D412545E" x="32" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="7"/>
-        <sprite guid="4EBE559F-C7DA-ED83-05B5-49C20F0AC3DE" x="32" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
+        <sprite guid="4EBE559F-C7DA-ED83-05B5-49C20F0AC3DE" x="32" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="9"/>
         <sprite guid="172C0618-549E-F77B-1EFF-A84758302CCF" x="208" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="2"/>
         <sprite guid="FECAD536-4119-3A66-52B7-0D5DD57C5133" x="464" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="2"/>
         <sprite guid="37C4A530-B83A-871F-0B36-7BF952C1AB80" x="688" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="2"/>
-        <sprite guid="41F831B9-BCAA-7752-7C0A-241287BBE1AB" x="352" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="9"/>
-        <sprite guid="5FD8AC05-6523-5F84-3547-7DBB12B25D0E" x="592" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="9"/>
+        <sprite guid="41F831B9-BCAA-7752-7C0A-241287BBE1AB" x="352" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
+        <sprite guid="5FD8AC05-6523-5F84-3547-7DBB12B25D0E" x="592" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
+        <sprite guid="61D47377-12A1-CB71-10D9-B096FFB1AAC1" x="912" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
+        <sprite guid="48D49ED8-DDFF-B4A7-2BC6-7114435E1EF9" x="416" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
+        <sprite guid="E2BAB642-56C1-C283-ADE9-EA428C854B76" x="-688" y="-288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="17"/>
+        <sprite guid="E15F9D61-D9B6-0CB9-9834-73326277436F" x="272" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="2"/>
+        <sprite guid="9A1CD900-143C-B963-134C-11EF10DE2107" x="528" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="12"/>
+        <sprite guid="2B504E8B-6716-ABE8-F16D-63A1061ECE2F" x="736" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="13"/>
+        <sprite guid="D00ED30D-883A-C667-F2D6-6AB19A4C3FD9" x="832" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="14"/>
+        <sprite guid="57AA9E88-D6A0-BA53-6264-DD8FE552FA2E" x="144" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="15"/>
+        <sprite guid="C9E500A3-07B7-BE21-09AF-389632F1392D" x="624" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="16"/>
+        <sprite guid="4FB3469F-4104-F1AF-871B-10F1C2BA6E44" x="784" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="17"/>
       </spritelayer>
       <spritelayer name="Forground" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
     </group>

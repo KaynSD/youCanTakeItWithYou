@@ -43,7 +43,7 @@ package com.p3.datastructures.bundles
 			return false;
 		}
 		
-		protected function registerAsset ($path:String, $res:*):void
+		public function registerAsset ($path:String, $res:*):void
 		{
 			if (m_map[$path] != null && !m_writeOnce) log(m_name + "overwrite: " + $path + " \n " + $res);
 			else log(m_name + " add: " + $path + " \n " + $res);

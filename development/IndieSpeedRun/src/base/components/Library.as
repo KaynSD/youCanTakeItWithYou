@@ -52,6 +52,7 @@ package base.components
 		
 		public function getMusic($name:String):void
 		{
+			
 			//var class_str:String = MUSIC_CLASS_PATH + $name
 			//return getDefinitionByName(class_str) as Class;
 		}
@@ -67,9 +68,6 @@ package base.components
 			}
 			return new GraphicAsset ();
 		}
-		
-
-		
 		public function getAsset($path:String):*
 		{
 			//if ($path.indexOf("mp3") != -1) trace("get asset " + $path);
@@ -139,7 +137,28 @@ package base.components
 			else
 			{
 				trace ("loading asset " + key);
+				_bundle
 				_ext.queueResource(key);
+			}
+		}
+		
+		public function loadItemGraphics ($bundle:XML):void
+		{
+			var key:String;
+			var item:XML 
+			_bundle = $bundle;
+			for each (item in $bundle.*)
+			{
+				if (item.hasOwnProperty("@path"))
+				{
+					key = item.@path;
+					if (!_int.hasAsset(key) && !_zip.hasAsset(key))_ext.queueResource(key);
+				}
+				else
+				{
+					trace("no path found");
+				}
+				
 			}
 		}
 		

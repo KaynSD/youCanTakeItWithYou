@@ -23,13 +23,14 @@ package entities.pickups
 			super();
 			_mousePos = new FlxPoint ();
 			_isCollision = false;
-			_invItem =  Core.items.createItem("TEMP");
+			
 		}
 		
 		override public function init($world:World):void 
 		{
 			super.init($world); 
 			loadNativeGraphics(false, false);
+			_invItem =  Core.items.createItem(_xml_name);
 		}
 		
 		public function setItem ($invItem:InventoryItem):void
