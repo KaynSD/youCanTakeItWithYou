@@ -1,6 +1,9 @@
 package entities.pickups 
 {
 	import entities.Pickup;
+	import entities.Player;
+	import inventory.elements.InventoryISREvent;
+	import inventory.elements.InventoryItem;
 	import org.flixel.FlxG;
 	import org.flixel.FlxPoint;
 	import world.World;
@@ -11,7 +14,8 @@ package entities.pickups
 	public class PickupItem extends Pickup
 	{
 		
-		protected var _mousePos:FlxPoint;
+		var _mousePos:FlxPoint;
+		var _invItem:InventoryItem;
 		
 		public function PickupItem() 
 		{
@@ -19,6 +23,7 @@ package entities.pickups
 			super();
 			_mousePos = new FlxPoint ();
 			_isCollision = false;
+			_invItem =  new InventoryItem ("TEMP", [[1]]);
 		}
 		
 		override public function init($world:World):void 
@@ -27,12 +32,26 @@ package entities.pickups
 			loadNativeGraphics(false, false);
 		}
 		
+		override public function onCollect($player:Player):void 
+		{
+			super.onCollect($player);
+			if (Core.control.isCollectAllowed)
+			{
+				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.COLLECT_ITEM, _invItem));
+			}
+			
+		}
+		
 		override public function update():void 
 		{
 			super.update();
 			FlxG.mouse.getWorldPosition(null, _mousePos);
 			if (this.overlapsPoint(_mousePos, true))
 			{
+				if (FlxG.mouse.justPressed())
+				{
+					onCollect(_world.player);
+				}
 				color = 0xFF0000;
 			}
 			else

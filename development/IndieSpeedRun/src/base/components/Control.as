@@ -31,6 +31,7 @@ package base.components
 		
 		public var isWon:Boolean;
 		public var isTutorial:Boolean; 
+		public var isCollectAllowed:Boolean =true;
 		
 		public var score:int = 0;
 		public var lives:int = 0;
