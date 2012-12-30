@@ -165,10 +165,10 @@
 			<PROPS>				
 			</PROPS>
 		</ANKH>
-		<MARKER_EVENT>
+		<MARKER_ENCOUNTER>
 			<START x="352.000" y="432.000"/>
 			<ID link_id="null" guid="41F831B9-BCAA-7752-7C0A-241287BBE1AB"/>
-			<CLASS name="MARKER_EVENT"/>
+			<CLASS name="MARKER_ENCOUNTER"/>
 			<SIZE width="16.000" height="16.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
 			<BOUNDS x="0" y="0"  width="16" height="16"/>
@@ -176,12 +176,13 @@
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
+					<p_encounterList>TEST</p_encounterList>
 			</PROPS>
-		</MARKER_EVENT>
-		<MARKER_EVENT>
+		</MARKER_ENCOUNTER>
+		<MARKER_ENCOUNTER>
 			<START x="592.000" y="432.000"/>
 			<ID link_id="null" guid="5FD8AC05-6523-5F84-3547-7DBB12B25D0E"/>
-			<CLASS name="MARKER_EVENT"/>
+			<CLASS name="MARKER_ENCOUNTER"/>
 			<SIZE width="16.000" height="16.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
 			<BOUNDS x="0" y="0"  width="16" height="16"/>
@@ -189,8 +190,9 @@
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
+					<p_encounterList>TEST</p_encounterList>
 			</PROPS>
-		</MARKER_EVENT>
+		</MARKER_ENCOUNTER>
 		<MARKER_ITEM_SPAWNER>
 			<START x="912.000" y="432.000"/>
 			<ID link_id="null" guid="61D47377-12A1-CB71-10D9-B096FFB1AAC1"/>

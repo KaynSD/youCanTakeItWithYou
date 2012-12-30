@@ -16,19 +16,40 @@ package base.structs.encounters
 		
 		public function EncounterInfo() 
 		{
-			
+			_choices = new Vector.<EncounterChoiceInfo> ();
 		}
 		
-		protected function deserialize ($xml:XML):void
+		public function deserialize ($xml:XML):void
 		{
 			_key = $xml.@key;
 			_title = $xml.@title;
 			_body = $xml.TEXT.@body;
-			for each (var choice:XML in $xml.CHOICE.*)
+			for each (var choice:XML in $xml.CHOICE)
 			{
 				var newChoice:EncounterChoiceInfo = new EncounterChoiceInfo ();
 				newChoice.deserialize(choice);
+				_choices.push(newChoice);
 			}
+		}
+		
+		public function get key():String 
+		{
+			return _key;
+		}
+		
+		public function get title():String 
+		{
+			return _title;
+		}
+		
+		public function get body():String 
+		{
+			return _body;
+		}
+		
+		public function get choices():Vector.<EncounterChoiceInfo> 
+		{
+			return _choices;
 		}
 		
 	}
