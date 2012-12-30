@@ -51,7 +51,7 @@ package base.structs.encounters
 			}
 			if ($xml.RESULT.hasOwnProperty("HEALTH_CHANGE"))
 			{
-				_resultHealthChange = ($xml.RESULT.HEALTH_CHANGE.@value as int);
+				_resultHealthChange = $xml.RESULT.HEALTH_CHANGE.@value;
 			}
 			if ($xml.hasOwnProperty("REQUIRES"))
 			{
@@ -116,7 +116,11 @@ package base.structs.encounters
 					item.kill();
 				}
 			}
-			$player.health += _resultHealthChange;
+			if (_resultHealthChange < 0)
+			{
+				$player.hurt( -_resultHealthChange);
+			}
+			 //+= _resultHealthChange;
 		}
 		
 		public function get resultText():String 

@@ -9,6 +9,7 @@ package entities
 	import entities.marker.MarkerCameraFocus;
 	import entities.Pickup;
 	import flash.events.Event;
+	import gui.popup.HUDEventPopup;
 	import inventory.InventoryView;
 	import org.flixel.FlxG;
 	import org.flixel.FlxTimer;
@@ -42,6 +43,7 @@ package entities
 			_action = new Action ();
 			_keys = FlxG.keys;
 			_xml_name = "PLAYER";
+			health = 100;
 			//Stats
 		}
 
@@ -165,6 +167,17 @@ package entities
 				}	
 			}
 			super.update();
+		}
+		
+		override public function hurt(value:Number):void
+		{
+			super.hurt(value);
+			//health -= value;
+			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
+			if (health < 0)
+			{
+				Core.control.endLevel(false)
+			}
 		}
 		
 		private function updateDeathBehavior():void 

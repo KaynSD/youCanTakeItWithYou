@@ -60,9 +60,9 @@ package state
 		{
 			trace("create play state");
 			_levelStarted = false;
-			//if (!_hud) _hud = new HUDScreen();
+			if (!_hud) _hud = new HUDScreen();
 			
-			//Core.screen_manager.addScreen(_hud, {});
+			Core.screen_manager.addScreen(_hud, {});
 		
 			// The Inventory!!
 			_inventory = new InventoryView(0,0) ;// add(new InventoryView());

@@ -7,25 +7,24 @@
 				<TEXT description="Ignore this and carry on" />
 				<RESULT>
 					<TEXT body="Nothing happens" />
+					<HEALTH_CHANGE value="-85" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Make a grue joke" />
+				<TEXT description="Give the Grue and Anhk" />
 				<REQUIRES itemKeys="ANKH"/>
 				<RESULT>
 					<TEXT body="The Grue is not amused" />
 					<ITEM_REMOVE itemKeys="ANKH"/>
-					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="The decscription on the button" />
+				<TEXT description="Use either a SKULL or a JEWEL & KEY to escape to the grue" />
 				<REQUIRES itemKeys="SKULL"/>
 				<REQUIRES itemKeys="JEWEL,KEY"/>
 				<RESULT>
 					<TEXT body="The text that appears after you have confirmed your choice" />
 					<ITEM_REMOVE itemKeys="JEWEL"/>
-					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
@@ -33,7 +32,7 @@
 				<REQUIRES health="25"/>
 				<RESULT>
 					<TEXT body="The Grue is not amused" />
-					<HEALTH_CHANGE value="-50" />
+					<HEALTH_CHANGE value="-25" />
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
