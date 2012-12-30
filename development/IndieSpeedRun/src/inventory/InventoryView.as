@@ -41,6 +41,7 @@ package inventory
 			makeGrid();
 			
 			_inventoryItems = new Vector.<InventoryItem>();
+			
 		}
 		
 		public function makeGrid ():void {
@@ -201,7 +202,25 @@ package inventory
 			}
 		}
 		
-		
+		public function hasItem(items:String):Vector.<InventoryItem>
+		{
+			
+			var input:Vector.<Array> = items.toLowerCase().split(",");
+			var returns:Vector.<InventoryItem> = new Vector.<InventoryItem>();
+			
+			if (input.length == 0) return null;
+			
+			for (var i:int = 0; i < input.length; i++) {
+				for (var j:int = 0; j < _inventoryItems.length; j++) {
+					if (_inventoryItems[j].identifier.split("_")[0] == input[i]) {
+						returns.push(_inventoryItems[j]);
+					}
+				}
+			}
+			
+			if (returns.length == 0) return null;
+			if (returns.length == 1) return returns;
+		}
 	}
 
 }
