@@ -23,6 +23,9 @@ package inventory.elements
 		public var assignedX:int;
 		public var assignedY:int;
 		
+		public var points:int = 0;
+		public var title:String = "An unknown item";
+		public var description:String = "Someone messed up here";
 		
 		public function InventoryItem(identifier:String, dimensions:Array, graphic:Class = null, cellSize:int = 32) 
 		{
