@@ -1,6 +1,8 @@
 package base.structs.encounters 
 {
 	import entities.Player;
+	import inventory.elements.InventoryISREvent;
+	import inventory.elements.InventoryItem;
 	import org.flixel.FlxG;
 	import state.PlayState;
 	/**
@@ -16,13 +18,17 @@ package base.structs.encounters
 		protected var _resultText:String = "some result copy";
 		protected var _requires:Vector.<EncounterRequiresInfo>;
 		
-		protected var _resultItemAdd:Vector.<String>;
-		protected var _resultItemRemove:Vector.<String>;
+		protected var _resultItemAddKeys:Array;
+		protected var _resultItemRemoveKeys:Array;
 		protected var _resultHealthChange:int;
+		
+		protected var _matchedItems:Vector.<InventoryItem>;
+		protected var _removedItems:Vector.<InventoryItem>;
 		
 		public function EncounterChoiceInfo() 
 		{
 			_requires = new Vector.<EncounterRequiresInfo> ();
+			_removedItems = new Vector.<InventoryItem> ();
 			//_itemRequires = new Vector.<String> ();
 		}
 		
@@ -35,6 +41,18 @@ package base.structs.encounters
 		{
 			_buttonText = $xml.TEXT.@description;
 			_resultText = $xml.RESULT.TEXT.@body;
+			if ($xml.RESULT.hasOwnProperty("ITEM_ADD"))
+			{
+				_resultItemAddKeys = $xml.RESULT.ITEM_ADD.@itemKeys.split(",");
+			}
+			if ($xml.RESULT.hasOwnProperty("ITEM_REMOVE"))
+			{
+				_resultItemRemoveKeys = $xml.RESULT.ITEM_REMOVE.@itemKeys.split(",");
+			}
+			if ($xml.RESULT.hasOwnProperty("HEALTH_CHANGE"))
+			{
+				_resultHealthChange = ($xml.RESULT.HEALTH_CHANGE.@value as int);
+			}
 			if ($xml.hasOwnProperty("REQUIRES"))
 			{
 				for each (var item:XML in $xml.REQUIRES)
@@ -62,15 +80,43 @@ package base.structs.encounters
 				{
 					checkHealth = $player.health > rec.health;
 				}
-				if (rec.itemKeys && rec.itemKeys.length > 0)
+				if (rec.itemKeys)
 				{
-					//checkItems = $player.invView.hasItem(_itemRequires);
+					_matchedItems = $player.invView.hasItem(rec.itemKeys);
+					checkItems = (_matchedItems && _matchedItems.length > 0);
 				}
 				_isPossible = checkHealth && checkItems;
 				if (_isPossible) break;
 			}
-			
+			if (_matchedItems)
+			{
+				for each (var item:InventoryItem in _matchedItems)
+				{
+					for each (var key:String in _resultItemRemoveKeys)
+					{
+						if (item.identifier.split("_")[0] == key.toLowerCase())
+						{
+							_removedItems.push(item);
+						}
+					}
+					
+				}
+			}
 			return _isPossible;
+		}
+		
+		public function triggerResult ($player:Player):void
+		{
+			
+			if (_removedItems.length > 0)
+			{
+				for each (var item:InventoryItem in _removedItems)
+				{
+					$player.invView.removeItem(item);
+					item.kill();
+				}
+			}
+			$player.health += _resultHealthChange;
 		}
 		
 		public function get resultText():String 

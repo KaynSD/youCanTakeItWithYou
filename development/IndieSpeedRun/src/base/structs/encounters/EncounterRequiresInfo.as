@@ -7,7 +7,7 @@ package base.structs.encounters
 	public class EncounterRequiresInfo 
 	{
 
-		protected var _itemKeys:Array;
+		protected var _itemKeys:String;
 		protected var _health:int = -1;
 		
 		public function EncounterRequiresInfo() 
@@ -19,7 +19,7 @@ package base.structs.encounters
 		{
 			if ($xml.hasOwnProperty("@itemKeys"))
 			{
-				_itemKeys = $xml.@itemKeys.split(",");
+				_itemKeys = $xml.@itemKeys;
 			}
 			if ($xml.hasOwnProperty("@health"))
 			{
@@ -27,7 +27,7 @@ package base.structs.encounters
 			}
 		}
 		
-		public function get itemKeys():Array 
+		public function get itemKeys():String 
 		{
 			return _itemKeys;
 		}

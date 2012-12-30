@@ -11,19 +11,20 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Make a grue joke" />
+				<REQUIRES itemKeys="ANKH"/>
 				<RESULT>
 					<TEXT body="The Grue is not amused" />
-					<ITEM_ADD itemKey="BOOKOFTHEDEAD"/>
+					<ITEM_REMOVE itemKeys="ANKH"/>
 					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="The decscription on the button" />
-				<REQUIRES itemKeys="AHNK,KEY"/>
-				<REQUIRES itemKeys="JEWEL"/>
+				<REQUIRES itemKeys="SKULL"/>
+				<REQUIRES itemKeys="JEWEL,KEY"/>
 				<RESULT>
 					<TEXT body="The text that appears after you have confirmed your choice" />
-					<ITEM_REMOVE itemKey="JEWEL"/>
+					<ITEM_REMOVE itemKeys="JEWEL"/>
 					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>

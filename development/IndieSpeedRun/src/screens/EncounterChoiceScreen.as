@@ -1,6 +1,7 @@
 package screens 
 {
 	import base.events.GameEvent;
+	import base.events.ISRGameEvent;
 	import base.structs.encounters.EncounterChoiceInfo;
 	import base.structs.encounters.EncounterInfo;
 	import entities.Player;
@@ -81,6 +82,7 @@ package screens
 			removeButton(_graphics.btn_choice_1);
 			addButton(_graphics.btn_choice_1, onClickCloseButton);
 			_graphics.btn_choice_1.visible = true;
+			Core.control.dispatchEvent(new ISRGameEvent(ISRGameEvent.EVENT_RESULT, $choice));
 			//_resultMode = true;
 		}
 		
