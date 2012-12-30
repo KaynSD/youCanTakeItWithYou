@@ -1,0 +1,9 @@
+<INDEX key="level" source="level" date="06/14/12 17:16:06" >
+	<AREAS>
+		<AREA>Group1</AREA>
+	</AREAS>
+	<ASSETS>
+		<MARKER_START path="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png" width="16" height="16"/>
+		<PLAYER path="../../deploy/assets/graphics/entities/player.png" width="16" height="32"/>
+	</ASSETS>
+</INDEX> 

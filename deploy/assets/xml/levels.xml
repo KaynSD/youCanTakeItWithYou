@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+		<EXAMPLE_LEVEL>
+		   <!-- key refeances the unique name of the levels main XML document and the folder of it's included assets -->
+			  <ID key="test" index="1" />
+			  <COPY name="A Cool Level Name"/>
+			  <THEME />
+			  <DEV author="Duncan" development="greybox"/>
+			 <INFO unlock_req="" />
+		</EXAMPLE_LEVEL>
+		<!-- <EXAMPLE_LEVEL_2>
+			  <ID key="test" index="2" />
+			  <COPY name="Another cool level name"/>
+			  <THEME />
+			  <DEV author="Chris" development="greybox"/>
+			 <INFO unlock_req="level_alpaca" />
+		</EXAMPLE_LEVEL_2> -->
+</data>

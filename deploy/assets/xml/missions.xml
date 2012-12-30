@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<!---- Missions will replace achivements eventually. -->
+	<MISSION key="mission01" requires="">
+		<TEXT name="Head Trauma" description="Hit your head %target% times" dynamic=". %remains% more times" />
+		<CONDITIONS comparison="GreaterOrEqual" stat="PLAYER_HIT_CEILING" target="10"/>
+		<SCORE value="1"/>
+	</MISSION>
+</data>

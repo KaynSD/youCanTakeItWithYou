@@ -1,0 +1,87 @@
+package com.p3.datastructures.bundles 
+{
+
+	import com.adobe.crypto.Base64;
+	import deng.fzip.FZip;
+	import deng.fzip.FZipFile;
+	import flash.display.Loader;
+	import flash.display.LoaderInfo;
+	import flash.events.Event;
+	import flash.utils.ByteArray;
+	/**
+	 * ...
+	 * @author Duncan Saunders
+	 */
+	public class P3ZipBundle extends P3AssetBundle 
+	{
+		
+		protected var m_fZip:FZip = new FZip ();
+		protected var m_hash:String = "";
+		protected var m_isLoaded:Boolean;
+		
+		public function P3ZipBundle() 
+		{
+			super();
+		}
+		
+		public function loadBytes ($bytes:ByteArray):void
+		{
+			m_hash = Base64.encodeByteArray($bytes);
+			m_hash = m_hash.substr(m_hash.length - 17, 16);
+			m_fZip.addEventListener(Event.COMPLETE, onZipLoaded);
+			m_fZip.loadBytes($bytes);
+		}
+		
+		//override public function load ($path:String)
+		//{
+			//m_fZip.addEventListener(Event.COMPLETE, onZipLoaded);
+			//m_fZip.load($path);
+		//}
+				
+		private function onZipLoaded(e:Event):void 
+		{
+			var len:int = m_fZip.getFileCount()
+			for (var i:int = 0; i < len; i++)
+			{
+				var file:FZipFile = m_fZip.getFileAt(i);
+
+				if (file.filename.indexOf(".png") != -1 || 
+						file.filename.indexOf(".jpg") != -1 || 
+						file.filename.indexOf(".swf") != -1 ||
+						file.filename.indexOf(".gif") != -1)
+						{
+							var loader:Loader = new Loader ();
+							loader.loadBytes(file.content);
+							loader.name = file.filename;
+							loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onSubloadComplete);
+						}
+						else
+						{
+							m_map[file.filename] = file.content;
+						}
+			}
+			m_isLoaded = true;
+			trace("zip load done");
+			dispatchEvent(new Event(Event.COMPLETE));
+		}
+		
+		private function onSubloadComplete(e:Event):void 
+		{
+			var loader:LoaderInfo = LoaderInfo(e.target);
+			m_map[loader.loader.name] = loader.content;
+		}
+		
+		override public function hasAsset($path:String):Boolean 
+		{
+			return super.hasAsset($path);
+		}
+		
+		public function get isLoaded():Boolean { return m_isLoaded; }
+		
+		public function getHash ():String
+		{
+			return m_hash;
+		}
+	}
+
+}

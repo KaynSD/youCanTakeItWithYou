@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<TUTORIAL>
+
+		<NODE key="tut_jump" title="JUMPING" index="1">
+			Press SPACE or CLICK whist hanging on a wall to wall jump.
+		</NODE>
+		<NODE key="tut_elevator" title="ELEVETOR" index="2">
+			Gravity Elevators pull you upwards as long as you are hanging on to them.
+		</NODE>
+		<NODE key="tut_jump_power" title="JUMP TIMING" index="3">
+			Press SPACE or CLICK right after landing to execute a Power Jump to ascend faster.
+		</NODE>
+		<NODE key="tut_beakers" title="BEAKERS" index="4">
+			Pick up beakers to increase your score.
+		</NODE>
+		<NODE key="tut_hazard" title="HAZARDS" index="5">
+			Hitting SLIME and other hazards will stun you. Mash the SPACE or CLICK key to recover.
+		</NODE>
+		<NODE key="tut_sliding" title="SLIDING" index="6">
+			You can not grip surfaces made from ICE. You will slide freely up and down them.
+		</NODE>
+		<NODE key="tut_jump_double" title="DOUBLE JUMP" index="7">
+			Pressing SPACE or CLICK mid jump will execute a double jump. Use it to dodge hazards.
+		</NODE>
+		<NODE key="tut_lazers" title="LAZERS" index="8">
+			Pressing SPACE or CLICK mid jump will execute a double jump. Use it to dodge hazards.
+		</NODE>
+		<NODE key="tut_boost" title="BOOST PAD" index="9">
+			Press SPACE or CLICK when over a BOOST PAD to boost upwards extra fast.
+		</NODE>	
+		<NODE key="tut_switch" title="SWITCH" index="10">
+			Press SPACE or CLICK when over a SWITCH PAD to change direction.
+		</NODE>
+		<NODE key="tut_boss" title="D-FENS DRONE" index="11">
+			Time your jumps to avoid the Drone attacks as you climb.
+		</NODE>
+		<NODE key="tut_stun" title="STUN" index="12">
+			When stunned hit the SPACE or CLICK button repeatedly to recover. In recovery hit SPACE or CLICK  to boost towards the wall.
+		</NODE>
+		<NODE key="tut_missions" title="MISSIONS" index="13">
+			Complete MISSIONS to gain ranks. Each rank you gain awards you a RETRY you can use.
+		</NODE>
+		<NODE key="tut_jump_floor" title="MISSIONS" index="14">
+			Press SPACE or CLICK  to jump along the floor.
+		</NODE>
+		<NODE key="tut_example" title="TUTORIAL" index="0">
+			TUTORIAL TEXT CAN HAVE AS MANY AS THIS NUMBER OF CHARACTERS BEFORE IT RUNS OUT OF SPACE. OTHERWISE THE TUTORIAL SCREEN WILL NEED REDESIGN. DUNCAN
+		</NODE>
+	</TUTORIAL>
+</data>
