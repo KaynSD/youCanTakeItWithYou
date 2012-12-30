@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <data>
-
+	<ANKH>
+		<DIMENSIONS>XXX,XOX,XXX,OXO,OXO</DIMENSIONS>
+		<POINTS MINIMUM="800"
+				MAXIMUM="1500" />
+		<DESCRIPTION name="Ankh"
+					 description="A symbol of life after death" />
+	</ANKH>
+	<BOOKOFTHEDEAD>
+		<DIMENSIONS>XXX,XXX,XXX,XXO</DIMENSIONS>
+		<POINTS MINIMUM="900"
+				MAXIMUM="2100" />
+		<DESCRIPTION name="Book of the Dead"
+					 description="Your guidebook to the world after this one" />
+	</BOOKOFTHEDEAD>
+	<CRYSTALSKULL>
+		<DIMENSIONS>XX,XX,OX</DIMENSIONS>
+		<POINTS MINIMUM="800"
+				MAXIMUM="900" />
+		<DESCRIPTION name="Crystal Skull"
+					 description="Left behind by unknown visitors" />
+	</CRYSTALSKULL>
+	<JEWEL>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="1000" />
+		<DESCRIPTION name="Jewels"
+					 description="Precious Jewels are as Cheap Glass..." />
+	</JEWEL>
+	<KEY>
+		<DIMENSIONS>XX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Key"
+					 description="Grants passage, but where to?" />
+	</KEY>
+	<TORCH>
+		<DIMENSIONS>X,X</DIMENSIONS>
+		<POINTS MINIMUM=""
+				MAXIMUM="" />
+		<DESCRIPTION name="Torch"
+					 description="Where you are headed, there may be little light..." />
+	</TORCH>
+	<MONEYBAG>
+		<DIMENSIONS>XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="120"
+				MAXIMUM="200" />
+		<DESCRIPTION name="Bag of Sekh"
+					 description="Filthy Lucre will only take you so far..." />
+	</MONEYBAG>
+	<!--
+	<ITEMDEAD>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM=""
+				MAXIMUM="" />
+		<DESCRIPTION name=""
+					 description="" />
+	</ITEMDEAD>
+	-->
 </data>

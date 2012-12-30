@@ -26,12 +26,15 @@ package inventory.elements
 		
 		public function InventoryItem(identifier:String, dimensions:Array, graphic:Class = null, cellSize:int = 32) 
 		{
+			
+			super(0, 0, graphic);
+			
 			_identifierS = identifier;
 			this.scrollFactor = new FlxPoint();
 			
 			_eventBus = Core.control
 			_dimensions = dimensions;
-			super(0, 0, graphic);
+			
 			if (graphic == null) makeGraphic(cellSize, cellSize, Math.random() * 0xffffff + 0xff000000, false);
 		}
 		
@@ -64,7 +67,7 @@ package inventory.elements
 				}
 			} else {
 				// Check if we're going to pick up the object
-				if (FlxG.mouse.justPressed() && overlapsPoint(FlxG.mouse.getScreenPosition(), true) || directlyGiveUserControl) {
+				if (FlxG.mouse.justPressed() && overlapsPoint(FlxG.mouse.getScreenPosition(), false) || directlyGiveUserControl) {
 					_isDragging = true;
 					
 					var scrXY:FlxPoint = this.getScreenXY();
@@ -73,7 +76,7 @@ package inventory.elements
 
 					super.update();
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.PICKUP_ITEM, this));
-					
+					directlyGiveUserControl = false;
 				}
 			}
 			

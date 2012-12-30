@@ -75,22 +75,6 @@ package state
 			//add(inventoryItem);
 			
 			
-			for (var i:int = 0; i < 10; i++) {
-				var inventoryItem:InventoryItem = new InventoryItem("key_" + i, 
-						Math.random() < 0.5 ? [[1, 1], [1, 1]] :
-									Math.random() < 0.5 ?  [[1, 0, 1], [1, 1, 1]] :
-															[[1,1,1],[0,1,0]]);
-				inventoryItem.x = 400;
-				inventoryItem.y = 32 * i;
-				add(inventoryItem);
-				
-				inventoryItem.directlyGiveUserControl = false
-				
-				
-				inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
-				inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
-				inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
-			}
 			
 			
 			Core.control.addEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
@@ -104,11 +88,13 @@ package state
 			var inventoryItem:InventoryItem = e.item;
 			
 			add(inventoryItem);
-			/*
+			
 			inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
 			inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
 			inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
-			*/
+			
+			inventoryItem.directlyGiveUserControl = true;
+			
 		}
 		
 		private function removeItemFromInventory(e:InventoryISREvent):void 

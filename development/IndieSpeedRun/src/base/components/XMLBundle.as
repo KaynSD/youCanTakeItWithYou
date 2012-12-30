@@ -10,6 +10,7 @@ package base.components
 		public var game:XML;
 		public var player:XML;
 		public var powerups:XML;
+		public var items:XML;
 		public var externals:XML;
 		public var copy:XML;
 		public var convo:XML;
