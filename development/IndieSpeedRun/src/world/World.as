@@ -348,18 +348,20 @@ package world
 				{
 					_collision_map = new_tiles;
 					isBehind = false;
-					_group_bg.add(new_tiles);
+					//_group_fg.add(new_tiles);
 					_group_collision.add(_collision_map);
 				}
 				if (isBehind) 
 				{
-					//_group_bg.add(new_tiles);
+					_group_bg.add(new_tiles);
 				}
 				else
 				{
-					//_group_fg.add(new_tiles);
+					_group_fg.add(new_tiles);
 				}
-				//trace("deserializing layer:- " + item.@depth + " collision: " + isCollision + " tp" + item.@tile_path);
+				//FlxG.state.add(new_tiles);
+				
+				trace("deserializing layer:- " + item.@depth + " collision: " + isCollision + " tp" + item.@tile_path);
 				new_tiles.loadMap(item, Core.lib.getAsset(item.@tile_path), item.@tile_width, item.@tile_height, 0, 0, 1, 1);
 				if (new_tiles.width > bounds_width) bounds_width = new_tiles.width;
 				if (new_tiles.height > bounds_height) bounds_height = new_tiles.height;
@@ -421,7 +423,7 @@ package world
 			if (e is Pickup && !e.immovable) target_group = _group_pickups;
 			else if (e is Volume) _group_volumes.add(e);
 			else if (e is Background) target_group = _group_parallax;
-			//else if (e.isForceBack) target_group = _group_bg;
+			else if (e.isForceBack) target_group = _group_bg;
 			//else if (e.isForceFront)
 			//{
 				//target_group = _group_fg;

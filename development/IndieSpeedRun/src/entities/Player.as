@@ -100,15 +100,38 @@ package entities
 			//drag.y = 500;
 			if (_keys)
 			{
-				if (_keys.LEFT) velocity.x = -100;
-				if (_keys.RIGHT) velocity.x = 100;
-				if (_keys.UP) velocity.y = -100;
-				if (_keys.DOWN) velocity.y = 100;
+				if (_keys.LEFT) walk(-100);
+				if (_keys.RIGHT) walk(100);
 				if (_keys.justPressed("SPACE")) 
 				{
 					_isAction = true;
 				}
 			}	
+		}
+		
+		public function walk ($velocity:int):void {
+			velocity.x = $velocity;
+		}
+		
+		protected function updateMovementAnimation ():void
+		{
+			var xVel:int = velocity.x;
+			if (xVel < 0) xVel = -xVel;
+			if (isTouching(FLOOR))
+			{
+				if (xVel == 0) 
+				{
+					play("idle");
+				}
+				else if (xVel > 0) 
+				{
+					play("walk");
+				}
+				else if (xVel > 50) 
+				{
+					play("run");
+				}
+			}
 		}
 		
 		override public function update():void 
@@ -122,8 +145,12 @@ package entities
 				return 
 			}
 			_isAction = false;
+			if (velocity.x > 0) facing = RIGHT;
+			else if (velocity.x < 0) facing = LEFT;
+			updateMovementAnimation();
 			updateInput();
 			updateStats();
+			walk(75);
 			if (_isAction)
 			{
 				//TODO - action should have a triggered flag, check for this rather than local flag.

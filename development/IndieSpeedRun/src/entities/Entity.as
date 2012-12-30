@@ -1,8 +1,9 @@
 package entities 
 {
 	import base.interfaces.ISerializedObject;
+	import base.structs.assets.AnimationAsset;
+	import base.structs.assets.GraphicAsset;
 	import base.structs.EventListenerInfo;
-	import base.structs.GraphicAsset;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.utils.getDefinitionByName;
@@ -170,7 +171,24 @@ package entities
 			height = graphic_asset.bounds.height;
 			offset.x = graphic_asset.bounds.x;
 			offset.y = graphic_asset.bounds.y;
-			loadAnimations();
+			if (graphic_asset.isAnimated)
+			{
+				for each (var anim:AnimationAsset in graphic_asset.animations)
+				{
+					addAssetAnimation(anim);
+				}
+			}
+			//loadAnimations();
+		}
+	
+	
+		public function addAssetAnimation ($animation:AnimationAsset):void
+		{
+			var name:String = $animation.name
+			var frames:Array =  $animation.frames;
+			var rate:int  = $animation.fps;
+			var looping:Boolean  = $animation.looped;
+			addAnimation(name, frames, rate, looping);
 		}
 		
 		//TODO - add multi direcion flag?

@@ -4,7 +4,7 @@ package base.components
 	import base.events.DataEvent;
 	import base.events.LibraryEvent;
 	import base.events.UIEvent;
-	import base.structs.GraphicAsset;
+	import base.structs.assets.GraphicAsset;
 	import com.p3.datastructures.bundles.P3ExternalBundle;
 	import com.p3.datastructures.bundles.P3ZipBundle;
 	import com.p3.utils.P3Globals;
@@ -67,6 +67,8 @@ package base.components
 			}
 			return new GraphicAsset ();
 		}
+		
+
 		
 		public function getAsset($path:String):*
 		{

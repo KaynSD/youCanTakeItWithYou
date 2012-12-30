@@ -101,6 +101,7 @@ package screens.dev
 			var button:MovieClip = $button;
 			_shared.data.pointer_id = $button.key;
 			_shared.flush();
+			Core.screen_manager.removeScreen(this);
 			Core.control.loadLevel($button.level.key);
 		}
 		

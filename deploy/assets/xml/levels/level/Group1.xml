@@ -39,6 +39,45 @@
 		</LAYER>
 	</LAYERS>
 	<OBJECTS>
+		<BG_PLACEHOLDER>
+			<START x="64.000" y="400.000"/>
+			<ID link_id="null" guid="3305B802-A3DF-096B-0AA9-3675C1A4E042"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="192.000" y="400.000"/>
+			<ID link_id="null" guid="B57C5724-D933-23D9-F7FE-6A69250491E6"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="320.000" y="400.000"/>
+			<ID link_id="null" guid="7E2DD60D-95C0-C6EE-441E-3B2B0CE79FAB"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
 		<MARKER_START>
 			<START x="16.000" y="416.000"/>
 			<ID link_id="null" guid="A4BB0601-C8DC-62CF-2C7B-A9B7D412545E"/>

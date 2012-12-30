@@ -1,7 +1,7 @@
 <AREA>
 	<INFO key="Group1" />
 	<LAYERS>
-		<LAYER depth="0" name="Map2" tile_width="16" tile_height="16" rows="34" cols="52" x="0" y="0" x_unit="0" y_unit="0" scroll_x="1" scroll_y="1" tile_path="graphics/tileset/tileset_base.png" collide="true" >
+		<LAYER depth="0" name="Map2" tile_width="16" tile_height="16" rows="34" cols="52" x="0" y="0" x_unit="0" y_unit="0" scroll_x="1" scroll_y="1" tile_path="graphics/built_in/tileset_base.png" collide="true" >
 			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -39,6 +39,84 @@
 		</LAYER>
 	</LAYERS>
 	<OBJECTS>
+		<BG_PLACEHOLDER>
+			<START x="48.000" y="352.000"/>
+			<ID link_id="null" guid="3305B802-A3DF-096B-0AA9-3675C1A4E042"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="176.000" y="352.000"/>
+			<ID link_id="null" guid="B57C5724-D933-23D9-F7FE-6A69250491E6"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="304.000" y="352.000"/>
+			<ID link_id="null" guid="7E2DD60D-95C0-C6EE-441E-3B2B0CE79FAB"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="-80.000" y="352.000"/>
+			<ID link_id="null" guid="F7BE73F7-7CA9-FD51-600F-073845992CA2"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="432.000" y="352.000"/>
+			<ID link_id="null" guid="837506FB-DBCF-6D7D-1845-EF56669D5779"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
+		<BG_PLACEHOLDER>
+			<START x="-208.000" y="352.000"/>
+			<ID link_id="null" guid="E0EB6A34-4F93-0704-5689-95F5521182D1"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="0.5" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_PLACEHOLDER>
 		<MARKER_START>
 			<START x="16.000" y="416.000"/>
 			<ID link_id="null" guid="A4BB0601-C8DC-62CF-2C7B-A9B7D412545E"/>
@@ -65,6 +143,71 @@
 			<PROPS>				
 			</PROPS>
 		</PLAYER>
+		<COIN_BAG>
+			<START x="144.000" y="448.000"/>
+			<ID link_id="null" guid="172C0618-549E-F77B-1EFF-A84758302CCF"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</COIN_BAG>
+		<BG_FRONT>
+			<START x="0.000" y="448.000"/>
+			<ID link_id="null" guid="50609342-4CB1-4572-00FA-76E9E0B63565"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_FRONT>
+		<BG_FRONT>
+			<START x="128.000" y="448.000"/>
+			<ID link_id="null" guid="E4A4B151-7D4B-8C37-061C-D3C4DC2662F3"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_FRONT>
+		<BG_FRONT>
+			<START x="256.000" y="448.000"/>
+			<ID link_id="null" guid="661AA502-8DFF-3DCD-4A0A-ECFA1654D651"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_FRONT>
+		<BG_FRONT>
+			<START x="384.000" y="448.000"/>
+			<ID link_id="null" guid="978699D5-39AF-623E-6AD5-86544AAA2C77"/>
+			<CLASS name="BACKGROUND"/>
+			<SIZE width="128.000" height="128.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="128" height="128"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</BG_FRONT>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>
