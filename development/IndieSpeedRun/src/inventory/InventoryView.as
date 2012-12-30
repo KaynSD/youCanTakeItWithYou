@@ -69,27 +69,17 @@ package inventory
 			var i:int, j:int;
 			if (checkItemPositions(item)) {
 				_inventoryItems.push(item);
-				var realX:int = (item.x - x) / _cellWidth;
-				var realY:int = (item.y - y) / _cellWidth;
-				
-				item.x = this.x + realX * _cellWidth
-				item.y = this.y + realY * _cellWidth
+				trace("Item:", item.identifier, "added");
+				trace(_inventoryItems.length, "items in inventory");
 				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.ACCEPT_ITEM, item));
 				
-				for (j = 0; j < item.dimensions.length; j++){
-				for (i = 0; i < item.dimensions[j].length; i++)
-				{
-					if (item.dimensions[j][i] == 1) {
-						var newX:int = realX + i;
-						var newY:int = realY + j;
-						
-						
-						_gridData[newX][newY].isFull = true;
-						}
-						
-					}
-				}
 				
+				item.assignedX  = (item.x - x) / _cellWidth;
+				item.assignedY =  (item.y - y) / _cellWidth;
+				
+				
+				
+				updateAllCurrentItems();
 				
 			} else {
 				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.REJECT_ITEM, item))
@@ -102,6 +92,38 @@ package inventory
 				}
 			}
 			
+		}
+		
+		private function updateAllCurrentItems():void 
+		{
+			
+			for (var k:int = 0; k < _inventoryItems.length; k++) {
+				
+				var item:InventoryItem = _inventoryItems[k];
+				
+				var realX:int = item.assignedX;// (item.x - x) / _cellWidth;
+				var realY:int = item.assignedY;// (item.y - y) / _cellWidth;
+				
+				item.x = this.x + realX * _cellWidth
+				item.y = this.y + realY * _cellWidth
+				
+				
+				
+				for (var j:int = 0; j < item.dimensions.length; j++){
+				for (var i:int = 0; i < item.dimensions[j].length; i++)
+				{
+					if (item.dimensions[j][i] == 1) {
+						var newX:int = realX + i;
+						var newY:int = realY + j;
+						
+						
+						_gridData[newX][newY].isFull = true;
+						}
+						
+					}
+				}
+				
+			}
 		}
 		
 		public function checkItemPositions(item:InventoryItem):Boolean 
@@ -149,23 +171,33 @@ package inventory
 		public function removeItem(item:InventoryItem):void 
 		{
 			
-			var realX:int = (item.x - x) / _cellWidth;
-			var realY:int = (item.y - y) / _cellWidth;
+			var realX:int = item.assignedX
+			var realY:int = item.assignedY
 			
-			for (var i:int = 0; i < _inventoryItems.length; i++) {
-				if (_inventoryItems[i].identifier == item.identifier) {
-					trace("Item at : " + i);
-					_inventoryItems.splice(i, 1);
+			var i:int, j:int, k:int;
+			
+			trace("Remove",item,"from",_inventoryItems);
+			for (k = _inventoryItems.length -1; k >=0 ; k--) {
+				if (_inventoryItems[k].identifier == item.identifier) {
 					
-					for (var y:int = 0; y < item.dimensions.length; y++){
-					for (var x:int = 0; x < item.dimensions[y].length; x++) {
-						if (item.dimensions[y][x] == 1) {
-							_gridData[y + realY][x + realX].isFull = false;
+					_inventoryItems.splice(k, 1);
+					trace(_inventoryItems);
+					for (j = 0; j < item.dimensions.length; j++){
+					for (i = 0; i < item.dimensions[j].length; i++)
+					{
+						if (item.dimensions[j][i] == 1) {
+							var newX:int = realX + i;
+							var newY:int = realY + j;
+							
+							
+							_gridData[newX][newY].isFull = false;
+							}
+							
 						}
 					}
-					}
-					
+					break;
 				}
+				
 			}
 		}
 		

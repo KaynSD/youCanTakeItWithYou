@@ -34,8 +34,10 @@ package base
 			
 			var _v:String = Version.Major + "." + Version.Minor + ".r" + Version.Revision;
 			
-			var _version:ContextMenuItem = new ContextMenuItem("Version: " + _v + ". By Playerthree");
-			_version.enabled = false;			
+			var _version:ContextMenuItem = new ContextMenuItem("Version: " + _v + ". By #aBadIdea");
+			_version.enabled = false;
+			var _version2:ContextMenuItem = new ContextMenuItem("  KaynSD, Titch, Synzima");
+			_version2.enabled = false;			
 			
 			
 			//var _fpsMenu:ContextMenuItem = new ContextMenuItem("FPS Counter");
@@ -66,6 +68,7 @@ package base
 				//_cm.customItems.push(_version, _fpsMenu, _unlockMenu, _devMenu, _keysMenu);
 			//else
 				_cm.customItems.push(_version);
+				_cm.customItems.push(_version2);
 		}
 		
 /*-------------------------------------------------

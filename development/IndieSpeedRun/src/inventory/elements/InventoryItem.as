@@ -1,6 +1,7 @@
 package inventory.elements 
 {
 	import base.events.InventoryEvent;
+	import base.events.ISRGameEvent;
 	import de.polygonal.ds.Array2;
 	import entities.Entity;
 	import flash.events.MouseEvent;
@@ -14,9 +15,14 @@ package inventory.elements
 	{
 		private var offPoint:FlxPoint;
 		private var _identifierS:String;
+		public var directlyGiveUserControl:Boolean = false;
 		
 		protected var _dimensions:Array
 		protected var _isDragging:Boolean;
+		
+		public var assignedX:int;
+		public var assignedY:int;
+		
 		
 		public function InventoryItem(identifier:String, dimensions:Array, graphic:Class = null, cellSize:int = 32) 
 		{
@@ -44,12 +50,13 @@ package inventory.elements
 		{
 			
 			var mseXY:FlxPoint = FlxG.mouse.getScreenPosition();
-			
+			var orD:Boolean = _isDragging;
 			if (_isDragging) {
 				if (FlxG.mouse.justReleased()) {
 					_isDragging = false;
+					
+					super.update();
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.DROP_ITEM, this));
-					trace("DOWN")
 				} else {
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.MOVING_ITEM, this));
 					this.x = mseXY.x + offPoint.x;
@@ -57,25 +64,31 @@ package inventory.elements
 				}
 			} else {
 				// Check if we're going to pick up the object
-				if (FlxG.mouse.justPressed()) if (overlapsPoint(FlxG.mouse.getScreenPosition(), true)) {
+				if (FlxG.mouse.justPressed() && overlapsPoint(FlxG.mouse.getScreenPosition(), true) || directlyGiveUserControl) {
 					_isDragging = true;
 					
 					var scrXY:FlxPoint = this.getScreenXY();
 					
-					offPoint = new FlxPoint(scrXY.x - mseXY.x, scrXY.y - mseXY.y);
-					trace("UP!");
+					offPoint = directlyGiveUserControl ? new FlxPoint() : new FlxPoint(scrXY.x - mseXY.x, scrXY.y - mseXY.y);
+
+					super.update();
+					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.PICKUP_ITEM, this));
+					
 				}
 			}
 			
-			super.update();
+			if (orD != _isDragging) super.update();
+			
 		}
 		
 		override public function draw():void 
 		{
 			super.draw();
 			
-			
-			
+		}
+		
+		override public function toString():String {
+			return "[" + _identifierS + "]";
 		}
 		
 	}
