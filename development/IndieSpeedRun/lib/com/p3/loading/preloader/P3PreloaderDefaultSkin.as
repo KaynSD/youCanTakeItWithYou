@@ -133,7 +133,7 @@ package com.p3.loading.preloader
 		public function remove():void 
 		{
 			_isBeingRemoved = true;
-			_tweenTimer = new Timer (20, 40)
+			_tweenTimer = new Timer (20, 5)
 			_tweenTimer.addEventListener(TimerEvent.TIMER, onUpdateTween);
 			_tweenTimer.addEventListener(TimerEvent.TIMER_COMPLETE, onCompleteTween);
 			_tweenTimer.start();

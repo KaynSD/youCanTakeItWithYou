@@ -148,11 +148,6 @@ package state
 			cleanUp();
 			FlxG.switchState(new MenuState(TitleScreen));
 		}
-
-
-
-		
-
 		
 		public function get world():World { return _world; }
 		

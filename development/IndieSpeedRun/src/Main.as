@@ -6,7 +6,7 @@ package {
 	import flash.events.Event;
 	import org.flixel.*;
 	import state.InitState;
-	[SWF(width="640", height="480", backgroundColor="#000000")] //Set the size and color of the Flash file
+	[SWF(width="960", height="540", backgroundColor="#000000")] //Set the size and color of the Flash file
 	//[SWF(width="4000", height="2000", backgroundColor="#000000")]
 	[Frame(factoryClass="Preloader")]
 	public class Main extends FlxGame

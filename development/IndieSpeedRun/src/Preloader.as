@@ -16,6 +16,7 @@ package
 		public function Preloader() 
 		{
 			super();
+			_minimumTime = 0.01;
 			_verbose = true;
 		}
 		

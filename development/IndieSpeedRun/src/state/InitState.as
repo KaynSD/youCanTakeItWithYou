@@ -10,7 +10,6 @@ package state
 	import entities.*;
 	import entities.blocks.*;
 	import entities.deco.*;
-	import entities.enemies.*;
 	import entities.hazard.*;
 	import entities.marker.*;
 	import entities.pickups.*;
