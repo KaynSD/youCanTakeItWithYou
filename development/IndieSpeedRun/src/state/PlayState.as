@@ -70,15 +70,22 @@ package state
 			_inventory = new InventoryView(0,0) ;// add(new InventoryView());
 			add(_inventory);
 			
-			var inventoryItem:InventoryItem = new InventoryItem("key", [[1,0,1],[1,1,1]]);
-			inventoryItem.x = 0;
-			inventoryItem.y = 0;
-			add(inventoryItem);
-			
-			inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
-			inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
-			inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
-			
+			for (var i:int = 0; i < 10; i++) {
+				var inventoryItem:InventoryItem = new InventoryItem("key_" + i, 
+						Math.random() < 0.5 ? [[1, 1], [1, 1]] :
+									Math.random() < 0.5 ?  [[1, 0, 1], [1, 1, 1]] :
+															[[1,1,1],[0,1,0]]);
+				inventoryItem.x = 400;
+				inventoryItem.y = 32 * i;
+				add(inventoryItem);
+				
+				inventoryItem.directlyGiveUserControl = false
+				
+				
+				inventoryItem.addEventListener(InventoryISREvent.MOVING_ITEM, checkSpacesInInventory);
+				inventoryItem.addEventListener(InventoryISREvent.DROP_ITEM, positionItemInInventory);
+				inventoryItem.addEventListener(InventoryISREvent.PICKUP_ITEM, removeItemFromInventory);
+			}
 			
 			
 			super.create();

@@ -11,7 +11,7 @@ package entities.pickups
 	public class PickupItem extends Pickup
 	{
 		
-		var _mousePos:FlxPoint;
+		protected var _mousePos:FlxPoint;
 		
 		public function PickupItem() 
 		{
