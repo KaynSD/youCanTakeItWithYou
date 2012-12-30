@@ -18,24 +18,36 @@
       <name>CONFIG::timeStamp</name>
       <value>'30/12/2012'</value>
     </define>
+    <define append="true">
+      <name>CONFIG::air</name>
+      <value>false</value>
+    </define>
+    <define append="true">
+      <name>CONFIG::mobile</name>
+      <value>false</value>
+    </define>
+    <define append="true">
+      <name>CONFIG::desktop</name>
+      <value>false</value>
+    </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\src</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\deploy</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\Levels</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\lib</path-element>
-      <path-element>C:\Program Files\FlashDevelop\Library\AS3\classes</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\src</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\deploy</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\Levels</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\lib</path-element>
+      <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\swc\ui.swc</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\swc\menu.swc</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\swc\miniclip\ActionSource.swc</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\swc\ds\ds_debug_alchemy.swc</path-element>
-      <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\swc\audio.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\ui.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\menu.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\miniclip\ActionSource.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\ds\ds_debug_alchemy.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\audio.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\Git Repos\youCanTakeItWithYou\development\IndieSpeedRun\src\Main.as</path-element>
+    <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>
