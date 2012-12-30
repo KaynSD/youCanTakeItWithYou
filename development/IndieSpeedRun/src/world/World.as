@@ -342,7 +342,7 @@ package world
 				
 				var new_tiles:DynamicTilemap = new DynamicTilemap ();		
 				isCollision = item.@collide == "true"
-				new_tiles.scrollFactor = new FlxPoint(item.@sf_x, item.@sf_y);
+				//new_tiles.scrollFactor = new FlxPoint(item.@sf_x, item.@sf_y);
 				_tilemaps.push(new_tiles);
 				if (item.@collide == "true")
 				{

@@ -56,7 +56,8 @@ package assets
     	[Embed(source = "graphics/built_in/effects/ember_mote.png")] 				public var img_ember_mote:Class;
 		[Embed(source = 'graphics/built_in/tileset_base.png')]							public var img_tileset_base:Class;
 		
-		[Embed(source="graphics/tileset/tileset_base.png")] 				public var img_tileset_base2:Class;		
+		[Embed(source = "graphics/tileset/tileset_base.png")] 				public var img_tileset_base2:Class;		
+		[Embed(source = "graphics/tileset/sand_tiles.png")]						public var img_tileset_sand:Class;
 
 		//[Embed(source = 'graphics/particles/boulder_warning.png')]	public var img_boulder_warning:Class;
 
