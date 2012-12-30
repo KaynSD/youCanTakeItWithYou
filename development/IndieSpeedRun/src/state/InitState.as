@@ -40,6 +40,10 @@ package state
 			Core.xml.game = getXMLFile('game');
 			Core.xml.levels = getXMLFile('levels');
 			Core.xml.convo = getXMLFile('scripts');
+			Core.xml.items = getXMLFile('items');
+			
+			
+			
 			Core.xml.init();
 		}
 		
@@ -51,6 +55,7 @@ package state
 
 			
 			Core.control.init();
+			Core.items.init();
 			
 			registerClasses();
 			

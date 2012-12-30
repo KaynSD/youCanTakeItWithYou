@@ -23,7 +23,7 @@ package entities.pickups
 			super();
 			_mousePos = new FlxPoint ();
 			_isCollision = false;
-			_invItem =  Core.items.createItem("TEMP");
+			_invItem =  Core.items.createItem(Math.random() < 0.5 ? "TORCH" : "ANKH");
 		}
 		
 		override public function init($world:World):void 

@@ -35,6 +35,7 @@ package
 			loadAsset(P3Globals.path + _path + 'missions.xml',  {name:'missions'});
 			loadAsset(P3Globals.path + _path + 'levels.xml',  {name:'levels'});
 			loadAsset(P3Globals.path + _path + 'externals.xml',  { name:'externals' } );
+			loadAsset(P3Globals.path + _path + 'items.xml',  { name:'items' } );
 		}
 		
 		
@@ -49,6 +50,7 @@ package
 			Core.xml.anims = getAsset('animations').rawContent;
 			Core.xml.levels = getAsset('levels').rawContent;
 			Core.xml.externals = getAsset('externals').rawContent;
+			Core.xml.items = getAsset('items').rawContent;
 			Core.xml.init();
 			
 		}
