@@ -11,11 +11,13 @@ package base.components.managers
 		protected var _lastUsedIndex:int;
 		
 		protected var dimensionsArray:Array
+		protected var pointsArray:Array
 		
 		public function ItemManager() 
 		{
 			
 			dimensionsArray = new Array();
+			pointsArray = new Array();
 			
 			//Core.lib.loadAsset("graphics/pickups/inventoryscreen/ankh.png");
 		}
@@ -37,7 +39,8 @@ package base.components.managers
 						dimensionsArray[itemName][i][j] = b[j] == "X" ? 1 : 0;
 					}
 				}
-
+				
+				pointsArray[itemName] = new Array(int(String(item.POINTS.@MINIMUM)), int(String(item.POINTS.@MAXIMUM)));
 				
 			}
 			
@@ -55,7 +58,15 @@ package base.components.managers
 			var inventoryItem:InventoryItem = new InventoryItem($identifier + "_" + i, 
 																dimensionsArray[$identifier],
 																Core.lib.getAsset("graphics/pickups/inventoryscreen/" + $identifier + ".png"));
-						
+																
+			var hi:int = pointsArray[$identifier][1];
+			var lo:int = pointsArray[$identifier][0];
+			inventoryItem.points = lo + int(Math.random() * (hi - lo))
+			
+			var node:XML = XML(Core.xml.items.child($identifier.toUpperCase()))
+			
+			inventoryItem.title = node.DESCRIPTION.@name
+			inventoryItem.description = node.DESCRIPTION.@description
 			return inventoryItem;
 		}
 		

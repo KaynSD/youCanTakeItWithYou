@@ -49,6 +49,27 @@
 		<DESCRIPTION name="Bag of Sekh"
 					 description="Filthy Lucre will only take you so far..." />
 	</MONEYBAG>
+	<ROD>
+		<DIMENSIONS>OX,XX,OX</DIMENSIONS>
+		<POINTS MINIMUM="1500"
+				MAXIMUM="2000" />
+		<DESCRIPTION name="Rod of Leadership"
+					 description="A symbol of the rule of the Pharoahs" />
+	</ROD>
+	<SCEPTER>
+		<DIMENSIONS>XX,OX,OX</DIMENSIONS>
+		<POINTS MINIMUM="1600"
+				MAXIMUM="2100" />
+		<DESCRIPTION name="Scepter of the Pharoahs"
+					 description="A symbol of the rule of the Pharoahs" />
+	</SCEPTER>
+	<CAT>
+		<DIMENSIONS>XO,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="800"
+				MAXIMUM="900" />
+		<DESCRIPTION name="Scepter of the Pharoahs"
+					 description="A symbol of the rule of the Pharoahs" />
+	</CAT>
 	<!--
 	<ITEMDEAD>
 		<DIMENSIONS>X</DIMENSIONS>
