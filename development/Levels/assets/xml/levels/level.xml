@@ -1,4 +1,4 @@
-<INDEX key="level" source="level" date="12/30/12 18:12:56" >
+<INDEX key="level" source="level" date="12/30/12 18:10:56" >
 	<AREAS>
 		<AREA>Group1</AREA>
 	</AREAS>
@@ -8,67 +8,67 @@
 			<BOUNDS x="0" y="0" width="1" height="1"/>
 			<ANCHOR x="0" y="0"/>
 		</Items>
-		<ANKH path="graphics/pickups/entity/backpack.png">
+		<ANKH path="../../deploy/assets/graphics/pickups/entity/ankh.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</ANKH>
-		<BOOKOFTHEDEAD path="graphics/pickups/entity/backpack.png">
+		<BOOKOFTHEDEAD path="../../deploy/assets/graphics/pickups/entity/bookofthedead.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</BOOKOFTHEDEAD>
-		<CRYSTALSKULL path="graphics/pickups/entity/backpack.png">
+		<CRYSTALSKULL path="../../deploy/assets/graphics/pickups/entity/crystalskull.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</CRYSTALSKULL>
-		<JEWEL path="graphics/pickups/entity/backpack.png">
+		<JEWEL path="../../deploy/assets/graphics/pickups/entity/jewel.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</JEWEL>
-		<KEY path="graphics/pickups/entity/backpack.png">
+		<KEY path="../../deploy/assets/graphics/pickups/entity/key.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</KEY>
-		<TORCH path="graphics/pickups/entity/backpack.png">
+		<TORCH path="../../deploy/assets/graphics/pickups/entity/torch.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</TORCH>
-		<MONEY_BAG path="graphics/pickups/entity/backpack.png">
+		<MONEYBAG path="../../deploy/assets/graphics/pickups/entity/moneybag.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
-		</MONEY_BAG>
-		<BG_PLACEHOLDER path="graphics/background/background_back.png">
+		</MONEYBAG>
+		<BG_PLACEHOLDER path="../../deploy/assets/graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>
 			<ANCHOR x="0" y="0"/>
 		</BG_PLACEHOLDER>
-		<BG_FRONT path="graphics/background/background_floor.png">
+		<BG_FRONT path="../../deploy/assets/graphics/background/background_floor.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>
 			<ANCHOR x="0" y="0"/>
 		</BG_FRONT>
-		<MARKER_START path="graphics/built_in/marker_tiles/mt_start.png">
+		<MARKER_START path="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png">
 			<SIZE width="16" height="16"/>
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_START>
-		<MARKER_EVENT path="graphics/built_in/marker_tiles/mt_template.png">
+		<MARKER_EVENT path="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png">
 			<SIZE width="16" height="16"/>
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_EVENT>
-		<MARKER_ITEM_SPAWNER path="graphics/built_in/marker_tiles/marker_launcher.png">
+		<MARKER_ITEM_SPAWNER path="../../deploy/assets/graphics/built_in/marker_tiles/marker_launcher.png">
 			<SIZE width="16" height="16"/>
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_ITEM_SPAWNER>
-		<PLAYER path="graphics/player.png">
+		<PLAYER path="../../deploy/assets/graphics/player.png">
 			<SIZE width="64" height="64"/>
 			<BOUNDS x="12" y="0" width="32" height="64"/>
 			<ANCHOR x="28" y="32"/>

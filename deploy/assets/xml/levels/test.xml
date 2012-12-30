@@ -1,4 +1,4 @@
-<INDEX key="test" source="test" date="12/30/12 17:54:24" >
+<INDEX key="test" source="test" date="12/30/12 18:16:46" >
 	<AREAS>
 		<AREA>Group1</AREA>
 	</AREAS>
@@ -8,41 +8,41 @@
 			<BOUNDS x="0" y="0" width="1" height="1"/>
 			<ANCHOR x="0" y="0"/>
 		</Items>
-		<ANKH path="graphics/pickups/entity/backpack.png">
+		<ANKH path="graphics/pickups/entity/ankh.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</ANKH>
-		<BOOKOFTHEDEAD path="graphics/pickups/entity/backpack.png">
+		<BOOKOFTHEDEAD path="graphics/pickups/entity/bookofthedead.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</BOOKOFTHEDEAD>
-		<CRYSTALSKULL path="graphics/pickups/entity/backpack.png">
+		<CRYSTALSKULL path="graphics/pickups/entity/crystalskull.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</CRYSTALSKULL>
-		<JEWEL path="graphics/pickups/entity/backpack.png">
+		<JEWEL path="graphics/pickups/entity/jewel.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</JEWEL>
-		<KEY path="graphics/pickups/entity/backpack.png">
+		<KEY path="graphics/pickups/entity/key.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</KEY>
-		<TORCH path="graphics/pickups/entity/backpack.png">
+		<TORCH path="graphics/pickups/entity/torch.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</TORCH>
-		<MONEY_BAG path="graphics/pickups/entity/backpack.png">
+		<MONEYBAG path="graphics/pickups/entity/moneybag.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
-		</MONEY_BAG>
+		</MONEYBAG>
 		<BG_PLACEHOLDER path="graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>
