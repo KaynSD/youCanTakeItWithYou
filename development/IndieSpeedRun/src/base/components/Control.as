@@ -1,11 +1,13 @@
 package base.components 
 {
 
+	import base.components.managers.EncounterManager;
 	import base.events.DataEvent;
 	import base.events.GameEvent;
 	import base.events.LibraryEvent;
 	import base.events.ScriptEvent;
 	import base.events.UIEvent;
+	import base.structs.encounters.EncounterInfo;
 	import base.structs.HashmapSerialized;
 	import base.structs.Script;
 	import com.p3.audio.soundcontroller.objects.IP3SoundObject;
@@ -17,6 +19,7 @@ package base.components
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
 	import org.flixel.FlxG;
+	import screens.EncounterChoiceScreen;
 	import screens.WarningPopupScreen;
 	import state.MenuState;
 	import state.PlayState;
@@ -46,15 +49,19 @@ package base.components
 		protected var _level_hashmap:HashmapSerialized;
 		protected var _level_list:Vector.<Level>;
 		
+		protected var _encounterManager:EncounterManager;
+		
 		public function Control(target:IEventDispatcher = null) 
 		{
 			_script_queue = new Vector.<String>()
+			_encounterManager = new EncounterManager ();
 			super(target);
 		}
 		
 		public function init():void 
 		{
 			initLevelData();
+			_encounterManager.init(Core.xml.game.ENCOUNTERS[0]);
 		}
 		
 		public function switchScreen ($new_screen:IP3Screen, $replace:Boolean = true, $transition:IP3Transition = null):void
@@ -222,6 +229,15 @@ package base.components
 			//var level_header:XML = Core.xml.getLevelXML($key);
 			//_level = new Level ();
 			//_level.loadRemote($key);
+		}
+		
+		public function startEncounter($key:String):void 
+		{
+			var enc:EncounterInfo = _encounterManager.getEncounter($key);
+			pause();
+			var encScreen:EncounterChoiceScreen = new EncounterChoiceScreen ();
+			encScreen.initEncounter(enc);
+			Core.screen_manager.addScreen(encScreen, { replace:false } );
 		}
 		
 		private function onWarning(e:UIEvent):void 

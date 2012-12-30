@@ -13,22 +13,22 @@
 				<TEXT description="Make a grue joke" />
 				<RESULT>
 					<TEXT body="The Grue is not amused" />
+					<ITEM_ADD itemKey="BOOKOFTHEDEAD"/>
 					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="The decscription on the button" />
-				<REQUIRES itemKeys="LIGHT,KEY"/>
+				<REQUIRES itemKeys="AHNK,KEY"/>
 				<REQUIRES itemKeys="JEWEL"/>
 				<RESULT>
 					<TEXT body="The text that appears after you have confirmed your choice" />
-					<ITEM_ADD itemKey="MAD_HACKS"/>
-					<ITEM_REMOVE itemKey="LIGHT"/>
+					<ITEM_REMOVE itemKey="JEWEL"/>
 					<HEALTH_CHANGE value="-50" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Make a grue joke" />
+				<TEXT description="This option has a health requirement" />
 				<REQUIRES health="25"/>
 				<RESULT>
 					<TEXT body="The Grue is not amused" />

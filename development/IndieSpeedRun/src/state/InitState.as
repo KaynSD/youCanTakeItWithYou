@@ -96,6 +96,8 @@ package state
 			Core.registry.registerClass(TriggerVolume, "TRIGGER_VOLUME");
 			
 			Core.registry.registerClass(PickupItem, "PICKUP_ITEM");
+			
+			Core.registry.registerClass(MarkerEncounter, "MARKER_ENCOUNTER");
 		}
 		
 		//TODO - wrap this function inside the Library.
