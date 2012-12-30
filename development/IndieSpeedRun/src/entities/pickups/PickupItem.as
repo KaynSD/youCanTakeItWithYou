@@ -14,8 +14,8 @@ package entities.pickups
 	public class PickupItem extends Pickup
 	{
 		
-		var _mousePos:FlxPoint;
-		var _invItem:InventoryItem;
+		private var _mousePos:FlxPoint;
+		private var _invItem:InventoryItem;
 		
 		public function PickupItem() 
 		{
@@ -30,6 +30,11 @@ package entities.pickups
 		{
 			super.init($world); 
 			loadNativeGraphics(false, false);
+		}
+		
+		public function setItem ($invItem:InventoryItem)
+		{
+			_invItem = $invItem;
 		}
 		
 		override public function onCollect($player:Player):void 

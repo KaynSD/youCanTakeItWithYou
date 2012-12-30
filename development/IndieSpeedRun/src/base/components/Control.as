@@ -11,6 +11,8 @@ package base.components
 	import com.p3.audio.soundcontroller.objects.IP3SoundObject;
 	import com.p3.display.screenmanager.IP3Screen;
 	import com.p3.display.screenmanager.transitions.IP3Transition;
+	import entities.pickups.PickupItem;
+	import entities.Player;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
@@ -19,6 +21,7 @@ package base.components
 	import state.MenuState;
 	import state.PlayState;
 	import world.engine.Level;
+	import world.World;
 	
 	/**
 	 * ...

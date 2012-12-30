@@ -18,6 +18,7 @@ package world
 	import entities.marker.MarkerCheckpoint;
 	import entities.marker.MarkerTeleport;
 	import entities.Pickup;
+	import entities.pickups.PickupItem;
 	import entities.Player;
 	import entities.PlayerBase;
 	import entities.volumes.Volume;
@@ -27,6 +28,8 @@ package world
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.utils.ByteArray;
+	import flash.utils.Dictionary;
+	import inventory.elements.InventoryISREvent;
 	import mx.graphics.codec.PNGEncoder;
 	import org.flixel.FlxCamera;
 	import org.flixel.FlxEmitter;
@@ -124,6 +127,7 @@ package world
 		protected var _flx_point:FlxPoint;
 		
 		private var _gravity:int = 335;
+		private var _pickupItems:Dictionary;
 		protected var _eventBus:EventDispatcher;
 
 		public function World() 
@@ -244,6 +248,13 @@ package world
 			Core.control.addEventListener(EmitterEvent.REMOVE_FROM_WORLD, onRemoveEmitter);
 			//GAME SPECIFIC
 			Core.control.addEventListener(GameEvent.MOUSE_CLICKED, onMousePressed);
+			
+			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, onItemDroppedInWorld);
+		}
+		
+		private function onItemDroppedInWorld(e:InventoryISREvent):void 
+		{
+			var pickup:PickupItem = _pickupItems[e.item]
 		}
 		
 		private function onLevelRestart(e:GameEvent):void 
@@ -342,7 +353,7 @@ package world
 				
 				var new_tiles:DynamicTilemap = new DynamicTilemap ();		
 				isCollision = item.@collide == "true"
-				new_tiles.scrollFactor = new FlxPoint(item.@sf_x, item.@sf_y);
+				//new_tiles.scrollFactor = new FlxPoint(item.@sf_x, item.@sf_y);
 				_tilemaps.push(new_tiles);
 				if (item.@collide == "true")
 				{
@@ -424,6 +435,11 @@ package world
 			else if (e is Volume) _group_volumes.add(e);
 			else if (e is Background) target_group = _group_parallax;
 			else if (e.isForceBack) target_group = _group_bg;
+			
+			if (e is PickupItem)
+			{
+				//_pickupItems[
+			}
 			//else if (e.isForceFront)
 			//{
 				//target_group = _group_fg;
