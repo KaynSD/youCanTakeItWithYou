@@ -1,4 +1,4 @@
-<INDEX key="test" source="test" date="12/30/12 15:12:36" >
+<INDEX key="test" source="test" date="12/30/12 15:50:43" >
 	<AREAS>
 		<AREA>Group1</AREA>
 	</AREAS>
@@ -23,6 +23,11 @@
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_START>
+		<MARKER_EVENT path="graphics/built_in/marker_tiles/mt_template.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_EVENT>
 		<PLAYER path="graphics/player.png">
 			<SIZE width="64" height="64"/>
 			<BOUNDS x="12" y="0" width="32" height="64"/>
