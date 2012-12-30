@@ -38,6 +38,7 @@ package entities
 			super(X, Y, SimpleGraphic);
 			_action = new Action ();
 			_keys = FlxG.keys;
+			_xml_name = "PLAYER";
 			//Stats
 		}
 
@@ -88,7 +89,8 @@ package entities
 		override public function init($world:World):void 
 		{
 			super.init($world);
-			makeGraphic(16, 32, 0xFFFF0000);
+			loadNativeGraphics(true, true);
+			//makeGraphic(16, 32, 0xFFFF0000);
 		}
 		
 		protected function updateInput ():void
