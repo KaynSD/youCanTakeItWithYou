@@ -3,7 +3,7 @@ package base.structs.encounters
 	import entities.Player;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EncounterInfo 
 	{

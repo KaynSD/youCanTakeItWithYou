@@ -4,7 +4,7 @@ package base.components.managers
 	import flash.utils.Dictionary;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EncounterManager 
 	{

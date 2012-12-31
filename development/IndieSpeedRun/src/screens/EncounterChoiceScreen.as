@@ -12,11 +12,12 @@ package screens
 	
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EncounterChoiceScreen extends BasicScreen 
 	{
 		private var _resultMode:Boolean;
+		private var _choice:EncounterChoiceInfo;
 		
 		protected var _graphics:ClipPanelEncounter;
 		protected var _buttons:Array;
@@ -37,6 +38,11 @@ package screens
 			for (var i:int = 0; i <=len; i++)
 			{
 				var button:ClipPanelButton = _buttons[i];
+				if (i >= $encounter.choices.length)
+				{
+					button.visible = false;
+					continue;
+				}
 				var choice:EncounterChoiceInfo =  $encounter.choices[i];
 				if (choice)
 				{
@@ -73,6 +79,7 @@ package screens
 		
 		private function showResult($choice:EncounterChoiceInfo):void 
 		{
+			_choice = $choice;
 			_graphics.mc_panel.txt_body.text = $choice.resultText;
 			_graphics.btn_choice_1.txt_copy.text = "So be it...";
 			for each (var button:MovieClip in _buttons)
@@ -82,7 +89,7 @@ package screens
 			removeButton(_graphics.btn_choice_1);
 			addButton(_graphics.btn_choice_1, onClickCloseButton);
 			_graphics.btn_choice_1.visible = true;
-			Core.control.dispatchEvent(new ISRGameEvent(ISRGameEvent.EVENT_RESULT, $choice));
+			
 			//_resultMode = true;
 		}
 		
@@ -94,6 +101,7 @@ package screens
 		private function close():void 
 		{
 			Core.screen_manager.removeScreen(this);
+			Core.control.dispatchEvent(new ISRGameEvent(ISRGameEvent.EVENT_RESULT, _choice));
 			Core.control.dispatchEvent(new GameEvent(GameEvent.GAME_RESUME));
 		}
 		

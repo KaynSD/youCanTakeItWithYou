@@ -5,7 +5,7 @@ package com.p3.audio.soundcontroller.events
 	
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class P3SoundEvent extends Event 
 	{

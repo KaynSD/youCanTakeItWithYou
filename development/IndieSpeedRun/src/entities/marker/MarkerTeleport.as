@@ -17,7 +17,7 @@ package entities.marker
 		
 		public function MarkerTeleport() 
 		{
-			super(Core.lib.getAsset('graphics/editor_stuff/mt_teleport.png'));
+			super(Core.lib.int.img_mt_teleport);
 			name = "Teleport";
 		}
 		

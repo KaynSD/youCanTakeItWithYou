@@ -2,7 +2,7 @@ package base.components
 {
 
 	import base.components.managers.EncounterManager;
-	import base.events.DataEvent;
+	import base.events.EntityEvent;
 	import base.events.GameEvent;
 	import base.events.LibraryEvent;
 	import base.events.ScriptEvent;
@@ -20,6 +20,7 @@ package base.components
 	import flash.events.IEventDispatcher;
 	import org.flixel.FlxG;
 	import screens.EncounterChoiceScreen;
+	import screens.InfoPopupScreen;
 	import screens.WarningPopupScreen;
 	import state.MenuState;
 	import state.PlayState;
@@ -206,7 +207,7 @@ package base.components
 			
 		}
 		
-		public function endLevel($isWon:Boolean):void 
+		public function endLevel($isWon:Boolean = true):void 
 		{
 			isWon = $isWon;
 			dispatchEvent(new GameEvent(GameEvent.LEVEL_END));
@@ -237,6 +238,14 @@ package base.components
 			var encScreen:EncounterChoiceScreen = new EncounterChoiceScreen ();
 			encScreen.initEncounter($enc);
 			Core.screen_manager.addScreen(encScreen, { replace:false } );
+		}
+		
+		public function playerLifeEnd():void 
+		{
+			pause();
+			var deathPopup:InfoPopupScreen = new InfoPopupScreen ()
+			deathPopup.quickInit("Death is not the end", "Continue your journey into the afterlife, but beware you cannot collect new items now you are dead");
+			Core.screen_manager.addScreen(deathPopup);
 		}
 		
 		private function onWarning(e:UIEvent):void 

@@ -41,7 +41,7 @@ package assets
 		
 		//CORE GRAFX
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_teleport.png')] 				public var img_mt_teleport:Class;
-		[Embed(source = 'graphics/built_in/marker_tiles/mt_start.png')] 					public var img_mt_start:Class;
+		[Embed(source = 'graphics/built_in/marker_tiles/mt_start.png')] 				public var img_mt_start:Class;
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_fin.png')] 					public var img_mt_fin:Class;
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_template.png')] 				public var img_mt_template:Class;
 		
@@ -58,6 +58,7 @@ package assets
 		
 		[Embed(source = "graphics/tileset/tileset_base.png")] 				public var img_tileset_base2:Class;		
 		[Embed(source = "graphics/tileset/sand_tiles.png")]						public var img_tileset_sand:Class;
+		[Embed(source="graphics/tileset/afterlife_tiles.png")]						public var img_afterlife_tiles:Class;
 
 		//[Embed(source = 'graphics/particles/boulder_warning.png')]	public var img_boulder_warning:Class;
 

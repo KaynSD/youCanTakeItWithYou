@@ -1,6 +1,8 @@
 package entities 
 {
 	import actions.Action;
+	import base.events.EntityEvent;
+	import base.events.GameEvent;
 	import base.events.InventoryEvent;
 	import base.events.UIEvent;
 	import base.structs.Damage;
@@ -8,6 +10,7 @@ package entities
 	import effects.emitters.GripEmitterWall;
 	import entities.marker.MarkerCameraFocus;
 	import entities.Pickup;
+	import entities.pickups.PickupItem;
 	import flash.events.Event;
 	import gui.popup.HUDEventPopup;
 	import inventory.InventoryView;
@@ -36,6 +39,8 @@ package entities
 		protected var _camera_focus:MarkerCameraFocus;
 		private var _ftx_control_lock:FlxTimer;
 		private var _isInteract:Boolean;
+		private var _isDropNextForward:Boolean;
+		private var _groundSpeed:int = 75;
 
 		public function Player(X:Number = 0, Y:Number = 0, SimpleGraphic:Class = null) 
 		{
@@ -50,6 +55,13 @@ package entities
 		private function onAnimCallback($name:String, $frame:int, $index:int):void 
 		{
 			
+		}
+		
+		override public function reset(X:Number, Y:Number):void 
+		{
+			super.reset(X, Y);
+			health = 100;
+			hurt(0);
 		}
 		
 		public function setState($flag:uint):void
@@ -106,8 +118,8 @@ package entities
 			//drag.y = 500;
 			if (_keys)
 			{
-				if (_keys.LEFT) walk(-100);
-				if (_keys.RIGHT) walk(100);
+				if (_keys.RIGHT) _groundSpeed = 400;
+				else _groundSpeed = 75;
 				if (_keys.justPressed("SPACE")) 
 				{
 					_isAction = true;
@@ -154,9 +166,13 @@ package entities
 			if (velocity.x > 0) facing = RIGHT;
 			else if (velocity.x < 0) facing = LEFT;
 			updateMovementAnimation();
-			updateInput();
-			updateStats();
-			walk(75);
+			if (alive)
+			{
+				updateStats();
+				updateInput();
+				walk(_groundSpeed);
+			}
+			
 			if (_isAction)
 			{
 				//TODO - action should have a triggered flag, check for this rather than local flag.
@@ -172,17 +188,33 @@ package entities
 		override public function hurt(value:Number):void
 		{
 			super.hurt(value);
+			if (health > 100) health = 100;
 			//health -= value;
 			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
-			if (health < 0)
+			if (health <= 0 && alive)
 			{
-				Core.control.endLevel(false)
+				dispatchEvent(new EntityEvent(EntityEvent.JUST_DIED, this));
+				alive = false;
+				//Core.control.pause();
+				
+				//Core.control.endLevel(false)
+			}
+			else
+			{
+				if (value > 0) 
+				{
+					FlxG.flash(0xFFFF0000, 0.025 * value, null, false);
+				}
+				if (value < 0) 
+				{
+					FlxG.flash(0xFF00FF00, 0.025 * -value, null, false);
+				}
 			}
 		}
 		
 		private function updateDeathBehavior():void 
 		{
-			
+			play("death");
 		}
 		
 		public function triggerEntity($entity:DynamicEntity):void
@@ -193,6 +225,16 @@ package entities
 		public function collect($pickup:Pickup):void 
 		{
 			$pickup.onCollect(this);
+		}
+		
+		public function dropPickup($pickupItem:PickupItem):void 
+		{
+			$pickupItem.velocity.y = -120;
+			if (_isDropNextForward) $pickupItem.velocity.x = velocity.x + 40 + Math.random() * 30;
+			else $pickupItem.velocity.x = -40 - Math.random() * 30;
+			
+			
+			_isDropNextForward = !_isDropNextForward
 		}
 
 		

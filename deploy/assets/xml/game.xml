@@ -7,20 +7,20 @@
 				<TEXT description="Ignore this and carry on" />
 				<RESULT>
 					<TEXT body="Nothing happens" />
-					<HEALTH_CHANGE value="-85" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Give the Grue and Anhk" />
+				<TEXT description="Give the Grue an Ankh" />
 				<REQUIRES itemKeys="ANKH"/>
 				<RESULT>
-					<TEXT body="The Grue is not amused" />
 					<ITEM_REMOVE itemKeys="ANKH"/>
+					<TEXT body="The Grue is not amused" />
+					<ITEM_ADD itemKeys="CRYSTALSKULL"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Use either a SKULL or a JEWEL & KEY to escape to the grue" />
-				<REQUIRES itemKeys="SKULL"/>
+				<REQUIRES itemKeys="CRYSTALSKULL"/>
 				<REQUIRES itemKeys="JEWEL,KEY"/>
 				<RESULT>
 					<TEXT body="The text that appears after you have confirmed your choice" />
@@ -33,6 +33,71 @@
 				<RESULT>
 					<TEXT body="The Grue is not amused" />
 					<HEALTH_CHANGE value="-25" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		<ENCOUNTER key="CAVE" title="A Spooooky Cave" >
+			<TEXT body="You discover a dark cave, what could be hidden deep inside"/>
+			<CHOICE>
+				<TEXT description="Nothing but junk, lets keep walking" />
+				<RESULT>
+					<TEXT body="Nothing happens" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Explore the dark cave" />
+				<RESULT>
+					<TEXT body="You are attacked by a grue" />
+					<HEALTH_CHANGE value="-25" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use the TORCH to light your way through the cave" />
+				<REQUIRES itemKeys="TORCH"/>
+				<RESULT>
+					<TEXT body="Deep in the cave you discover a golden Ankh. Good job you went there with light, or you might have been hurt" />
+					<ITEM_ADD itemKeys="ANKH"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		<ENCOUNTER key="TEST_DAMAGE" title="Take some damage" >
+			<TEXT body="Debug encounter to force damage"/>
+			<CHOICE>
+				<TEXT description="Take 100 damage" />
+				<RESULT>
+					<TEXT body="Take 100 damage" />
+					<HEALTH_CHANGE value="-100" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Take 99 damage" />
+				<RESULT>
+					<TEXT body="Take 99 damage" />
+					<HEALTH_CHANGE value="-99" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Heal 100 damage" />
+				<RESULT>
+					<TEXT body="Heal 100 damage" />
+					<HEALTH_CHANGE value="100" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Heal 25 damage" />
+				<RESULT>
+					<TEXT body="Take 25 damage" />
+					<HEALTH_CHANGE value="25"/>
+				</RESULT>
+			</CHOICE>
+
+		</ENCOUNTER>
+		<ENCOUNTER key="TEST_AFTERLIFE" title="Example Afterlife Event" >
+			<TEXT body="Putting a unique event in the afterlife just cause..."/>
+			<CHOICE>
+				<TEXT description="Ignore this and carry on" />
+				<RESULT>
+					<TEXT body="Nothing happens" />
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>

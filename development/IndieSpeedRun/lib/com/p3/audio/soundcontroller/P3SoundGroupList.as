@@ -5,7 +5,7 @@ package com.p3.audio.soundcontroller
 	import flash.utils.Dictionary;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class P3SoundGroupList 
 	{

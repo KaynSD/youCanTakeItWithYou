@@ -12,7 +12,7 @@ package com.p3.input.keyboard
 	 * P3KeyboardCheats.bindUnlockKeys(["ONE","CONTROL","SHIFT"]);
 	 * P3KeyboardCheats.bindCheatKey("ONE", callbackFunction, [_someParameter]);
 	 * 
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class P3KeyboardCheats
 	{

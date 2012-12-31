@@ -1,0 +1,226 @@
+<INDEX key="life" source="life" date="12/31/12 03:08:39" >
+	<AREAS>
+		<AREA>Group1</AREA>
+	</AREAS>
+	<ASSETS>
+		<Items path="%imagefilerelative%">
+			<SIZE width="0" height="0"/>
+			<BOUNDS x="0" y="0" width="1" height="1"/>
+			<ANCHOR x="0" y="0"/>
+		</Items>
+		<ABACUS path="graphics/pickups/entity/abacus.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</ABACUS>
+		<AXE path="graphics/pickups/entity/axe.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</AXE>
+		<BEER path="graphics/pickups/entity/beer.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</BEER>
+		<BOW path="graphics/pickups/entity/bow.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</BOW>
+		<CARPENTRY path="graphics/pickups/entity/carpentry.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CARPENTRY>
+		<CAT path="graphics/pickups/entity/cat.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CAT>
+		<COIN path="graphics/pickups/entity/coin.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</COIN>
+		<CROOK path="graphics/pickups/entity/crook.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CROOK>
+		<DAGGER path="graphics/pickups/entity/dagger.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</DAGGER>
+		<EMBALMEDSLAVE path="graphics/pickups/entity/embalmedslave.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</EMBALMEDSLAVE>
+		<GEOMETRY path="graphics/pickups/entity/geometry.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</GEOMETRY>
+		<GOLD path="graphics/pickups/entity/gold.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</GOLD>
+		<HEADDRESS path="graphics/pickups/entity/headdress.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</HEADDRESS>
+		<INK path="graphics/pickups/entity/ink.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</INK>
+		<INTESTINES path="graphics/pickups/entity/intestines.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</INTESTINES>
+		<LIVER path="graphics/pickups/entity/liver.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</LIVER>
+		<LUNGS path="graphics/pickups/entity/lungs.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</LUNGS>
+		<PAPYRUS path="graphics/pickups/entity/papyrus.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</PAPYRUS>
+		<PLOUGH path="graphics/pickups/entity/plough.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</PLOUGH>
+		<QUIVER path="graphics/pickups/entity/quiver.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</QUIVER>
+		<ROD path="graphics/pickups/entity/rod.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</ROD>
+		<RUDDER path="graphics/pickups/entity/rudder.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</RUDDER>
+		<SCARAB path="graphics/pickups/entity/scarab.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</SCARAB>
+		<STAFF path="graphics/pickups/entity/staff.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</STAFF>
+		<STOMACH path="graphics/pickups/entity/stomach.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</STOMACH>
+		<SWORD path="graphics/pickups/entity/sword.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</SWORD>
+		<WATER path="graphics/pickups/entity/water.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</WATER>
+		<ANKH path="graphics/pickups/entity/ankh.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</ANKH>
+		<BOOKOFTHEDEAD path="graphics/pickups/entity/bookofthedead.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</BOOKOFTHEDEAD>
+		<CRYSTALSKULL path="graphics/pickups/entity/crystalskull.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CRYSTALSKULL>
+		<JEWEL path="graphics/pickups/entity/jewel.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</JEWEL>
+		<KEY path="graphics/pickups/entity/key.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</KEY>
+		<MONEYBAG path="graphics/pickups/entity/moneybag.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</MONEYBAG>
+		<TORCH path="graphics/pickups/entity/torch.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</TORCH>
+		<BG_PLACEHOLDER path="graphics/background/background_back.png">
+			<SIZE width="128" height="128"/>
+			<BOUNDS x="0" y="0" width="128" height="128"/>
+			<ANCHOR x="0" y="0"/>
+		</BG_PLACEHOLDER>
+		<BG_FRONT path="graphics/background/background_floor.png">
+			<SIZE width="128" height="128"/>
+			<BOUNDS x="0" y="0" width="128" height="128"/>
+			<ANCHOR x="0" y="0"/>
+		</BG_FRONT>
+		<MARKER_START path="graphics/built_in/marker_tiles/mt_start.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_START>
+		<MARKER_ENCOUNTER path="graphics/built_in/marker_tiles/mt_template.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_ENCOUNTER>
+		<MARKER_ITEM_SPAWNER path="graphics/built_in/marker_tiles/marker_launcher.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_ITEM_SPAWNER>
+		<PLAYER path="graphics/player.png">
+			<SIZE width="64" height="64"/>
+			<BOUNDS x="12" y="0" width="32" height="64"/>
+			<ANCHOR x="28" y="32"/>
+			<ANIMS>
+				<ANIM animnum="0" fps="10.000" name="idle" numframes="2" looped="true" frames="0,0"/>
+ 				<ANIM animnum="1" fps="10.000" name="walk" numframes="6" looped="true" frames="30,31,32,33,34,35"/>
+ 				<ANIM animnum="2" fps="10.000" name="run" numframes="6" looped="true" frames="40,41,42,43,44,45"/>
+ 				<ANIM animnum="3" fps="10.000" name="sprint" numframes="8" looped="true" frames="50,51,52,53,54,55,56,57"/>
+ 				<ANIM animnum="4" fps="10.000" name="jump" numframes="4" looped="false" frames="10,11,12,13"/>
+ 				<ANIM animnum="5" fps="10.000" name="land" numframes="4" looped="false" frames="15,12,10,7"/>
+ 				<ANIM animnum="6" fps="10.000" name="fall" numframes="2" looped="false" frames="15,16"/>
+ 				<ANIM animnum="7" fps="10.000" name="climb" numframes="6" looped="true" frames="60,61,62,63,64,65"/>
+ 				<ANIM animnum="8" fps="6.000" name="crouch" numframes="4" looped="false" frames="1,10,7,9"/>
+ 				<ANIM animnum="9" fps="8.500" name="uncrouch" numframes="3" looped="false" frames="8,7,10"/>
+ 				<ANIM animnum="10" fps="10.000" name="death" numframes="2" looped="true" frames="26,26"/>
+ 				<ANIM animnum="11" fps="10.000" name="stun" numframes="3" looped="true" frames="27,28,29"/>
+ 			</ANIMS>
+ 		</PLAYER>
+	</ASSETS>
+</INDEX> 

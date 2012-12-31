@@ -6,7 +6,7 @@ package gui.popup
 	import org.flixel.FlxText;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class HUDEventPopup extends UIGroup
 	{

@@ -2,7 +2,7 @@ package base.structs
 {
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EventInfo 
 	{

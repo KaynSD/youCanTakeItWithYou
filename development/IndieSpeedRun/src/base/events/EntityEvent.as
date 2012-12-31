@@ -14,6 +14,8 @@ package base.events
 		static public const REMOVE_FROM_WORLD:String = "removeEntityFromWorld";
 		static public const ADD_TO_WORLD:String = "addEntityToWorld";
 		
+		static public const JUST_DIED:String = "justDied";
+		
 		static public const SET_LEVEL_FINISH:String = "setLevelFinish";
 		static public const SET_PLAYER_AREA:String = "setPlayerArea";
 		static public const SET_PLAYER_CHECKPOINT:String = "setPlayerCheckpoint";

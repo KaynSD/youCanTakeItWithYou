@@ -12,7 +12,7 @@ package com.p3.input.keyboard
 	 * On released - keys.justReleased("SPACE")
 	 * is held - keys.SPACE
 	 * ect ect
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class P3Keyboard
 	{

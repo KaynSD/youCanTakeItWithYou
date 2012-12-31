@@ -85,6 +85,8 @@ package world.engine
 			verifyContent();
 			enumerateEntities();
 			Core.control.dispatchEvent(new LibraryEvent(LibraryEvent.LEVEL_LOADED, null));
+			Core.lib.ext.removeEventListener(ProgressEvent.PROGRESS, onAssetLoadingProgress);
+			Core.lib.removeEventListener(LibraryEvent.BUNDLE_LOADED, onLevelLoaded);
 		}
 		
 		public function addArea($area:LevelArea):void 
