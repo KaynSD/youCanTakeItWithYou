@@ -98,7 +98,7 @@
 				<REQUIRES itemKeys="INK,PAPYRUS"/>
 				<REQUIRES itemKeys="CROOK"/>
 				<RESULT>
-					<TEXT body="Doctor Doctor, please, wooah the mess I'm in..." />
+					<TEXT body="Doctor Doctor, please, wooah the mess I'm in... ~ By UFO" />
 					<ITEM_ADD itemKeys="STAFF,EMBALMINGTOOLS"/>
 					<RANK_UP/>
 				</RESULT>
@@ -278,6 +278,54 @@
 			</CHOICE>
 		</ENCOUNTER>
 		<!-- RANDOM EVENTS-->
+		<ENCOUNTER key="PRIEST" title="You Meet a Friendly Priest" >
+			<TEXT body="On your journy you meet a kind priest who has a predication towards eating dates. He offers you his services...for a price"/>
+			<CHOICE>
+				<TEXT description="Have a small amount of health restored" />
+				<RESULT>
+					<TEXT body="The Priest heals your wounders" />
+					<HEALTH_CHANGE value="25"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Trade for an embalmingkit" />
+				<REQUIRES itemKeys="DATES"/>
+				<RESULT>
+					<TEXT body="You trade your dates with the priest for an EMBALMING TOOLS" />
+					<ITEM_ADD itemKeys="EMBALMINGTOOLS"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Pay him to EMABALM your slave" />
+				<REQUIRES itemKeys="SLAVE,MONEYBAG"/>
+				<RESULT>
+					<TEXT body="The Priest gladly prepares your loyal slave to follow you into the afterlife." />
+					<ITEM_REMOVE itemKeys="SLAVE,MONEYBAG"/>
+					<ITEM_ADD itemKeys="EMBALMEDSLAVE" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Give him your pet cat" />
+				<REQUIRES itemKeys="CAT"/>
+				<RESULT>
+					<TEXT body="To show you his graditude for your lovely pet, the Priest gives you a tacky movie prop" />
+					<ITEM_REMOVE itemKeys="CAT"/>
+					<ITEM_ADD itemKeys="CRYSTALSKULL" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+
+		<ENCOUNTER key="TEST_PHAR" title="A Test Event" >
+			<TEXT body="You find a dead pharoa, woot woot"/>
+			<CHOICE>
+				<TEXT description="Loot his body like it's going out of fasion" />
+				<RESULT>
+					<TEXT body="You get loads of phat loot" />
+					<ITEM_ADD itemKeys="ROD,STAFF,HEADDRESS,CROOK" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
 		<ENCOUNTER key="TEST" title="A Test Event" >
 			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
 			<CHOICE>
@@ -412,8 +460,7 @@
 		</ENCOUNTER>
 	</ENCOUNTERS>
 	<ITEM_SPAWNS>
-		<RANK>BEER,COINS,WATER,BREAD,DATES</RANK>
-		<RANK>CRYSTALSKULL,MONEYBAG,JEWEL,ROD,SCEPTER</RANK>
+		<RANK>BEER,BEER,COINS,BREAD,DATES</RANK>
 		<RANK>CAT,WATER,DATES,TORCH,QUIVER,REEDS</RANK>
 		<RANK>DAGGER,RUDDER,MONEYBAG,KEY,INK</RANK>
 		<RANK>SWORD,GOLD,JEWEL,SLAVE,QUIVER</RANK>

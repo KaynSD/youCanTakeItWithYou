@@ -44,6 +44,7 @@ package assets
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_start.png')] 				public var img_mt_start:Class;
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_fin.png')] 					public var img_mt_fin:Class;
 		[Embed(source = 'graphics/built_in/marker_tiles/mt_template.png')] 				public var img_mt_template:Class;
+		[Embed(source="graphics/built_in/marker_tiles/marker_launcher.png")]			public var img_mt_spawner:Class;
 		
 		[Embed(source = 'graphics/gui/hud_button_prompt.png')]					public var img_hud_button_prompt:Class; 
 		[Embed(source = 'graphics/gui/hud_sign_bg.png')]						public var img_hud_sign_bg:Class;
