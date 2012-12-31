@@ -38,6 +38,7 @@ package entities.pickups
 			super.init($world); 
 			loadNativeGraphics(false, false);
 			acceleration.y = 500;
+			drag.x = 150;
 		}
 		
 		public function setItem ($invItem:InventoryItem):void

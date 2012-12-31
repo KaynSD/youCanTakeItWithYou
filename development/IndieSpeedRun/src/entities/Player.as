@@ -29,7 +29,7 @@ package entities
 		private var _state:uint;
 		private static const IDLE:int = 	0x000001;
 		private static const ACTION:int = 	0x000010;
-		static public const BASE_GROUND_SPEED:int =  75;
+		static public const BASE_GROUND_SPEED:int =  50;
 
 		private var _keys:Keyboard;
 		
@@ -237,8 +237,8 @@ package entities
 		public function dropPickup($pickupItem:PickupItem):void 
 		{
 			$pickupItem.velocity.y = -120;
-			if (_isDropNextForward) $pickupItem.velocity.x = velocity.x + 40 + Math.random() * 30;
-			else $pickupItem.velocity.x = -40 - Math.random() * 30;
+			if (_isDropNextForward) $pickupItem.velocity.x = velocity.x + 50 + Math.random() * 30;
+			else $pickupItem.velocity.x = -50 - Math.random() * 30;
 			
 			
 			_isDropNextForward = !_isDropNextForward
@@ -261,7 +261,7 @@ package entities
 		}
 		
 		protected function onUpdateRank ():void {
-			_groundSpeed = BASE_GROUND_SPEED + 15 * _rank;
+			_groundSpeed = BASE_GROUND_SPEED + 10 * _rank;
 			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
 		}
 		

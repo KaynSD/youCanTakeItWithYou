@@ -125,19 +125,6 @@
 					<p_encounterList>CAREER_1</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
-		<CARPENTRY>
-			<START x="1504.000" y="-288.000"/>
-			<ID link_id="null" guid="E2BAB642-56C1-C283-ADE9-EA428C854B76"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</CARPENTRY>
 		<MARKER_START>
 			<START x="1600.000" y="384.000"/>
 			<ID link_id="null" guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D"/>
@@ -626,7 +613,7 @@
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
-					<p_tutorialText></p_tutorialText>
+					<p_tutorialText>Yo I'm Osiris</p_tutorialText>
 					<p_godName>OSIRIS_SAYS</p_godName>
 			</PROPS>
 		</MARKER_TUTORIAL>
