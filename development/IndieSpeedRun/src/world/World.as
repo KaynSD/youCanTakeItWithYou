@@ -41,6 +41,7 @@ package world
 	import org.flixel.FlxObject;
 	import org.flixel.FlxPoint;
 	import org.flixel.FlxRect;
+	import org.flixel.FlxSound;
 	import org.flixel.FlxSprite;
 	import org.flixel.plugin.TimerManager;
 	import world.engine.Level;
@@ -131,6 +132,7 @@ package world
 		
 		private var _gravity:int = 335;
 		private var _pickupItems:Dictionary;
+		private var _ambSoundLoop:FlxSound;
 		protected var _eventBus:EventDispatcher;
 
 		public function World() 
@@ -268,6 +270,7 @@ package world
 			if (player)
 			{
 				//advanceArea();
+				FlxG.play(Core.lib.int.snd_mus_player_died);
 				FlxG.fade(0xff000000, 0.5, onDeathFadeComplete, false)
 			}
 		}
@@ -396,6 +399,18 @@ package world
 		
 		protected function addArea($area:LevelArea):void
 		{
+			if (_ambSoundLoop) _ambSoundLoop.stop()
+			if ($area.key == "area_life") 
+			{
+				FlxG.playMusic(Core.lib.int.snd_mus_alive)
+				_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
+				_ambSoundLoop.volume = 0.4;
+			}
+			else if ($area.key == "area_death")  
+			{
+				_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
+			FlxG.playMusic(Core.lib.int.snd_mus_dead)
+			}
 			if (!_player) _player = new Player ()
 			deserializeTiles($area.xml.LAYERS.*)
 			deserializeEntities($area.xml.OBJECTS.*)
@@ -659,6 +674,7 @@ package world
 		
 		public function switchArea($key:String, $linked_id:int):void 
 		{
+			
 			_isSwitchingAreas = true;
 			clearGroups();
 			//_last_link_id = $linked_id;
