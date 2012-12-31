@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'30/12/2012'</value>
+      <value>'31/12/2012'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -44,6 +44,7 @@
       <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\miniclip\ActionSource.swc</path-element>
       <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\ds\ds_debug_alchemy.swc</path-element>
       <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\audio.swc</path-element>
+      <path-element>C:\Users\Keith\Documents\youCanTakeItWithYou\development\IndieSpeedRun\swc\eventpopup.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
