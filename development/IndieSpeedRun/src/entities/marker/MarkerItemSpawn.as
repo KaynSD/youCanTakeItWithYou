@@ -14,7 +14,7 @@ package entities.marker
 		
 		public function MarkerItemSpawn(SimpleGraphic:Class=null) 
 		{
-			super(SimpleGraphic);
+			super(Core.lib.int.img_mt_spawner);
 			
 		}
 		

@@ -72,15 +72,17 @@ package state
 			
 		
 			
-			if (!_world) _world = new World ();
-			add(_world); 
+			
 			
 			// The Inventory!!
 			if (!_inventory) {
 				_inventory = new InventoryView(560, 60) ;// add(new InventoryView());
 			}
-			add(_inventory);
 			
+			
+			if (!_world) _world = new World ();
+			add(_world); 
+			add(_inventory);
 			//
 			//var inventoryItem:InventoryItem = new InventoryItem("key", [[1,0,1],[1,1,1]]);
 			//inventoryItem.x = 0;
@@ -180,7 +182,7 @@ package state
 			{
 				_inventory.kill();
 				_inventory.destroy();
-				_inventory = null;
+				//_inventory = null;
 			}
 			
 			remove(_inventory);

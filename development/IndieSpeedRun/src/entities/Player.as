@@ -111,7 +111,7 @@ package entities
 		{
 			super.init($world);
 			loadNativeGraphics(true, true);
-			_invView = PlayState(FlxG.state).inventory;
+			if (!_invView) _invView = PlayState(FlxG.state).inventory;
 			//makeGraphic(16, 32, 0xFFFF0000);
 		}
 		

@@ -90,8 +90,16 @@ package base.structs.encounters
 				}
 				if (rec.itemKeys)
 				{
+					if ($player.invView)
+					{
 					_matchedItems = $player.invView.hasItem(rec.itemKeys);
 					checkItems = (_matchedItems && _matchedItems.length > 0);
+					}
+					else
+					{
+						trace("no invView, wtf?", $player.invView)
+					}
+					
 				}
 				_isPossible = checkHealth && checkItems;
 				if (_isPossible) break;
