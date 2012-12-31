@@ -69,11 +69,18 @@ package screens
 			Core.control.addEventListener(ISRGodSpeaksEvent.SET_SAYS, godSays);
 			Core.control.addEventListener(ISRGodSpeaksEvent.QUIET_ALL_GODS, godSays);
 			
+			TweenLite.killDelayedCallsTo(stopGodSays);
+			TweenLite.killTweensOf(_graphics.god_mc);
+			
 			super.unload();
 		}
 		
 		private function godSays(e:ISRGodSpeaksEvent = null):void 
 		{
+			
+			TweenLite.killDelayedCallsTo(stopGodSays);
+			TweenLite.killTweensOf(_graphics.god_mc);
+			
 			if (e == null) {
 				_graphics.god_mc.visible = false;
 				_graphics.god_mc.alpha = 0;
@@ -83,11 +90,17 @@ package screens
 				case ISRGodSpeaksEvent.SET_SAYS:
 					_graphics.god_mc.alpha = 0.5;
 					TweenLite.to(_graphics.god_mc, 0.5, { autoAlpha:1 } );
-					_graphics.god_mc.text_txt.text = e.message
+					_graphics.god_mc.text_txt.text = e.message;
+					TweenLite.delayedCall(5.0, stopGodSays);
 					break;
 				default:
 					TweenLite.to(_graphics.god_mc, 0.5, { autoAlpha:0 } );
 			}
+		}
+		
+		private function stopGodSays():void 
+		{
+			TweenLite.to(_graphics.god_mc, 1.5, { autoAlpha:0 } );
 		}
 		
 		private function hideItemInfo(e:InventoryISREvent = null):void 
