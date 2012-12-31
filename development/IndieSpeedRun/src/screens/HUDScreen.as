@@ -39,7 +39,7 @@ package screens
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 			Core.control.addEventListener(UIEvent.UPDATE_PLAYER, onUpdatePlayer);
 			
-			Core.control.addEventListener(InventoryISREvent.PICKUP_ITEM, showItemInfo);
+			Core.control.addEventListener(InventoryISREvent.MOVING_ITEM, showItemInfo);
 			Core.control.addEventListener(InventoryISREvent.ACCEPT_ITEM, hideItemInfo);
 			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, hideItemInfo);
 			hideItemInfo();
@@ -85,7 +85,9 @@ package screens
 		private function onUpdatePlayer(e:UIEvent):void 
 		{
 			var player:Player = e.dispatcher;
-			_graphics.mc_healthBar.mc_fill.width = (250 / 100) * player.health;
+			
+			TweenLite.to(_graphics.mc_healthBar.mc_fill, 1.5, { width:(250 / 100) * player.health } );
+			
 			_graphics.mc_healthBar.txt_value.text = player.health.toString() + "/100";
 			_graphics.txt_rank.text = "Rank : " + player.rank;
 			//visible = true

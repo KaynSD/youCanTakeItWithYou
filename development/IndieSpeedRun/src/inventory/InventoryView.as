@@ -66,7 +66,6 @@ package inventory
 		
 		
 		public function switchExistence(isLife:Boolean = true):void {
-			trace("AH! I AM " + isLife);
 			var sarcophagus:BitmapData = isLife ? new SarcDay() : new SarcNight();
 			
 			FlxExternal.setData(sarcophagus, "sarc_"+new Date().getTime());
