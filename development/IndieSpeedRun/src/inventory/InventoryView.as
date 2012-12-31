@@ -279,15 +279,16 @@ package inventory
 					if (_inventoryItems[j].identifier.split("_")[0] == input[i])
 					{
 						returns.push(_inventoryItems[j]);
+						break;
 					}
 				}
 			}
 			
-			if (returns.length == 0)
-				return null;
-			if (returns.length == 1)
-				return returns;
-			return null;
+			if (returns.length == 0 || returns.length != input.length)return null;
+				
+			//if (returns.length == 1)
+			return returns;
+			//return null;
 		}
 	
 	}

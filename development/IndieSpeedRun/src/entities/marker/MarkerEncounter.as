@@ -30,7 +30,8 @@ package entities.marker
 			super.onTouch($player);
 			if ($player.alive && _encounterList && _encounterList.length > 0)
 			{
-				var enc:EncounterInfo = Core.control.encManager.getEncounter(_encounterList[0]);
+				var rnd:int = int((_encounterList.length) * Math.random())
+				var enc:EncounterInfo = Core.control.encManager.getEncounter(_encounterList[rnd]);
 				enc.validate($player);
 				Core.control.startEncounter(enc);
 			}
