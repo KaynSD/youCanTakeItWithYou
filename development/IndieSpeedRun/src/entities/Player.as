@@ -29,6 +29,7 @@ package entities
 		private var _state:uint;
 		private static const IDLE:int = 	0x000001;
 		private static const ACTION:int = 	0x000010;
+		static public const BASE_GROUND_SPEED:int =  75;
 
 		private var _keys:Keyboard;
 		
@@ -40,7 +41,9 @@ package entities
 		private var _ftx_control_lock:FlxTimer;
 		private var _isInteract:Boolean;
 		private var _isDropNextForward:Boolean;
-		private var _groundSpeed:int = 75;
+		private var _groundSpeed:int = BASE_GROUND_SPEED;
+		
+		private var _rank:int;
 
 		public function Player(X:Number = 0, Y:Number = 0, SimpleGraphic:Class = null) 
 		{
@@ -49,6 +52,7 @@ package entities
 			_keys = FlxG.keys;
 			_xml_name = "PLAYER";
 			health = 100;
+			rank = 1;
 			//Stats
 		}
 
@@ -119,7 +123,10 @@ package entities
 			if (_keys)
 			{
 				if (_keys.RIGHT) _groundSpeed = 400;
-				else _groundSpeed = 75;
+				else if (_groundSpeed == 400)
+				{
+					onUpdateRank();
+				}
 				if (_keys.justPressed("SPACE")) 
 				{
 					_isAction = true;
@@ -253,6 +260,11 @@ package entities
 			}
 		}
 		
+		protected function onUpdateRank ():void {
+			_groundSpeed = BASE_GROUND_SPEED + 15 * _rank;
+			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
+		}
+		
 		public function get isAction():Boolean { return _isAction; }
 		
 		public function get isInteract ():Boolean { return _isInteract; }
@@ -260,6 +272,18 @@ package entities
 		public function get invView():InventoryView 
 		{
 			return _invView;
+		}
+		
+		public function get rank():int 
+		{
+			return _rank;
+		}
+		
+		public function set rank(value:int):void 
+		{
+			_rank = value;
+			if (_rank > 5) _rank = 5;
+			onUpdateRank();
 		}
 		
 

@@ -70,6 +70,19 @@ package base.components.managers
 			return inventoryItem;
 		}
 		
+		public function createRankItem($rank:int = 1):InventoryItem 
+		{
+			if ($rank <= 1) $rank = 1;
+			var rankXML:XMLList = Core.xml.game.ITEM_SPAWNS.*;
+			var itemListRaw:String = rankXML[$rank - 1].toString();
+			if (itemListRaw == "") itemListRaw = rankXML[rankXML.length() - 1].toString();
+			var itemKeyList:Array = itemListRaw.split(",");
+			var len:int = itemKeyList.length - 1;
+			var rnd:int = Math.random() * len;
+			var key:String = itemKeyList[rnd];
+			return createItem(key);
+		}
+		
 	}
 
 }

@@ -24,6 +24,7 @@ package base.structs.encounters
 		protected var _resultItemAddKeys:Array;
 		protected var _resultItemRemoveKeys:Array;
 		protected var _resultHealthChange:int;
+		protected var _resultIsRankUp:Boolean;
 		
 		protected var _matchedItems:Vector.<InventoryItem>;
 		protected var _removedItems:Vector.<InventoryItem>;
@@ -55,6 +56,10 @@ package base.structs.encounters
 			if ($xml.RESULT.hasOwnProperty("HEALTH_CHANGE"))
 			{
 				_resultHealthChange = $xml.RESULT.HEALTH_CHANGE.@value;
+			}
+			if ($xml.RESULT.hasOwnProperty("RANK_UP"))
+			{
+				_resultIsRankUp = true;
 			}
 			if ($xml.hasOwnProperty("REQUIRES"))
 			{
@@ -105,6 +110,7 @@ package base.structs.encounters
 					
 				}
 			}
+		
 			
 			return _isPossible;
 		}
@@ -135,7 +141,11 @@ package base.structs.encounters
 					Core.control.dispatchEvent(new EntityEvent(EntityEvent.ADD_TO_WORLD, pickupItem));
 				}
 			}
+			if (_resultIsRankUp)
+			{
+				$player.rank++;
 			 //+= _resultHealthChange;
+			}
 		}
 		
 		public function get resultText():String 
