@@ -1,6 +1,7 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 09:47:30" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 10:16:57" >
 	<AREAS>
-		<AREA>Group1</AREA>
+		<AREA>area_life</AREA>
+		<AREA>area_death</AREA>
 	</AREAS>
 	<ASSETS>
 		<Items path="%imagefilerelative%">
@@ -38,11 +39,11 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</CAT>
-		<COIN path="graphics/pickups/entity/coin.png">
+		<COINS path="graphics/pickups/entity/coin.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
-		</COIN>
+		</COINS>
 		<CROOK path="graphics/pickups/entity/crook.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
@@ -178,6 +179,41 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</TORCH>
+		<BREAD path="graphics/pickups/entity/bread.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</BREAD>
+		<REEDS path="graphics/pickups/entity/reeds.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</REEDS>
+		<DATES path="graphics/pickups/entity/dates.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</DATES>
+		<SLAVE path="graphics/pickups/entity/slave.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</SLAVE>
+		<REDHERRING path="graphics/pickups/entity/redherring.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</REDHERRING>
+		<ASP path="graphics/pickups/entity/asp.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</ASP>
+		<COBRA path="graphics/pickups/entity/cobra.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</COBRA>
 		<BG_PLACEHOLDER path="graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>

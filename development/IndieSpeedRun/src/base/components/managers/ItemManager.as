@@ -77,7 +77,7 @@ package base.components.managers
 			var itemListRaw:String = rankXML[$rank - 1].toString();
 			if (itemListRaw == "") itemListRaw = rankXML[rankXML.length() - 1].toString();
 			var itemKeyList:Array = itemListRaw.split(",");
-			var len:int = itemKeyList.length - 1;
+			var len:int = itemKeyList.length;
 			var rnd:int = Math.random() * len;
 			var key:String = itemKeyList[rnd];
 			return createItem(key);

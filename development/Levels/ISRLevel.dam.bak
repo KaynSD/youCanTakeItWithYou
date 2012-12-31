@@ -2,11 +2,11 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-340" y="229"/>
+  <viewPos x="-3055" y="229"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
-    <group name="area_life" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
+    <group name="Group1" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
       <spritelayer name="Background" id="0" xScroll="0.5" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
         <sprite guid="3305B802-A3DF-096B-0AA9-3675C1A4E042" x="160" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="39"/>
         <sprite guid="B57C5724-D933-23D9-F7FE-6A69250491E6" x="288" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="39"/>
@@ -38,48 +38,63 @@
         </tileProperties>
       </maplayer>
       <spritelayer name="Layer1" id="2" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false" selected="true">
+        <sprite guid="B307415A-CBDD-40EE-F342-8BF0F80C7FAF" x="608" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
+        <sprite guid="677B010A-3754-D3EA-70ED-3C5DFAA822A2" x="560" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
+        <sprite guid="AEBF1353-B5EC-BBA8-2A66-D02D179BCCF7" x="752" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
+        <sprite guid="16173D18-1DAE-05DC-FCE1-3006FD888197" x="688" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
+        <sprite guid="7B310F06-E637-7C35-3A4E-F4A0486F5858" x="640" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
         <sprite guid="E2BAB642-56C1-C283-ADE9-EA428C854B76" x="-688" y="-288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
         <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="512" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
         <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="496" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
+        <sprite guid="3887FAE2-ED8B-D521-2A55-CE8E3101A7E8" x="944" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties/>
+        </sprite>
+        <sprite guid="6594F397-4E0E-573C-5439-4E52D08AB6D6" x="1344" y="304" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="CAVE" idx="0"/>
+          </properties>
+        </sprite>
         <sprite guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7" x="1920" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties/>
         </sprite>
         <sprite guid="CFD45A44-5637-3556-0170-994E2E810A7D" x="720" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="36"/>
         <sprite guid="2FD412BD-A19C-3CE1-C9BF-27ABFD827BE7" x="832" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="37"/>
+        <sprite guid="3495DCBE-0672-CB0D-B520-F99E107C6F96" x="1472" y="288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="35"/>
+        <sprite guid="1C8A06ED-3B60-658B-B3EE-C84B73B29B04" x="1568" y="288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="36"/>
+        <sprite guid="055A6ED9-FBD9-A8CE-40FC-CAE71BF15F25" x="2032" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="32"/>
+        <sprite guid="18E1C6E0-003A-1912-3C9D-285E0D96BBA8" x="1040" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
         <sprite guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30" x="1648" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
         <sprite guid="52CCE38E-3F14-65D6-1FAA-1C9EB88A7CA2" x="656" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
         <sprite guid="356B0CFF-5A8A-0762-DCA4-5A36EA6C3E8A" x="784" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
+        <sprite guid="DF68DFAB-920A-1C33-0EA7-2AC38C90EFAC" x="1008" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="BAE3330C-3A30-DEEF-FA68-B677AF232460" x="1088" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="D18E0787-86D2-489E-4C75-78A2ED6A649B" x="1136" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="7A43AE17-D289-FF9E-8523-262C75E30461" x="1184" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="333468B7-7469-2439-1D83-69D7765018D9" x="1248" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="4F9C4DD3-C96C-5EDD-C530-82A91EDB7BE9" x="1296" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="CC75217A-CD9F-ABC9-0615-7A35117AB4B7" x="1328" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="0865E903-EED0-372F-5F02-26DE51AE700D" x="1360" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="7C80E51E-2B02-04C8-CF68-3CDAB8B7C0C0" x="1392" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="1386889B-95FE-E065-5945-B425F79CCE2D" x="1456" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="ABC559E6-D5E0-FC27-702A-59B0558EC918" x="1488" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="8C3E7292-A6AD-1497-C4EE-62D099552028" x="1552" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="E9FECA4D-FD65-E3A2-8035-436A2518BE69" x="3408" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
       </spritelayer>
       <spritelayer name="Forground" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
     </group>
-    <group name="area_death" id="4" xScroll="1" yScroll="1" visible="false" open="true" locked="false" exports="true">
-      <maplayer name="Map2(2)" id="5" xScroll="1" yScroll="1" x="0" y="0" width="140" height="17" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png" tileWidth="32" tileHeight="32" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="32" tileSpacingY="32" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>18,17,17,18,17,17,18,17,17,17,17,17,18,18,18,17,18,18,18,17,17,18,18,18,17,17,17,18,18,18,18,17,17,18,17,17,17,17,18,18,17,17,17,17,17,18,18,18,18,17,17,18,17,18,18,17,18,18,17,17,17,17,17,17,17,17,18,17,18,17,18,18,18,17,17,17,17,17,17,18,18,17,18,18,18,18,18,18,18,17,18,18,18,18,17,18,18,18,17,17,18,18,18,17,18,18,17,18,18,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>33,33,49,33,33,49,33,33,33,49,49,33,50,50,33,33,50,34,50,34,49,34,50,50,50,33,50,49,34,50,34,33,50,34,50,50,33,49,49,50,50,50,34,50,49,50,49,33,33,33,34,34,49,50,50,49,49,33,49,49,50,49,34,50,49,33,50,49,50,34,50,33,33,33,33,34,33,33,34,34,34,33,34,33,49,49,34,49,34,34,50,49,34,50,34,49,49,33,34,49,33,49,33,49,33,34,50,49,49,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>34,34,50,34,34,50,34,49,50,34,49,50,33,49,34,49,50,34,34,50,50,50,33,33,34,50,50,50,49,49,50,33,33,34,50,33,33,33,50,50,33,50,49,33,50,49,34,34,34,50,34,33,49,34,49,33,33,50,34,33,50,34,49,33,34,49,34,49,49,49,50,34,34,33,50,50,49,34,33,50,34,34,33,34,33,50,34,50,50,33,34,50,49,34,49,49,33,33,50,50,49,50,49,50,49,33,33,50,49,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-      </maplayer>
-      <spritelayer name="Layer2" id="8" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
-        <sprite guid="3E0FFA10-A4E6-F4BC-AD17-F7CA6225C6EC" x="448" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
-        <sprite guid="26B773AF-4D7E-702F-982F-776C952F12C9" x="464" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
-      </spritelayer>
-    </group>
   </layers>
   <layerTemplates/>
-  <tileMatrix currentMatrix="2" rows="4" cols="4" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png">
+  <tileMatrix currentMatrix="0" rows="4" cols="4" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/sand_tiles.png">
     <row>
       <tile>16</tile>
       <tile>17</tile>
@@ -169,8 +184,8 @@
       </rows>
     </specialConnections>
   </tileMatrix>
-  <tileMatrixData name="matrix1" rows="4" cols="4" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/sand_tiles.png">
-    <tiles>16,17,18,19,32,33,34,35,48,49,50,34,64,65,66,67</tiles>
+  <tileMatrixData name="matrix1" rows="3" cols="3" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/tileset_base.png">
+    <tiles>0,0,0,0,0,0,0,0,0</tiles>
     <connections set="0">
       <tiles>0,0,0,0</tiles>
     </connections>
@@ -180,15 +195,6 @@
   </tileMatrixData>
   <tileMatrixData name="matrix2" rows="3" cols="3" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/tileset_base.png">
     <tiles>0,0,0,0,0,0,0,0,0</tiles>
-    <connections set="0">
-      <tiles>0,0,0,0</tiles>
-    </connections>
-    <connections set="0">
-      <tiles>0,0,0,0</tiles>
-    </connections>
-  </tileMatrixData>
-  <tileMatrixData name="matrix3" rows="4" cols="4" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="../../deploy/assets/graphics/tileset/sand_tiles.png">
-    <tiles>16,17,18,19,32,33,34,35,48,49,50,34,64,65,66,67</tiles>
     <connections set="0">
       <tiles>0,0,0,0</tiles>
     </connections>

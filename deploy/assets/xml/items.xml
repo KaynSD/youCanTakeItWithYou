@@ -92,7 +92,7 @@
 					 description="You have a cobra. Why do you have a cobra?" />
 	</COBRA>
 	<AXE>
-		<DIMENSIONS>X</DIMENSIONS>
+		<DIMENSIONS>X</DIMENSIONS>r
 		<POINTS MINIMUM="0"
 				MAXIMUM="0" />
 		<DESCRIPTION name="Axe"
@@ -126,13 +126,13 @@
 		<DESCRIPTION name="Carpenter's Tools"
 					 description="A hammer and saw, for construction labourers" />
 	</CARPENTRY>
-	<COIN>
+	<COINS>
 		<DIMENSIONS>X</DIMENSIONS>
 		<POINTS MINIMUM="10"
 				MAXIMUM="80" />
 		<DESCRIPTION name="Coins"
 					 description="Filthy Lucre will only take you so far in these worlds..." />
-	</COIN>
+	</COINS>
 	<DAGGER>
 		<DIMENSIONS>X</DIMENSIONS>
 		<POINTS MINIMUM="0"

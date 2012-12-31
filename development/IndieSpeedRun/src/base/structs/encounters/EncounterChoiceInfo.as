@@ -47,7 +47,7 @@ package base.structs.encounters
 			_resultText = $xml.RESULT.TEXT.@body;
 			if ($xml.RESULT.hasOwnProperty("ITEM_ADD"))
 			{
-				_resultItemAddKeys = $xml.RESULT.ITEM_ADD.@itemKeys.split(",");
+				_resultItemAddKeys = $xml.RESULT.ITEM_ADD[0].@itemKeys.split(",");
 			}
 			if ($xml.RESULT.hasOwnProperty("ITEM_REMOVE"))
 			{
