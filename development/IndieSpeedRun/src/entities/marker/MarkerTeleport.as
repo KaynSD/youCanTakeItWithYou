@@ -23,8 +23,9 @@ package entities.marker
 		
 		override protected function onTouch($player:Player):void 
 		{
-			Core.control.dispatchEvent(new EntityEvent(EntityEvent.SET_PLAYER_AREA, this));
-			_hasTouch = false;
+			//Core.control.dispatchEvent(new EntityEvent(EntityEvent.SET_PLAYER_AREA, this));
+			//_hasTouch = false;
+			$player.hurt(100);
 			super.onTouch($player);
 		}
 		

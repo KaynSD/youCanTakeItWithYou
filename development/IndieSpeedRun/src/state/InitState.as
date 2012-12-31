@@ -100,6 +100,7 @@ package state
 			Core.registry.registerClass(MarkerEncounter, "MARKER_ENCOUNTER");
 			Core.registry.registerClass(MarkerTeleport, "MARKER_TELEPORT");
 			Core.registry.registerClass(MarkerFinish, "MARKER_FINISH");
+			Core.registry.registerClass(MarkerItemSpawn, "MARKER_ITEM_SPAWNER");
 		}
 		
 		//TODO - wrap this function inside the Library.

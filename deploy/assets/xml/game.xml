@@ -14,8 +14,9 @@
 				<REQUIRES itemKeys="ANKH"/>
 				<RESULT>
 					<ITEM_REMOVE itemKeys="ANKH"/>
-					<TEXT body="The Grue is not amused" />
+					<TEXT body="Your rank was increased by one" />
 					<ITEM_ADD itemKeys="CRYSTALSKULL"/>
+					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
@@ -92,6 +93,23 @@
 			</CHOICE>
 
 		</ENCOUNTER>
+		<ENCOUNTER key="TEST_RANK" title="Test event for boosting rank" >
+			<TEXT body="Putting a unique event in the afterlife just cause..."/>
+			<CHOICE>
+				<TEXT description="Ignore this and carry on" />
+				<RESULT>
+					<TEXT body="Nothing happens" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Increase rank" />
+				<RESULT>
+					<TEXT body="Rank Up!" />
+					<RANK_UP/>
+				</RESULT>
+				
+			</CHOICE>
+		</ENCOUNTER>
 		<ENCOUNTER key="TEST_AFTERLIFE" title="Example Afterlife Event" >
 			<TEXT body="Putting a unique event in the afterlife just cause..."/>
 			<CHOICE>
@@ -102,4 +120,12 @@
 			</CHOICE>
 		</ENCOUNTER>
 	</ENCOUNTERS>
+	<ITEM_SPAWNS>
+		<RANK>BEER,COINS,WATER,BREAD</RANK>
+		<RANK>CRYSTALSKULL,MONEYBAG,JEWEL,ROD,SCEPTER</RANK>
+		<RANK>CAT,WATER,DATES,TORCH,QUIVER</RANK>
+		<RANK>DAGGER,RUDDER,MONEYBAG,KEY,INK</RANK>
+		<RANK>SWORD,GOLD,JEWEL,SLAVE,QUIVER</RANK>
+		<RANK>SCARAB,GOLD,JEWEL,BOOKOFTHEDEAD,CHARIOT</RANK>
+	</ITEM_SPAWNS>
 </data>

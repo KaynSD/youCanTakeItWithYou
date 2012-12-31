@@ -15,7 +15,8 @@ package entities.marker
 		public function MarkerEncounter(SimpleGraphic:Class=null) 
 		{
 			super(SimpleGraphic);
-			
+			//Core.items.createRankItem();
+			//Core.items.createItem();
 		}
 		
 		override public function deserialize($xml:XML):void 

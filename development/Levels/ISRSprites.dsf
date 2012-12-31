@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-  <spriteEntries currentId="46">
+  <spriteEntries currentId="47">
     <group name="Items" idx="1" open="false"/>
     <group name="Pickups" idx="2" open="false">
       <group name="In Progress" idx="3" open="false">
@@ -48,12 +48,13 @@
       <sprite name="MARKER_START" idx="42" className="MARKER_START" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png" width="16" height="16" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false"/>
       <tileEntry name="MARKER_ENCOUNTER" idx="43" className="MARKER_ENCOUNTER" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false">
         <properties>
-          <type typeof="String" name="p_encounterList" value="TEST" hidden="false"/>
+          <type typeof="String" name="p_encounterList" value="TEST_RANK" hidden="false"/>
         </properties>
       </tileEntry>
       <tileEntry name="MARKER_ITEM_SPAWNER" idx="44" className="MARKER_ITEM_SPAWNER" image="../../deploy/assets/graphics/built_in/marker_tiles/marker_launcher.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
+      <tileEntry name="MARKER_TELEPORT" idx="46" className="MARKER_TELEPORT" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_teleport.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
     </group>
-    <sprite name="PLAYER" idx="45" className="PLAYER" image="../../deploy/assets/graphics/player.png" width="64" height="64" preview="0" anchorX="28" anchorY="32" centerAnchor="false" boundsX="12" boundsY="0" boundsWidth="32" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false">
+    <sprite name="PLAYER" idx="45" className="PLAYER" image="../../deploy/assets/graphics/player.png" width="64" height="64" preview="0" anchorX="28" anchorY="32" centerAnchor="false" boundsX="12" boundsY="0" boundsWidth="32" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false" selected="true">
       <anims>
         <anim name="idle" fps="10" loops="true">0,0</anim>
         <anim name="walk" fps="10" loops="true">30,31,32,33,34,35</anim>
@@ -65,7 +66,7 @@
         <anim name="climb" fps="10" loops="true">60,61,62,63,64,65</anim>
         <anim name="crouch" fps="6" loops="false">1,10,7,9</anim>
         <anim name="uncrouch" fps="8.5" loops="false">8,7,10</anim>
-        <anim name="death" fps="10" loops="true">26,26</anim>
+        <anim name="death" fps="10" loops="true">1,18,19,72,74</anim>
         <anim name="stun" fps="10" loops="true">27,28,29</anim>
       </anims>
     </sprite>

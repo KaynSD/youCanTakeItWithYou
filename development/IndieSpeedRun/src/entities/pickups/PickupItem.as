@@ -43,7 +43,11 @@ package entities.pickups
 		public function setItem ($invItem:InventoryItem):void
 		{
 			_invItem = $invItem;
-			_xml_name = String($invItem.identifier.split("_")[0]).toUpperCase();
+			if (!_invItem)
+			{
+				_invItem = Core.items.createItem("KEY");
+			}
+			_xml_name = String(_invItem.identifier.split("_")[0]).toUpperCase();
 		}
 		
 		override public function onCollect($player:Player):void 
