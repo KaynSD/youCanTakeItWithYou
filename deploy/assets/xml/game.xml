@@ -29,9 +29,9 @@
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Following people into dark allyways and meanacing them with pictures of kittens" />
+				<TEXT description="Throw your lot in with bandits" />
 				<RESULT>
-					<TEXT body="Since the bandits you joined didn't have any kittens they gave you a dagger instead" />
+					<TEXT body="You are hardly comfortable in this life, but it pays regularly" />
 					<ITEM_ADD itemKeys="DAGGER,COINS"/>
 				</RESULT>
 			</CHOICE>
@@ -133,27 +133,18 @@
 				<RESULT>
 					<TEXT body="Your perfect plan isn't quite perfect and your SLAVE dies. " />
 					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
+					<ITEM_REMOVE itemKeys="SLAVE"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Murder him in his wake" />
+				<TEXT description="Organise a coup!" />
 				<REQUIRES itemKeys="SWORD,DAGGER"/>
 				<REQUIRES health="50"/>
 				<RESULT>
-					<TEXT body="Doctor Doctor, please, wooah the mess I'm in..." />
+					<TEXT body="Your bloody coup leaves you with ill health for the remainder of your days..." />
 					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
 					<HEALTH_CHANGE value="-35" />
-					<RANK_UP/>
-				</RESULT>
-			</CHOICE>
-			<CHOICE>
-				<TEXT description="Join the army as a leader of men" />
-				<REQUIRES itemKeys="DAGGER,BOW,QUIVER"/>
-				<REQUIRES itemKeys="ASP,DAGGER"/>
-				<RESULT>
-					<TEXT body="You rise up in the ranks of the army quickly becoming a well respected general." />
-					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
@@ -249,6 +240,7 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Put the Crystal Skull in the indentation" />
+				<REQUIRES itemKeys="CRYSTALSKULL" />
 				<RESULT>
 					<TEXT body="The skull slots perfectly into the indentatation. A deep rumbling moves the earth and the doors roll open by themselves. Beyond, inside the tomb is some sort of strange flying craft just waiting to be taken " />
 					<ITEM_ADD itemKeys="UFO"/>
@@ -601,7 +593,7 @@
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Talk to Yorik the Crystal Skull" />
+				<TEXT description="Talk to Yorick the Crystal Skull" />
 				<REQUIRES itemKeys="CRYSTALSKULL"/>
 				<RESULT>
 					<TEXT body="You have a chat with the Crystal Skull. He relates to you many interesting about what it's like to look like a tacky paperweight and what it was like working with Harrison Ford and Shaia Leboueff" />
