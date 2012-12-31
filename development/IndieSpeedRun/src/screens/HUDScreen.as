@@ -37,7 +37,7 @@ package screens
 			var player:Player = e.dispatcher;
 			_graphics.mc_healthBar.mc_fill.width = (250 / 100) * player.health;
 			_graphics.mc_healthBar.txt_value.text = player.health.toString() + "/100";
-			_graphics.mc_healthBar.txt_rank.text = "Rank : " + player.rank;
+			_graphics.txt_rank.text = "Rank : " + player.rank;
 		}
 		
 		public function destroy():void 

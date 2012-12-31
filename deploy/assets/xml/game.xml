@@ -128,7 +128,7 @@
 				<TEXT description="Murder him in his sleep" />
 				<REQUIRES itemKeys="SLAVE,DAGGER,ASP"/>
 				<RESULT>
-					<TEXT body="NO TEXT YET" />
+					<TEXT body="Your perfect plan isn't quite perfect and your SLAVE dies. " />
 					<ITEM_ADD itemKeys="GEOMETRY"/>
 					<ITEM_ADD itemKeys="GOLD"/>
 					<RANK_UP/>
@@ -142,6 +142,7 @@
 					<TEXT body="Doctor Doctor, please, wooah the mess I'm in..." />
 					<ITEM_ADD itemKeys="STAFF"/>
 					<ITEM_ADD itemKeys="EMBALMINGTOOLS"/>
+					<HEALTH_CHANGE value="-35" />
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
