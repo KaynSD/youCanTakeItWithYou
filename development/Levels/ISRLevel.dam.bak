@@ -2,7 +2,7 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-1332" y="312"/>
+  <viewPos x="-1466" y="312"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
@@ -130,10 +130,18 @@
             <dataOverride name="p_encounterList" typeof="String" value="PLOT" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6" x="1824" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51"/>
-        <sprite guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A" x="2208" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51"/>
-        <sprite guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF" x="2560" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51"/>
-        <sprite guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D" x="3040" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51"/>
+        <sprite guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6" x="1824" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+          <properties/>
+        </sprite>
+        <sprite guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A" x="2208" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+          <properties/>
+        </sprite>
+        <sprite guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF" x="2560" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+          <properties/>
+        </sprite>
+        <sprite guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D" x="3040" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+          <properties/>
+        </sprite>
         <sprite guid="E010222D-E97D-3AED-7BAE-17A78E367CB0" x="5216" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SNAKE" idx="0"/>

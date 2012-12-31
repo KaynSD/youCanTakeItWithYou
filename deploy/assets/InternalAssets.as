@@ -68,7 +68,9 @@ package assets
 		[Embed(source = "xml/levels/the_prince.xml", mimeType = 'application/octet-stream')]				public var bytes_the_prince:Class;	
 		
 		[Embed(source = "graphics/player.png")]												public var img_player:Class;	
-		[Embed(source="graphics/playerDEAD.png")]											public var img_player_dead:Class;	
+		[Embed(source = "graphics/playerDEAD.png")]											public var img_player_dead:Class;	
+		
+		[Embed(source="graphics/tileset/tiling.png")]										public var img_tiling:Class;										
 		
 		
 		
