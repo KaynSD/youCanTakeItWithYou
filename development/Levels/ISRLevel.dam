@@ -2,22 +2,28 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-2450" y="485"/>
+  <viewPos x="-9727" y="782"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
     <group name="area_life" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
       <maplayer name="Parralaxing_Far" id="0" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7</row>
-        <row>85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87</row>
-        <row>85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71</row>
+        <row>87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87</row>
+        <row>87,87,87,87,87,87,87,87,87,87,87,87,17,87,22,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87</row>
       </maplayer>
-      <maplayer name="ParralaxNear" id="1" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
+      <maplayer name="ParralaxNear" id="1" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,18,19,20,21,0,0,8,9,10,11,12,13,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,33,34,35,36,37,38,0,24,25,26,27,28,29,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,18,19,20,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,0,0</row>
+        <row>0,0,33,34,35,36,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0</row>
         <row>0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+      </maplayer>
+      <maplayer name="BGTiles" id="8" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,8,11,10,9,10,11,14,0,0,0,0,0,0,0,0,0,8,12,12,14,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,0,0,0,8,9,10,11,12,13,14,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,42,0,31,0,39,0,0,0,0,0,0,0,0,0,0,0,0,24,27,26,26,26,27,30,0,0,0,0,0,0,0,0,0,24,28,29,30,0,0,0,0,0,0,0,0,0,0,0,80,81,82,83,0,0,0,24,25,26,27,28,29,30,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
       </maplayer>
       <maplayer name="FGTiles" id="2" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
@@ -28,13 +34,23 @@
           <properties/>
         </tileProperties>
       </maplayer>
-      <spritelayer name="Layer1" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+      <spritelayer name="Layer1" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false" selected="true">
+        <sprite guid="B503ECF3-CAD3-75D6-555D-82F3CA6CE9FB" x="10464" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="UFO_2" idx="0"/>
+          </properties>
+        </sprite>
+        <sprite guid="2C5963A2-8E63-292F-EFDC-08D254E83500" x="8096" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="UFO_1" idx="0"/>
+          </properties>
+        </sprite>
         <sprite guid="51A96EE4-425E-1929-3E03-A7E6056F2E86" x="4800" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SHOP_1" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="87C2DE37-90F3-CF11-BC5F-00649C0EEB22" x="10016" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="87C2DE37-90F3-CF11-BC5F-00649C0EEB22" x="10912" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SHOP_2" idx="0"/>
           </properties>
@@ -82,7 +98,6 @@
         <sprite guid="6448FC6A-AEED-D30D-42B1-0103C06CA3FD" x="7232" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
         <sprite guid="25065ACB-8E55-B8AD-B2BC-4353CD63FD60" x="5600" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
         <sprite guid="1C761744-8F8A-D412-7921-5AC9DE5A4AFE" x="3616" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="50"/>
-        <sprite guid="DB4B2990-DFE5-3F4A-C9F4-063109B1D50B" x="7584" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
         <sprite guid="AC87FB85-334F-FF88-D938-618651313994" x="4288" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAVE,PRIEST,THIRST" idx="0"/>
@@ -132,7 +147,7 @@
             <dataOverride name="p_encounterList" typeof="String" value="PHAROAH" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="D283A0F9-F261-EA17-8DBF-E9CBF637BB97" x="10496" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="54"/>
+        <sprite guid="D283A0F9-F261-EA17-8DBF-E9CBF637BB97" x="11328" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="54"/>
         <sprite guid="EBC1D2AF-920F-917B-D0F8-41395C72E43A" x="8992" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="THIRST,HUNGER" idx="0"/>
@@ -148,6 +163,7 @@
             <dataOverride name="p_encounterList" typeof="String" value="BANK" idx="0"/>
           </properties>
         </sprite>
+        <sprite guid="DC2CA1A6-94CB-4F80-8738-9FCE94F5D259" x="10368" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
       </spritelayer>
       <spritelayer name="Forground" id="4" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
     </group>
@@ -488,6 +504,20 @@
         <tile x="7" id="87"/>
       </row>
     </brush>
+    <brush name="brush 3" tileset="../../deploy/assets/graphics/tileset/tiling.png">
+      <row y="3">
+        <tile x="73" id="68"/>
+        <tile x="74" id="69"/>
+        <tile x="75" id="70"/>
+        <tile x="76" id="71"/>
+      </row>
+      <row y="4">
+        <tile x="73" id="87"/>
+        <tile x="74" id="85"/>
+        <tile x="75" id="86"/>
+        <tile x="76" id="87"/>
+      </row>
+    </brush>
   </tileBrushes>
   <colorSwatches/>
   <bookmarks>
@@ -550,7 +580,7 @@
   </customPropertyTypes>
   <guides>
     <snap>true</snap>
-    <visible>true</visible>
+    <visible>false</visible>
     <x>0</x>
     <y>0</y>
     <xspace>32</xspace>

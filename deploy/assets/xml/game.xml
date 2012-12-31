@@ -213,6 +213,50 @@
 			</CHOICE>
 		</ENCOUNTER>
 		
+		<ENCOUNTER key="UFO_1" title="Strange Lights in the Sky" >
+			<TEXT body="They sky at night lights up with a weird aura, suddenly beams of devine white light sweep around you"/>
+			<CHOICE>
+			<TEXT description="Get me outter here!" />
+				<RESULT>
+					<TEXT body="You run away as quickly as possible in terror" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Bow down and worship" />
+				<RESULT>
+					<TEXT body="You wait bowing down, the beams of light spin and spread and slowly close into a single beam and a giant silver spacecraft descends almost on top of you. You pass out and rememeber nothing else, but wake with a horrible headache. Next to you is a tacky looking paperweight" />
+					<ITEM_ADD itemKeys="CRYSTALSKULL"/>
+					<HEALTH_CHANGE value="-15"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Offer Tribute" />
+				<REQUIRES itemKeys="JEWEL" />
+				<RESULT>
+					<TEXT body="You wait offering up a beatuiful jewel you collected in your travels, the beams of light spin and spread and slowly close into a single beam and a giant silver spacecraft descends almost on top of you. You pass out and rememeber nothing else. Next to you is a tacky looking paperweight" />
+					<ITEM_ADD itemKeys="CRYSTALSKULL"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="UFO_2" title="The Mystery of the Skull" >
+			<TEXT body="You discover a tomb door with a mysterious indentatation."/>
+			<CHOICE>
+			<TEXT description="Can't fit anything in there" />
+				<RESULT>
+					<TEXT body="You ignore it, remembering some advice a friend once gave you about convientiantly shaped orifi." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Put the Crystal Skull in the indentation" />
+				<RESULT>
+					<TEXT body="The skull slots perfectly into the indentatation. A deep rumbling moves the earth and the doors roll open by themselves. Beyond, inside the tomb is some sort of strange flying craft just waiting to be taken " />
+					<ITEM_ADD itemKeys="UFO"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		
 		<ENCOUNTER key="SHOP_1" title="Buy some stuff" >
 			<TEXT body="A lowly merchent offers you a good deal on his wears"/>
 			<CHOICE>
@@ -474,7 +518,7 @@
 				<RESULT>
 					<TEXT body="To show you his graditude for your lovely pet, the Priest gives you a tacky movie prop" />
 					<ITEM_REMOVE itemKeys="CAT"/>
-					<ITEM_ADD itemKeys="CRYSTALSKULL" />
+					<ITEM_ADD itemKeys="CROOK" />
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
