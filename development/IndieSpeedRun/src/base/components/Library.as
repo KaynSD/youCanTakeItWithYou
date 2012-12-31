@@ -70,7 +70,7 @@ package base.components
 		public function getAsset($path:String):*
 		{
 
-			//if ($path.indexOf("mp3") != -1) trace("get asset " + $path);
+			if ($path.indexOf("mp3") != -1) trace("get asset " + $path);
 			if (_zip && _zip.hasAsset($path))
 			{
 				asset = _zip.getAsset($path)
@@ -105,7 +105,7 @@ package base.components
 					return asset;
 				}				
 			}
-			else if (_int.getAsset($path))
+			if (_int.getAsset($path))
 			{
 				return _int.getAsset($path);
 			}
@@ -129,17 +129,17 @@ package base.components
 				trace ("int asset " + key);
 				//dispatchEvent(new LibraryEvent(LibraryEvent.ASSET_LOADED,_int.getAsset(key)));
 			}
-			else if (_zip.hasAsset(key))
-			{
-				trace ("zip asset " + key);
+			//else if (_zip.hasAsset(key))
+			//{
+				//trace ("zip asset " + key);
 				//dispatchEvent(new LibraryEvent(LibraryEvent.ASSET_LOADED,_zip.getAsset(key)));
-			}
-			else
-			{
-				trace ("loading asset " + key);
-				_bundle
-				_ext.queueResource(key);
-			}
+			//}
+			//else
+			//{
+				//trace ("loading asset " + key);
+				//_bundle
+				//_ext.queueResource(key);
+			//}
 		}
 		
 		public function loadItemGraphics ($bundle:XML):void

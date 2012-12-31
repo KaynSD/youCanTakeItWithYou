@@ -29,7 +29,7 @@ package entities
 		private var _state:uint;
 		private static const IDLE:int = 	0x000001;
 		private static const ACTION:int = 	0x000010;
-		static public const BASE_GROUND_SPEED:int =  50;
+		static public const BASE_GROUND_SPEED:int =  60;
 
 		private var _keys:Keyboard;
 		
@@ -261,7 +261,7 @@ package entities
 		}
 		
 		protected function onUpdateRank ():void {
-			_groundSpeed = BASE_GROUND_SPEED + 10 * _rank;
+			_groundSpeed = BASE_GROUND_SPEED + 20 * _rank;
 			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
 		}
 		

@@ -64,7 +64,9 @@ package world.engine
 		private function onIndexLoaded(e:LibraryEvent):void 
 		{
 			Core.lib.removeEventListener(LibraryEvent.BUNDLE_LOADED, onIndexLoaded);
-			_index_xml = P3BytesToXML(Core.lib.getAsset(_index_url));
+			var cls:Class = Core.lib.getAsset(_index_url)
+			var bytes:ByteArray =  (new cls)as ByteArray
+			_index_xml = P3BytesToXML(bytes);
 			
 			log (" index is loaded; loading ASSETS and AREAS");
 			loadAreas(_index_xml.AREAS.*)
@@ -78,7 +80,8 @@ package world.engine
 		{
 			for each (var area_key:String in _area_keys)
 			{
-				var bytes:ByteArray = Core.lib.getAsset(area_key)
+				var cls:Class = Core.lib.getAsset(area_key)
+				var bytes:ByteArray = new cls ();
 				var area:LevelArea = new LevelArea (bytes); 
 				addArea(area);
 			}

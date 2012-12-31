@@ -1,4 +1,4 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 19:02:45" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 20:06:38" >
 	<AREAS>
 		<AREA>area_life</AREA>
 		<AREA>area_death</AREA>
@@ -219,11 +219,11 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</CHARIOT>
-		<EMBALMINGKIT path="graphics/pickups/entity/crook.png">
+		<EMBALMINGTOOLS path="graphics/pickups/entity/crook.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
-		</EMBALMINGKIT>
+		</EMBALMINGTOOLS>
 		<BG_PLACEHOLDER path="graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>
