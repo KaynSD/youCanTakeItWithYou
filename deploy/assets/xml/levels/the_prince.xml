@@ -1,14 +1,9 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 10:16:57" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 12:56:36" >
 	<AREAS>
 		<AREA>area_life</AREA>
 		<AREA>area_death</AREA>
 	</AREAS>
 	<ASSETS>
-		<Items path="%imagefilerelative%">
-			<SIZE width="0" height="0"/>
-			<BOUNDS x="0" y="0" width="1" height="1"/>
-			<ANCHOR x="0" y="0"/>
-		</Items>
 		<ABACUS path="graphics/pickups/entity/abacus.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
@@ -154,16 +149,16 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</BOOKOFTHEDEAD>
-		<CRYSTALSKULL path="graphics/pickups/entity/crystalskull.png">
-			<SIZE width="32" height="32"/>
-			<BOUNDS x="0" y="0" width="32" height="32"/>
-			<ANCHOR x="0" y="0"/>
-		</CRYSTALSKULL>
 		<JEWEL path="graphics/pickups/entity/jewel.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</JEWEL>
+		<CRYSTALSKULL path="graphics/pickups/entity/crystalskull.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CRYSTALSKULL>
 		<KEY path="graphics/pickups/entity/key.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
@@ -244,6 +239,11 @@
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_TELEPORT>
+		<MARKER_FINISH path="graphics/built_in/marker_tiles/mt_fin.png">
+			<SIZE width="16" height="16"/>
+			<BOUNDS x="0" y="0" width="16" height="16"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_FINISH>
 		<PLAYER path="graphics/player.png">
 			<SIZE width="64" height="64"/>
 			<BOUNDS x="12" y="0" width="32" height="64"/>

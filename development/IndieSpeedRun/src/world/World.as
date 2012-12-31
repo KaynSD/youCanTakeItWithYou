@@ -399,6 +399,7 @@ package world
 			if (!_player) _player = new Player ()
 			deserializeTiles($area.xml.LAYERS.*)
 			deserializeEntities($area.xml.OBJECTS.*)
+			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_AREA,this));
 		}
 		
 		private function swapPlayerToFront():void 
@@ -664,6 +665,8 @@ package world
 			_level.setArea($key);
 			initGroups();
 			addArea(_level.area);
+			
+			//Core.control.dispatchEvent(new 
 			//Core.control.dispatchEvent(new LibraryEvent(LibraryEvent.LEVEL_LOADED,null));
 		}
 		
