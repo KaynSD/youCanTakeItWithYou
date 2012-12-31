@@ -56,27 +56,279 @@
 		<DESCRIPTION name="Rod of Leadership"
 					 description="A symbol of the rule of the Pharoahs" />
 	</ROD>
-	<SCEPTER>
+	<CROOK>
 		<DIMENSIONS>XX,OX,OX</DIMENSIONS>
 		<POINTS MINIMUM="1600"
 				MAXIMUM="2100" />
-		<DESCRIPTION name="Scepter of the Pharoahs"
-					 description="A symbol of the rule of the Pharoahs" />
-	</SCEPTER>
+		<DESCRIPTION name="Crook"
+					 description="A symbol of the rule of the Pharoahs, of Shepherds and Osiris" />
+	</CROOK>
 	<CAT>
 		<DIMENSIONS>XO,XX,XX</DIMENSIONS>
 		<POINTS MINIMUM="800"
 				MAXIMUM="900" />
-		<DESCRIPTION name="Scepter of the Pharoahs"
-					 description="A symbol of the rule of the Pharoahs" />
+		<DESCRIPTION name="Cat"
+					 description="A dispassionate companion in both life and death" />
 	</CAT>
-	<!--
-	<ITEMDEAD>
+	<ABACUS>
+		<DIMENSIONS>XXX,XOX</DIMENSIONS>
+		<POINTS MINIMUM="400"
+				MAXIMUM="600" />
+		<DESCRIPTION name="Abacus"
+					 description="A tool for senior architects" />
+	</ABACUS>
+	<ASP>
+		<DIMENSIONS>XXX,XOO,XOO</DIMENSIONS>
+		<POINTS MINIMUM="100"
+				MAXIMUM="230" />
+		<DESCRIPTION name="Asp"
+					 description="You have an asp. Why do you have an asp?" />
+	</ASP>
+	<COBRA>
+		<DIMENSIONS>XXX,OOX,XXX</DIMENSIONS>
+		<POINTS MINIMUM="100"
+				MAXIMUM="230" />
+		<DESCRIPTION name="Asp"
+					 description="You have a cobra. Why do you have a cobra?" />
+	</COBRA>
+	<AXE>
 		<DIMENSIONS>X</DIMENSIONS>
-		<POINTS MINIMUM=""
-				MAXIMUM="" />
-		<DESCRIPTION name=""
-					 description="" />
-	</ITEMDEAD>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Axe"
+					 description="A tool for cutting down wood" />
+	</AXE>
+	<BEER>
+		<DIMENSIONS>X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Beer"
+					 description="Liquid bread. Kept them from starving, and knocked them out at night, so they wouldn't be inclined to insurrection." />
+	</BEER>
+	<BOW>
+		<DIMENSIONS>XX,XX,OX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Bow"
+					 description="A weapon. Requires a quiver for effective use..." />
+	</BOW>
+	<BREAD>
+		<DIMENSIONS>X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Flatbread"
+					 description="An essential foodstuff" />
+	</BREAD>
+	<CARPENTRY>
+		<DIMENSIONS>XXX,OXO,OXO</DIMENSIONS>
+		<POINTS MINIMUM="100"
+				MAXIMUM="260" />
+		<DESCRIPTION name="Carpenter's Tools"
+					 description="A hammer and saw, for construction labourers" />
+	</CARPENTRY>
+	<COIN>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM="10"
+				MAXIMUM="80" />
+		<DESCRIPTION name="Coins"
+					 description="Filthy Lucre will only take you so far in these worlds..." />
+	</COIN>
+	<DAGGER>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Dagger"
+					 description="A deseperate weapon, easy to conceal and carry" />
+	</DAGGER>
+	<DATES>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="20" />
+		<DESCRIPTION name="Dates"
+					 description="An essential foodstuff, buried alongside the dead to sustain them in the afterlife" />
+	</DATES>
+	<DJED>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="450"
+				MAXIMUM="600" />
+		<DESCRIPTION name="Djed"
+					 description="A pillar of support, for the afterlife. Because your spine is removed upon mummification" />
+	</DJED>
+	<EMBALMEDSLAVE>
+		<DIMENSIONS>XXXXX,XXXXX</DIMENSIONS>
+		<POINTS MINIMUM="300"
+				MAXIMUM="800" />
+		<DESCRIPTION name="Embalmed Slave"
+					 description="Your faithful servant, even in death..." />
+	</EMBALMEDSLAVE>
+	<EMBALMINGTOOLS>
+		<DIMENSIONS>X</DIMENSIONS>
+		<POINTS MINIMUM="180"
+				MAXIMUM="350" />
+		<DESCRIPTION name="Embalming Tools"
+					 description="Used for the mummification of the dead." />
+	</EMBALMINGTOOLS>
+	<GEOMETRY>
+		<DIMENSIONS>OXO,XXX</DIMENSIONS>
+		<POINTS MINIMUM="270"
+				MAXIMUM="500" />
+		<DESCRIPTION name="Geometer's Tools"
+					 description="Set Square and Protractor, for an Architect" />
+	</GEOMETRY>
+	<GOLD>
+		<DIMENSIONS>XX</DIMENSIONS>
+		<POINTS MINIMUM="190"
+				MAXIMUM="360" />
+		<DESCRIPTION name="Gold Bar"
+					 description="A bar of solid gold..." />
+	</GOLD>
+	<HEADDRESS>
+		<DIMENSIONS>XXX,OXX,OXO</DIMENSIONS>
+		<POINTS MINIMUM="900"
+				MAXIMUM="1200" />
+		<DESCRIPTION name="Pharoah's Headdress"
+					 description="The nile is your domain, now and forever..." />
+	</HEADDRESS>
+	<INK>
+		<DIMENSIONS>X,X,X</DIMENSIONS>
+		<POINTS MINIMUM="50"
+				MAXIMUM="170" />
+		<DESCRIPTION name="Ink and Quill"
+					 description="For recording notes" />
+	</INK>
+	<INTESTINES>
+		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="400"
+				MAXIMUM="800" />
+		<DESCRIPTION name="Canopic Jar: Intestines"
+					 description="A jar containing vital organs. Yummy Sausages" />
+	</INTESTINES>
+	<LIVER>
+		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="400"
+				MAXIMUM="800" />
+		<DESCRIPTION name="Canopic Jar: Liver"
+					 description="A jar containing vital organs. Eww" />
+	</LIVER>
+	<LUNGS>
+		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="400"
+				MAXIMUM="800" />
+		<DESCRIPTION name="Canopic Jar: Lungs"
+					 description="A jar containing vital organs. Squick" />
+	</LUNGS>
+	<STOMACH>
+		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="400"
+				MAXIMUM="800" />
+		<DESCRIPTION name="Canopic Jar: Stomach"
+					 description="A jar containing vital organs. Yack" />
+	</STOMACH>
+	<PAPYRUS>
+		<DIMENSIONS>X,X</DIMENSIONS>
+		<POINTS MINIMUM="20"
+				MAXIMUM="100" />
+		<DESCRIPTION name="Papyrus"
+					 description="Writing Material, made of reeds" />
+	</PAPYRUS>
+	<PLOUGH>
+		<DIMENSIONS>XXXX,XOXO</DIMENSIONS>
+		<POINTS MINIMUM="100"
+				MAXIMUM="170" />
+		<DESCRIPTION name="Plough"
+					 description="A tool for tilling the fields. We shall all till the fields in Osiris' garden..." />
+	</PLOUGH>
+	<QUIVER>
+		<DIMENSIONS>X,X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Quiver of Arrows"
+					 description="A Quiver of Arrows. Requires a bow to be effective..." />
+	</QUIVER>
+	<REDHERRING>
+		<DIMENSIONS>OX,XX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Red Herring"
+					 description="It looks delicious." />
+	</REDHERRING>
+	<REEDS>
+		<DIMENSIONS>X,X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Reeds and Bullrushes"
+					 description="For making Papyrus, or hiding babies in" />
+	</REEDS>
+	<RUDDER>
+		<DIMENSIONS>XO,XO,XX,OX,OX</DIMENSIONS>
+		<POINTS MINIMUM="150"
+				MAXIMUM="280" />
+		<DESCRIPTION name="Rudder"
+					 description="An oar for steering a river vessel, both on the Nile and the Styx" />
+	</RUDDER>
+	<SCARAB>
+		<DIMENSIONS>X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="1000" />
+		<DESCRIPTION name="Scarab Broach"
+					 description="A symbol of luck, for it pushes the sun across the sky..." />
+	</SCARAB>
+	<SLAVE>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="100"
+				MAXIMUM="800" />
+		<DESCRIPTION name="A Slave"
+					 description="An exceedingly loyal member of the serving caste" />
+	</SLAVE>
+	<STAFF>
+		<DIMENSIONS>X,X,X,X,X</DIMENSIONS>
+		<POINTS MINIMUM="500"
+				MAXIMUM="900" />
+		<DESCRIPTION name="Staff of Command"
+					 description="A badge of office for the mighty ruling caste" />
+	</STAFF>
+	<SWORD>
+		<DIMENSIONS>X,X,X</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Sword"
+					 description="A weapon, for coming battles ahead" />
+	</SWORD>
+	<UFO>
+		<DIMENSIONS>OXO,XXX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="500" />
+		<DESCRIPTION name="U.F.O."
+					 description="We have no idea either..." />
+	</UFO>
+	<WATER>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Water"
+					 description="Blessed is the Nile, for it gives you life" />
+	</WATER>
+	<WATERMELON>
+		<DIMENSIONS>OX,XX</DIMENSIONS>
+		<POINTS MINIMUM="0"
+				MAXIMUM="0" />
+		<DESCRIPTION name="Watermelon"
+					 description="A fruit cultivated along the Nile" />
+	</WATERMELON>
+	<CHARIOT>
+		<DIMENSIONS>OOOOXXX,XXXXXXX</DIMENSIONS>
+		<POINTS MINIMUM="700"
+				MAXIMUM="1000" />
+		<DESCRIPTION name="Chariot"
+					 description="Your own war chariot, my leige. May it serve you well" />
+	</CHARIOT>
+	<!--
+		 <ITEMDEAD>
+		 <DIMENSIONS>X</DIMENSIONS>
+		 <POINTS MINIMUM=""
+		 MAXIMUM="" />
+		 <DESCRIPTION name=""
+		 description="" />
+		 </ITEMDEAD>
 	-->
 </data>
