@@ -11,9 +11,9 @@ package inventory.elements
 	{
 		
 		public static const INVALID:int = 0xffdd0000;
-		public static const VALID:int = 0xff0000dd;
-		public static const OCCUPIED:int = 0xff666666;
-		public static const EMPTY:int = 0xffdddddd;
+		public static const VALID:int = 0xff00dd00;
+		public static const OCCUPIED:int = 0x99000000;
+		public static const EMPTY:int = 0x00000000;
 		
 		
 		private var dimension:int

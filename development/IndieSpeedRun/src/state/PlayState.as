@@ -68,12 +68,16 @@ package state
 			
 			
 		
-			// The Inventory!!
-			if (!_inventory) _inventory = new InventoryView(0,0) ;// add(new InventoryView());
-			add(_inventory);
 			
 			if (!_world) _world = new World ();
 			add(_world); 
+			
+			// The Inventory!!
+			if (!_inventory) {
+				_inventory = new InventoryView(560, 60) ;// add(new InventoryView());
+			}
+			add(_inventory);
+			
 			//
 			//var inventoryItem:InventoryItem = new InventoryItem("key", [[1,0,1],[1,1,1]]);
 			//inventoryItem.x = 0;
