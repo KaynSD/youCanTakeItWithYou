@@ -2,24 +2,30 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-2450" y="485"/>
+  <viewPos x="-1096" y="166"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
     <group name="area_life" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
-      <maplayer name="Parralaxing_Far" id="0" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+      <maplayer name="Parralaxing_Far" id="0" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7,68,69,70,71,1,2,6,7</row>
-        <row>85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87</row>
-        <row>85,86,87,87,17,87,22,87,85,86,87,87,17,87,22,87,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71</row>
+        <row>87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87</row>
+        <row>87,87,87,87,87,87,87,87,87,87,87,87,17,87,22,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87</row>
       </maplayer>
-      <maplayer name="ParralaxNear" id="1" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
+      <maplayer name="ParralaxNear" id="1" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,0,18,19,20,21,0,0,8,9,10,11,12,13,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
-        <row>0,0,33,34,35,36,37,38,0,24,25,26,27,28,29,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,18,19,20,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,0,0</row>
+        <row>0,0,33,34,35,36,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0</row>
         <row>0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
       </maplayer>
-      <maplayer name="FGTiles" id="2" xScroll="1" yScroll="1" x="1408" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+      <maplayer name="BGTiles" id="2" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
+        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,8,11,10,9,10,11,14,0,0,0,0,0,0,0,0,0,8,12,12,14,0,0,0,0,0,0,0,0,63,15,0,0,65,66,67,0,0,0,8,9,10,11,12,13,14,0,63,15,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,42,0,31,0,39,0,0,0,0,0,0,0,0,0,0,0,0,24,27,26,26,26,27,30,0,0,0,0,0,0,0,0,0,24,28,29,30,0,0,0,0,0,0,0,0,0,0,0,80,81,82,83,0,0,0,24,25,26,27,28,29,30,0,0,0,0,0,0,0,0,0,0,0</row>
+        <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
+      </maplayer>
+      <maplayer name="FGTiles" id="3" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
@@ -28,131 +34,141 @@
           <properties/>
         </tileProperties>
       </maplayer>
-      <spritelayer name="Layer1" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
-        <sprite guid="51A96EE4-425E-1929-3E03-A7E6056F2E86" x="4800" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+      <spritelayer name="Layer1" id="4" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+        <sprite guid="B503ECF3-CAD3-75D6-555D-82F3CA6CE9FB" x="9312" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="UFO_2" idx="0"/>
+          </properties>
+        </sprite>
+        <sprite guid="2C5963A2-8E63-292F-EFDC-08D254E83500" x="6944" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="UFO_1" idx="0"/>
+          </properties>
+        </sprite>
+        <sprite guid="51A96EE4-425E-1929-3E03-A7E6056F2E86" x="3648" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SHOP_1" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="87C2DE37-90F3-CF11-BC5F-00649C0EEB22" x="10016" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="87C2DE37-90F3-CF11-BC5F-00649C0EEB22" x="9760" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SHOP_2" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="6472FB25-B712-BD21-6CEB-694D93CE65E7" x="6240" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="6472FB25-B712-BD21-6CEB-694D93CE65E7" x="5088" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="THIRST,HUNGER,BANDITS" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="52300956-9E88-C4EE-7DCA-A6DE09F7981D" x="7392" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="52300956-9E88-C4EE-7DCA-A6DE09F7981D" x="6240" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAREER_3" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7" x="5664" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7" x="4512" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAREER_2" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="5FD5BFDA-DF59-D88C-EF77-D3D86C94C8FE" x="3296" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="5FD5BFDA-DF59-D88C-EF77-D3D86C94C8FE" x="2144" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAREER_1" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="1600" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
-        <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="1600" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
-        <sprite guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30" x="3904" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD" x="1984" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="30"/>
-        <sprite guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98" x="2496" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
-        <sprite guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527" x="3168" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="4805F286-3F5B-A3E5-68B8-4BB1D51D37B3" x="4960" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="448" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
+        <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="448" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
+        <sprite guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30" x="2752" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD" x="832" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="30"/>
+        <sprite guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98" x="1344" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
+        <sprite guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527" x="2016" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="4805F286-3F5B-A3E5-68B8-4BB1D51D37B3" x="3808" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="BANDITS" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="CF2C9C0F-0C55-E4BA-8CA7-B34E395E724E" x="4672" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="EECEA758-3C46-3373-7FAD-4BF39A97B41C" x="4192" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="7C11D81E-6109-A92B-17BA-038D1B9213CD" x="3488" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="0618D50E-88FF-CC9F-18F6-90762A077B6F" x="6048" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="9F8EC1D8-46C5-DDBF-E436-24772277F689" x="6144" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="04A0C48E-12BE-26DE-5551-C5A6892BB7F4" x="6528" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
-        <sprite guid="CBC03B1A-36B4-153A-8B52-F45266C7C739" x="6720" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="25"/>
-        <sprite guid="F9D00525-C6B4-5CB2-5662-9986A0519062" x="7936" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="1EDEAB20-4A6D-C88F-EC08-5FB64AB539EB" x="7008" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="6448FC6A-AEED-D30D-42B1-0103C06CA3FD" x="7232" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="25065ACB-8E55-B8AD-B2BC-4353CD63FD60" x="5600" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="1C761744-8F8A-D412-7921-5AC9DE5A4AFE" x="3616" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="50"/>
-        <sprite guid="DB4B2990-DFE5-3F4A-C9F4-063109B1D50B" x="7584" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
-        <sprite guid="AC87FB85-334F-FF88-D938-618651313994" x="4288" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="CF2C9C0F-0C55-E4BA-8CA7-B34E395E724E" x="3520" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="EECEA758-3C46-3373-7FAD-4BF39A97B41C" x="3040" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="7C11D81E-6109-A92B-17BA-038D1B9213CD" x="2336" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="0618D50E-88FF-CC9F-18F6-90762A077B6F" x="4896" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="9F8EC1D8-46C5-DDBF-E436-24772277F689" x="4992" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="04A0C48E-12BE-26DE-5551-C5A6892BB7F4" x="5376" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
+        <sprite guid="CBC03B1A-36B4-153A-8B52-F45266C7C739" x="5568" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="25"/>
+        <sprite guid="F9D00525-C6B4-5CB2-5662-9986A0519062" x="6784" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="1EDEAB20-4A6D-C88F-EC08-5FB64AB539EB" x="5856" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="6448FC6A-AEED-D30D-42B1-0103C06CA3FD" x="6080" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="25065ACB-8E55-B8AD-B2BC-4353CD63FD60" x="4448" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="1C761744-8F8A-D412-7921-5AC9DE5A4AFE" x="2464" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="50"/>
+        <sprite guid="AC87FB85-334F-FF88-D938-618651313994" x="3136" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAVE,PRIEST,THIRST" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="D06DEBC1-8ADC-AF0F-A30F-081A374C7D3E" x="9184" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="CA296785-C50C-C189-76AD-8298E04CFCF0" x="8896" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="45686F8A-9C87-8EF4-5BC3-545681B765BB" x="8224" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="D06DEBC1-8ADC-AF0F-A30F-081A374C7D3E" x="8032" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="CA296785-C50C-C189-76AD-8298E04CFCF0" x="7744" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="45686F8A-9C87-8EF4-5BC3-545681B765BB" x="7072" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="PRIEST" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="BC453113-54A5-B3DD-9CBD-D141560CBC0D" x="6880" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="BC453113-54A5-B3DD-9CBD-D141560CBC0D" x="5728" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="CAVE" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="C103D2E2-2722-77D3-2BF3-DE0CC6C5AA68" x="4000" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
-        <sprite guid="EB0D61F4-76D7-D680-B551-9BE720F3D4CD" x="7488" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="28"/>
-        <sprite guid="98908F1D-3A27-5992-9C8A-DB3E4E729CAF" x="8352" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="20"/>
-        <sprite guid="B47DC02B-1449-8AEF-64D0-196977562B39" x="9120" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="19"/>
-        <sprite guid="2BDC7EE7-62A6-0C6D-6163-E13574289E18" x="9600" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="18"/>
-        <sprite guid="1CF89682-DED8-6BBE-D328-B5069DF34EC0" x="7808" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="C103D2E2-2722-77D3-2BF3-DE0CC6C5AA68" x="2848" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10"/>
+        <sprite guid="EB0D61F4-76D7-D680-B551-9BE720F3D4CD" x="6336" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="28"/>
+        <sprite guid="98908F1D-3A27-5992-9C8A-DB3E4E729CAF" x="7200" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="20"/>
+        <sprite guid="B47DC02B-1449-8AEF-64D0-196977562B39" x="7968" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="19"/>
+        <sprite guid="2BDC7EE7-62A6-0C6D-6163-E13574289E18" x="8448" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="18"/>
+        <sprite guid="1CF89682-DED8-6BBE-D328-B5069DF34EC0" x="6656" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="PLOT" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6" x="1824" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+        <sprite guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6" x="672" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
           <properties/>
         </sprite>
-        <sprite guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A" x="2208" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+        <sprite guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A" x="1056" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
           <properties/>
         </sprite>
-        <sprite guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF" x="2560" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+        <sprite guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF" x="1408" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
           <properties/>
         </sprite>
-        <sprite guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D" x="3040" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
+        <sprite guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D" x="1888" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="55">
           <properties/>
         </sprite>
-        <sprite guid="E010222D-E97D-3AED-7BAE-17A78E367CB0" x="5216" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="E010222D-E97D-3AED-7BAE-17A78E367CB0" x="4064" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="SNAKE" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="8DC1F080-7804-1553-1C96-A3BC801F073E" x="9440" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="8DC1F080-7804-1553-1C96-A3BC801F073E" x="8288" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="PHAROAH" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="D283A0F9-F261-EA17-8DBF-E9CBF637BB97" x="10496" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="54"/>
-        <sprite guid="EBC1D2AF-920F-917B-D0F8-41395C72E43A" x="8992" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="D283A0F9-F261-EA17-8DBF-E9CBF637BB97" x="10176" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="54"/>
+        <sprite guid="EBC1D2AF-920F-917B-D0F8-41395C72E43A" x="7840" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="THIRST,HUNGER" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="73BEB855-48B9-32FD-EC13-31275617F5D8" x="4480" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="73BEB855-48B9-32FD-EC13-31275617F5D8" x="3328" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="BANK" idx="0"/>
           </properties>
         </sprite>
-        <sprite guid="DBFDA59E-33A6-56CB-BBBB-977D3176F6EB" x="7104" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+        <sprite guid="DBFDA59E-33A6-56CB-BBBB-977D3176F6EB" x="5952" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="BANK" idx="0"/>
           </properties>
         </sprite>
+        <sprite guid="DC2CA1A6-94CB-4F80-8738-9FCE94F5D259" x="9216" y="352" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
       </spritelayer>
-      <spritelayer name="Forground" id="4" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
+      <spritelayer name="Forground" id="5" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
     </group>
     <group name="area_death" id="4" xScroll="1" yScroll="1" visible="false" open="true" locked="false" exports="true">
-      <maplayer name="ParallaxTiles" id="5" xScroll="0.5" yScroll="1" x="0" y="0" width="140" height="17" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png" tileWidth="32" tileHeight="32" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="32" tileSpacingY="32" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+      <maplayer name="ParallaxTiles" id="6" xScroll="0.5" yScroll="1" x="0" y="0" width="140" height="17" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png" tileWidth="32" tileHeight="32" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="32" tileSpacingY="32" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
@@ -171,7 +187,7 @@
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
       </maplayer>
-      <maplayer name="FGTiles" id="6" xScroll="1" yScroll="1" x="0" y="0" width="140" height="17" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png" tileWidth="32" tileHeight="32" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="32" tileSpacingY="32" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+      <maplayer name="FGTiles" id="7" xScroll="1" yScroll="1" x="0" y="0" width="140" height="17" tileset="../../deploy/assets/graphics/tileset/afterlife_tiles.png" tileWidth="32" tileHeight="32" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="32" tileSpacingY="32" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
@@ -190,7 +206,7 @@
         <row>33,33,49,33,33,49,33,33,33,49,49,33,50,50,33,33,50,34,50,34,49,34,50,50,50,33,50,49,34,50,34,33,50,34,50,50,33,49,49,50,50,50,34,50,49,50,49,33,33,33,34,34,49,50,50,49,49,33,49,49,50,49,34,50,49,33,50,49,50,34,50,33,33,33,33,34,33,33,34,34,34,33,34,33,49,49,34,49,34,34,50,49,34,50,34,49,49,33,34,49,33,49,33,49,33,34,50,49,49,34,32,50,49,50,34,49,34,34,50,50,50,33,50,50,50,49,49,50,34,49,49,34,50,33,33,49,50,33,34,50</row>
         <row>34,34,50,34,34,50,34,49,50,34,49,50,33,49,34,49,50,34,34,50,50,50,33,33,34,50,50,50,49,49,50,33,33,34,50,33,33,33,50,50,33,50,49,33,50,49,34,34,34,50,34,33,49,34,49,33,33,50,34,33,50,34,49,33,34,49,34,49,49,49,50,34,34,33,50,50,49,34,33,50,34,34,33,34,33,50,34,50,50,33,34,50,49,34,49,49,33,33,50,50,49,50,49,50,49,33,33,50,49,35,48,33,34,50,49,34,49,50,49,33,50,49,34,34,50,33,33,33,50,49,34,49,34,34,50,49,49,34,49,49</row>
       </maplayer>
-      <spritelayer name="Layer2" id="7" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+      <spritelayer name="Layer2" id="8" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
         <sprite guid="D8545D93-2A73-01ED-7E4E-0E8147DD85A2" x="3264" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="FIRE_RIVER" idx="0"/>
@@ -488,6 +504,20 @@
         <tile x="7" id="87"/>
       </row>
     </brush>
+    <brush name="brush 3" tileset="../../deploy/assets/graphics/tileset/tiling.png">
+      <row y="3">
+        <tile x="73" id="68"/>
+        <tile x="74" id="69"/>
+        <tile x="75" id="70"/>
+        <tile x="76" id="71"/>
+      </row>
+      <row y="4">
+        <tile x="73" id="87"/>
+        <tile x="74" id="85"/>
+        <tile x="75" id="86"/>
+        <tile x="76" id="87"/>
+      </row>
+    </brush>
   </tileBrushes>
   <colorSwatches/>
   <bookmarks>
@@ -550,7 +580,7 @@
   </customPropertyTypes>
   <guides>
     <snap>true</snap>
-    <visible>true</visible>
+    <visible>false</visible>
     <x>0</x>
     <y>0</y>
     <xspace>32</xspace>

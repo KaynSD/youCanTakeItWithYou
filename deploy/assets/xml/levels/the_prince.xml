@@ -1,4 +1,4 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 21:43:18" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 22:10:16" >
 	<AREAS>
 		<AREA>area_life</AREA>
 		<AREA>area_death</AREA>
@@ -219,7 +219,12 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</CHARIOT>
-		<EMBALMINGTOOLS path="graphics/pickups/entity/crook.png">
+		<UFO path="graphics/pickups/entity/ufo.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</UFO>
+		<EMBALMINGTOOLS path="graphics/pickups/entity/embalmingtools.png">
 			<SIZE width="32" height="32"/>
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
