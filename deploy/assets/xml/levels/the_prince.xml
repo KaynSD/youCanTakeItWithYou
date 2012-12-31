@@ -1,4 +1,4 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 15:15:42" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 18:45:59" >
 	<AREAS>
 		<AREA>area_life</AREA>
 		<AREA>area_death</AREA>
@@ -209,6 +209,21 @@
 			<BOUNDS x="0" y="0" width="32" height="32"/>
 			<ANCHOR x="0" y="0"/>
 		</COBRA>
+		<CROOK path="graphics/pickups/entity/crook.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CROOK>
+		<CHARIOT path="graphics/pickups/entity/chariot.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</CHARIOT>
+		<EMBALMINGKIT path="graphics/pickups/entity/crook.png">
+			<SIZE width="32" height="32"/>
+			<BOUNDS x="0" y="0" width="32" height="32"/>
+			<ANCHOR x="0" y="0"/>
+		</EMBALMINGKIT>
 		<BG_PLACEHOLDER path="graphics/background/background_back.png">
 			<SIZE width="128" height="128"/>
 			<BOUNDS x="0" y="0" width="128" height="128"/>

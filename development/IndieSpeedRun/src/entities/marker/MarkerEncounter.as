@@ -32,8 +32,12 @@ package entities.marker
 			{
 				var rnd:int = int((_encounterList.length) * Math.random())
 				var enc:EncounterInfo = Core.control.encManager.getEncounter(_encounterList[rnd]);
-				enc.validate($player);
-				Core.control.startEncounter(enc);
+				if (enc)
+				{
+					enc.validate($player);
+					Core.control.startEncounter(enc);
+				}
+				
 			}
 			
 		}

@@ -9,10 +9,11 @@
 				<RESULT>
 					<TEXT body="Aimless begging nets you a small amout of coins and a large amount of shame" />
 					<ITEM_ADD itemKeys="COINS"/>
+					<HEALTH_CHANGE value="-10" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Cut wood to avenge your mother who died in a lumber accident" />
+				<TEXT description="Cut wood to avenge your mother who died in a logging accident" />
 				<RESULT>
 					<TEXT body="The path of the lumberjack is a fine one, although a few centuries too early for catchy songs" />
 					<ITEM_ADD itemKeys="AXE"/>
@@ -31,7 +32,7 @@
 				<TEXT description="Following people into dark allyways and meanacing them with pictures of kittens" />
 				<RESULT>
 					<TEXT body="Since the bandits you joined didn't have any kittens they gave you a dagger instead" />
-					<ITEM_ADD itemKeys="DAGGER"/>
+					<ITEM_ADD itemKeys="DAGGER,COINS"/>
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
@@ -105,7 +106,7 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Join the army as a leader of men" />
-				<REQUIRES itemKeys="DAGGER,BOW,QUIVER"/>
+				<REQUIRES itemKeys="DAGGER,BOW"/>
 				<REQUIRES itemKeys="ASP,DAGGER"/>
 				<RESULT>
 					<TEXT body="You rise up in the ranks of the army quickly becoming a well respected general." />
@@ -117,7 +118,7 @@
 		
 		
 		<!-- END CAREERS -->
-		<!-- UNFINIDHED
+
 		<ENCOUNTER key="PHAROAH" title="Top of the pile" >
 			<TEXT body="A strange twist of fate gives you are rare one time chance to regain your rightful place as Pharoah. But the question is, how are you going to do it?"/>
 			<CHOICE>
@@ -131,8 +132,7 @@
 				<REQUIRES itemKeys="SLAVE,DAGGER,ASP"/>
 				<RESULT>
 					<TEXT body="Your perfect plan isn't quite perfect and your SLAVE dies. " />
-					<ITEM_ADD itemKeys="GEOMETRY"/>
-					<ITEM_ADD itemKeys="GOLD"/>
+					<ITEM_ADD itemKeys="CROOK,ROD"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
@@ -142,8 +142,7 @@
 				<REQUIRES health="50"/>
 				<RESULT>
 					<TEXT body="Doctor Doctor, please, wooah the mess I'm in..." />
-					<ITEM_ADD itemKeys="STAFF"/>
-					<ITEM_ADD itemKeys="EMBALMINGTOOLS"/>
+					<ITEM_ADD itemKeys="CROOK,ROD"/>
 					<HEALTH_CHANGE value="-35" />
 					<RANK_UP/>
 				</RESULT>
@@ -160,7 +159,116 @@
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
-		! -->
+		
+		
+		<ENCOUNTER key="PLOT" title="Take Revenge" >
+			<TEXT body="A powerful group in the government are plotting to murder you, what will you do?"/>
+			<CHOICE>
+			<TEXT description="Flee in Terror" />
+				<RESULT>
+					<TEXT body="You bravely run away. Nobody is impressed. You trip whilst running away and injure yourself" />
+					<HEALTH_CHANGE value="-35" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Kill them all" />
+				<REQUIRES itemKeys="DAGGER" />
+				<RESULT>
+					
+					<TEXT body="Taking them by complete suprise you brutally murder them all and overthrow their plot" />
+					<ITEM_ADD itemKeys="MONEYBAG,GOLD"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Pay to have them killed" />
+				<REQUIRES itemKeys="MONEYBAG,GOLD" />
+				<RESULT>
+					<TEXT body="You pay a band of mecernaries to do your dirty work for you. They are VERY efficient. You get the bow they where going to kill you with" />
+					<ITEM_ADD itemKeys="BOW"/>
+					<ITEM_REMOVE itemKeys="MONEYBAG,GOLD"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="SHOP_1" title="Buy some stuff" >
+			<TEXT body="An important merchent offers you a good deal on his wears"/>
+			<CHOICE>
+				<TEXT description="Buy a Quiver with coins" />
+				<REQUIRES itemKeys="COINS" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="COINS"/>
+					<ITEM_ADD itemKeys="QUIVER"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Buy a dagger with a moneybag" />
+				<REQUIRES itemKeys="DAGGER" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_ADD itemKeys="DAGGER"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Buy a Bow with a moneybag" />
+				<REQUIRES itemKeys="MONEYBAG" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_ADD itemKeys="BOW"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Buy a Book of the Dead with gold" />
+				<REQUIRES itemKeys="GOLD" />
+				<RESULT>
+					<TEXT body="You pay a band of mecernaries to do your dirty work for you. They are VERY efficient. You get the bow they where going to kill you with" />
+					<ITEM_REMOVE itemKeys="GOLD"/>
+					<ITEM_ADD itemKeys="BOOKOFTHEDEAD"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="SHOP_2" title="Buy some stuff" >
+			<TEXT body="An important merchent offers you a good deal on his wears"/>
+			<CHOICE>
+				<TEXT description="Buy a Key with moneybag" />
+				<REQUIRES itemKeys="COINS" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="COINS"/>
+					<ITEM_ADD itemKeys="KEY"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Buy a chariot with a gold" />
+				<REQUIRES itemKeys="GOLD" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_ADD itemKeys="CHARIOT"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Buy a Sword with a gold" />
+				<REQUIRES itemKeys="GOLD" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_ADD itemKeys="SWORD"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Buy a Scarab with jewel" />
+				<REQUIRES itemKeys="JEWEL" />
+				<RESULT>
+					<TEXT body="You pay a band of mecernaries to do your dirty work for you. They are VERY efficient. You get the bow they where going to kill you with" />
+					<ITEM_REMOVE itemKeys="JEWEL"/>
+					<ITEM_ADD itemKeys="SCARAB"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
 		<!-- UNFINIDHED! -->
 		<!-- RANDOM EVENTS-->
 		<!-- THIRST-->
@@ -352,7 +460,7 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Fasion a raft out REEDS and an RUDDER" />
-				<REQUIRES itemKeys="OAR,RUDDER"/>
+				<REQUIRES itemKeys="REEDS,RUDDER"/>
 				<RESULT>
 					<TEXT body="You build a craft out of the REEDS you where carrying and the RUDDER (man, I bet you thought they where useless). It's a bit leaky but you make it." />
 					<ITEM_REMOVE itemKeys="RUDDER"/>
@@ -360,48 +468,14 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Use your PHAROAH SUPER POWERS to fly across" />
-				<REQUIRES itemKeys="CROOK, ROD,HEADDRESS"/>
+				<REQUIRES itemKeys="CROOK,ROD,HEADDRESS"/>
 				<RESULT>
 					<TEXT body="Pharoah powers AWAY! You woosh off over the river. Walking is for chumps." />
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
 
-		<ENCOUNTER key="HEART" title="Test of Anubis" >
-			<TEXT body="You reach your final desination, judgement by Anubis. How will your heart weight up."/>
-			<CHOICE>
-				<TEXT description="Test of Endurance" />
-				<RESULT>
-					<TEXT body="Having shown no other redeeming qualitys (seriously, what have you been doing with your life) the only way to prove your worth is with endurance against a crippling assault" />
-					<HEALTH_CHANGE value="-95" />
-				</RESULT>
-			</CHOICE>
-			<CHOICE>
-				<TEXT description="Test of Worth. Warefare, Architecture and Maths or Religion" />
-				<REQUIRES itemKeys="SWORD,DAGGER,BOW,QUIVER"/>
-				<REQUIRES itemKeys="GEOMETRY,ABACUS"/>
-				<REQUIRES itemKeys="STAFF"/>
-				<RESULT>
-					<TEXT body="Anubis Judges you worthy, given your dedication to your career" />
-				</RESULT>
-			</CHOICE>
-			<CHOICE>
-				<TEXT description="Test of Leadership. Become the leader of the Egyptian People" />
-				<REQUIRES itemKeys="CROOK, ROD,HEADDRESS"/>
-				<RESULT>
-					<TEXT body="Pharoah powers go! Even Anubis can't stop a man in such an awesome outfit." />
-				</RESULT>
-			</CHOICE>
-			<CHOICE>
-				<TEXT description="Test of Bribery. What?! Anubis want's to get paid too..." />
-				<REQUIRES itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
-				<RESULT>
-					<TEXT body="You bribe Anubis outrageously. It works too." />
-					<ITEM_REMOVE itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
-				</RESULT>
-			</CHOICE>
-		</ENCOUNTER>
-		
+	
 		<ENCOUNTER key="TALK_AFTER" title="Lonlieness Sets In..." >
 			<TEXT body="After a hours of walking through desolate cold wastes you start to feel quite alone. If only there where someone to talk to"/>
 			<CHOICE>
@@ -572,6 +646,42 @@
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
+
+		<ENCOUNTER key="HEART" title="Test of Anubis" >
+			<TEXT body="You reach your final desination, judgement by Anubis. How will your heart weight up."/>
+			<CHOICE>
+				<TEXT description="Test of Endurance" />
+				<RESULT>
+					<TEXT body="Having shown no other redeeming qualitys (seriously, what have you been doing with your life) the only way to prove your worth is with endurance against a crippling assault" />
+					<HEALTH_CHANGE value="-95" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Worth. Warefare, Architecture and Maths or Religion" />
+				<REQUIRES itemKeys="SWORD,DAGGER,BOW,QUIVER"/>
+				<REQUIRES itemKeys="GEOMETRY,ABACUS"/>
+				<REQUIRES itemKeys="STAFF"/>
+				<RESULT>
+					<TEXT body="Anubis Judges you worthy, given your dedication to your career" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Leadership. Become the leader of the Egyptian People" />
+				<REQUIRES itemKeys="CROOK, ROD,HEADDRESS"/>
+				<RESULT>
+					<TEXT body="Pharoah powers go! Even Anubis can't stop a man in such an awesome outfit." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Bribery. What?! Anubis want's to get paid too..." />
+				<REQUIRES itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
+				<RESULT>
+					<TEXT body="You bribe Anubis outrageously. It works too." />
+					<ITEM_REMOVE itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
 		
 		<!-- END AFTERLIFE -->
 		<ENCOUNTER key="CAVE" title="A Spooooky Cave" >
