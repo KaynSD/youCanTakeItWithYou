@@ -101,8 +101,8 @@
 			</PROPS>
 		</BG_PLACEHOLDER>
 		<MARKER_ENCOUNTER>
-			<START x="608.000" y="432.000"/>
-			<ID link_id="null" guid="B307415A-CBDD-40EE-F342-8BF0F80C7FAF"/>
+			<START x="1920.000" y="432.000"/>
+			<ID link_id="null" guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
 			<SIZE width="16.000" height="16.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
@@ -111,12 +111,12 @@
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
+					<p_encounterList>CAREER_2</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="560.000" y="432.000"/>
-			<ID link_id="null" guid="677B010A-3754-D3EA-70ED-3C5DFAA822A2"/>
+			<START x="1120.000" y="416.000"/>
+			<ID link_id="null" guid="5FD5BFDA-DF59-D88C-EF77-D3D86C94C8FE"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
 			<SIZE width="16.000" height="16.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
@@ -125,49 +125,7 @@
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
-					<p_encounterList>TEST_DAMAGE</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="752.000" y="432.000"/>
-			<ID link_id="null" guid="AEBF1353-B5EC-BBA8-2A66-D02D179BCCF7"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="688.000" y="432.000"/>
-			<ID link_id="null" guid="16173D18-1DAE-05DC-FCE1-3006FD888197"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="640.000" y="432.000"/>
-			<ID link_id="null" guid="7B310F06-E637-7C35-3A4E-F4A0486F5858"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
+					<p_encounterList>CAREER_1</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<CARPENTRY>
@@ -209,126 +167,6 @@
 			<PROPS>				
 			</PROPS>
 		</PLAYER>
-		<MARKER_ENCOUNTER>
-			<START x="944.000" y="432.000"/>
-			<ID link_id="null" guid="3887FAE2-ED8B-D521-2A55-CE8E3101A7E8"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="1344.000" y="304.000"/>
-			<ID link_id="null" guid="6594F397-4E0E-573C-5439-4E52D08AB6D6"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>CAVE</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="1920.000" y="432.000"/>
-			<ID link_id="null" guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_RANK</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MONEYBAG>
-			<START x="720.000" y="416.000"/>
-			<ID link_id="null" guid="CFD45A44-5637-3556-0170-994E2E810A7D"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MONEYBAG>
-		<TORCH>
-			<START x="832.000" y="416.000"/>
-			<ID link_id="null" guid="2FD412BD-A19C-3CE1-C9BF-27ABFD827BE7"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</TORCH>
-		<KEY>
-			<START x="1472.000" y="288.000"/>
-			<ID link_id="null" guid="3495DCBE-0672-CB0D-B520-F99E107C6F96"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</KEY>
-		<MONEYBAG>
-			<START x="1568.000" y="288.000"/>
-			<ID link_id="null" guid="1C8A06ED-3B60-658B-B3EE-C84B73B29B04"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MONEYBAG>
-		<BOOKOFTHEDEAD>
-			<START x="2032.000" y="416.000"/>
-			<ID link_id="null" guid="055A6ED9-FBD9-A8CE-40FC-CAE71BF15F25"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</BOOKOFTHEDEAD>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1040.000" y="432.000"/>
-			<ID link_id="null" guid="18E1C6E0-003A-1912-3C9D-285E0D96BBA8"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
 		<MARKER_ITEM_SPAWNER>
 			<START x="1648.000" y="432.000"/>
 			<ID link_id="null" guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30"/>
@@ -342,9 +180,9 @@
 			<PROPS>				
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
-		<ANKH>
-			<START x="656.000" y="416.000"/>
-			<ID link_id="null" guid="52CCE38E-3F14-65D6-1FAA-1C9EB88A7CA2"/>
+		<WATER>
+			<START x="672.000" y="416.000"/>
+			<ID link_id="null" guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
@@ -354,179 +192,10 @@
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</ANKH>
-		<ANKH>
-			<START x="784.000" y="416.000"/>
-			<ID link_id="null" guid="356B0CFF-5A8A-0762-DCA4-5A36EA6C3E8A"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</ANKH>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1008.000" y="432.000"/>
-			<ID link_id="null" guid="DF68DFAB-920A-1C33-0EA7-2AC38C90EFAC"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1088.000" y="432.000"/>
-			<ID link_id="null" guid="BAE3330C-3A30-DEEF-FA68-B677AF232460"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1136.000" y="432.000"/>
-			<ID link_id="null" guid="D18E0787-86D2-489E-4C75-78A2ED6A649B"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1184.000" y="432.000"/>
-			<ID link_id="null" guid="7A43AE17-D289-FF9E-8523-262C75E30461"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1248.000" y="432.000"/>
-			<ID link_id="null" guid="333468B7-7469-2439-1D83-69D7765018D9"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1296.000" y="432.000"/>
-			<ID link_id="null" guid="4F9C4DD3-C96C-5EDD-C530-82A91EDB7BE9"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1328.000" y="432.000"/>
-			<ID link_id="null" guid="CC75217A-CD9F-ABC9-0615-7A35117AB4B7"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1360.000" y="432.000"/>
-			<ID link_id="null" guid="0865E903-EED0-372F-5F02-26DE51AE700D"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1392.000" y="432.000"/>
-			<ID link_id="null" guid="7C80E51E-2B02-04C8-CF68-3CDAB8B7C0C0"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1456.000" y="416.000"/>
-			<ID link_id="null" guid="1386889B-95FE-E065-5945-B425F79CCE2D"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1488.000" y="432.000"/>
-			<ID link_id="null" guid="ABC559E6-D5E0-FC27-702A-59B0558EC918"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
-		<MARKER_ITEM_SPAWNER>
-			<START x="1552.000" y="432.000"/>
-			<ID link_id="null" guid="8C3E7292-A6AD-1497-C4EE-62D099552028"/>
-			<CLASS name="MARKER_ITEM_SPAWNER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-			</PROPS>
-		</MARKER_ITEM_SPAWNER>
+		</WATER>
 		<BREAD>
-			<START x="3408.000" y="416.000"/>
-			<ID link_id="null" guid="E9FECA4D-FD65-E3A2-8035-436A2518BE69"/>
+			<START x="832.000" y="416.000"/>
+			<ID link_id="null" guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
@@ -537,6 +206,32 @@
 			<PROPS>				
 			</PROPS>
 		</BREAD>
+		<MARKER_ITEM_SPAWNER>
+			<START x="992.000" y="416.000"/>
+			<ID link_id="null" guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527"/>
+			<CLASS name="MARKER_ITEM_SPAWNER"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_ITEM_SPAWNER>
+		<MARKER_TELEPORT>
+			<START x="3456.000" y="416.000"/>
+			<ID link_id="null" guid="476330A0-D2F2-8061-213A-697636BAFD56"/>
+			<CLASS name="MARKER_TELEPORT"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_TELEPORT>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

@@ -2,7 +2,7 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-340" y="229"/>
+  <viewPos x="-2938" y="229"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
@@ -38,17 +38,24 @@
         </tileProperties>
       </maplayer>
       <spritelayer name="Layer1" id="2" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false" selected="true">
+        <sprite guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7" x="1920" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="CAREER_2" idx="0"/>
+          </properties>
+        </sprite>
+        <sprite guid="5FD5BFDA-DF59-D88C-EF77-D3D86C94C8FE" x="1120" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
+          <properties>
+            <dataOverride name="p_encounterList" typeof="String" value="CAREER_1" idx="0"/>
+          </properties>
+        </sprite>
         <sprite guid="E2BAB642-56C1-C283-ADE9-EA428C854B76" x="-688" y="-288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
         <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="512" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
         <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="496" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
-        <sprite guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7" x="1920" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
-          <properties/>
-        </sprite>
-        <sprite guid="CFD45A44-5637-3556-0170-994E2E810A7D" x="720" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="36"/>
-        <sprite guid="2FD412BD-A19C-3CE1-C9BF-27ABFD827BE7" x="832" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="37"/>
         <sprite guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30" x="1648" y="432" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="52CCE38E-3F14-65D6-1FAA-1C9EB88A7CA2" x="656" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
-        <sprite guid="356B0CFF-5A8A-0762-DCA4-5A36EA6C3E8A" x="784" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="31"/>
+        <sprite guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD" x="672" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="30"/>
+        <sprite guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98" x="832" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
+        <sprite guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527" x="992" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
+        <sprite guid="476330A0-D2F2-8061-213A-697636BAFD56" x="3456" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
       </spritelayer>
       <spritelayer name="Forground" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
     </group>
@@ -255,8 +262,8 @@
     <visible>true</visible>
     <x>0</x>
     <y>0</y>
-    <xspace>16</xspace>
-    <yspace>16</yspace>
+    <xspace>32</xspace>
+    <yspace>32</yspace>
     <gridcolour>0x77333333</gridcolour>
     <snaptype>TopLeft</snaptype>
     <paintcontinuous>false</paintcontinuous>
