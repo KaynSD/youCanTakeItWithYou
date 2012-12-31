@@ -85,7 +85,7 @@
 					 description="You have an asp. Why do you have an asp?" />
 	</ASP>
 	<COBRA>
-		<DIMENSIONS>XXX,OOX,XXX</DIMENSIONS>
+		<DIMENSIONS>XX,OX,XX</DIMENSIONS>
 		<POINTS MINIMUM="100"
 				MAXIMUM="230" />
 		<DESCRIPTION name="Asp"
@@ -197,28 +197,28 @@
 					 description="For recording notes" />
 	</INK>
 	<INTESTINES>
-		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
 		<POINTS MINIMUM="400"
 				MAXIMUM="800" />
 		<DESCRIPTION name="Canopic Jar: Intestines"
 					 description="A jar containing vital organs. Yummy Sausages" />
 	</INTESTINES>
 	<LIVER>
-		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
 		<POINTS MINIMUM="400"
 				MAXIMUM="800" />
 		<DESCRIPTION name="Canopic Jar: Liver"
 					 description="A jar containing vital organs. Eww" />
 	</LIVER>
 	<LUNGS>
-		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
 		<POINTS MINIMUM="400"
 				MAXIMUM="800" />
 		<DESCRIPTION name="Canopic Jar: Lungs"
 					 description="A jar containing vital organs. Squick" />
 	</LUNGS>
 	<STOMACH>
-		<DIMENSIONS>XX,XX,XX</DIMENSIONS>
+		<DIMENSIONS>XX,XX,XX,XX</DIMENSIONS>
 		<POINTS MINIMUM="400"
 				MAXIMUM="800" />
 		<DESCRIPTION name="Canopic Jar: Stomach"
