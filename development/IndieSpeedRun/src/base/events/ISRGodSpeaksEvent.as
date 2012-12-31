@@ -11,9 +11,9 @@ package base.events
 		public var message:String;
 		
 		public static const QUIET_ALL_GODS:String = "shutupguys!";
-		public static const ANUBIS_SAYS:String = "woofwoofImagoodpsychopomp!";
-		public static const OSIRIS_SAYS:String = "osirisesmanypeiceswantyou!";
-		public static const SET_SAYS:String = "setdemandsyourattention!";
+		public static const ANUBIS_SAYS:String = "ANUBIS_SAYS";
+		public static const OSIRIS_SAYS:String = "OSIRIS_SAYS";
+		public static const SET_SAYS:String = "SET_SAYS";
 		
 		
 		

@@ -76,6 +76,7 @@ package state
 			
 			// The Inventory!!
 			if (!_inventory) {
+				trace("new inventyory!");
 				_inventory = new InventoryView(560, 60) ;// add(new InventoryView());
 			}
 			
