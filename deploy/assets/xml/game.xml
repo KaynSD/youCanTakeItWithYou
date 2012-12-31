@@ -97,10 +97,10 @@
 			<CHOICE>
 				<TEXT description="Get ordainded as a preist." />
 				<REQUIRES itemKeys="INK,PAPYRUS"/>
-				<REQUIRES itemKeys="CROOK"/>
+				
 				<RESULT>
 					<TEXT body="Doctor Doctor, please, wooah the mess I'm in... ~ By UFO" />
-					<ITEM_ADD itemKeys="STAFF,EMBALMINGTOOLS"/>
+					<ITEM_ADD itemKeys="CROOK,EMBALMINGTOOLS"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
@@ -132,7 +132,7 @@
 				<REQUIRES itemKeys="SLAVE,DAGGER,ASP"/>
 				<RESULT>
 					<TEXT body="Your perfect plan isn't quite perfect and your SLAVE dies. " />
-					<ITEM_ADD itemKeys="CROOK,ROD"/>
+					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
@@ -142,7 +142,7 @@
 				<REQUIRES health="50"/>
 				<RESULT>
 					<TEXT body="Doctor Doctor, please, wooah the mess I'm in..." />
-					<ITEM_ADD itemKeys="CROOK,ROD"/>
+					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
 					<HEALTH_CHANGE value="-35" />
 					<RANK_UP/>
 				</RESULT>
@@ -153,13 +153,36 @@
 				<REQUIRES itemKeys="ASP,DAGGER"/>
 				<RESULT>
 					<TEXT body="You rise up in the ranks of the army quickly becoming a well respected general." />
-					<ITEM_ADD itemKeys="SWORD"/>
-					<ITEM_ADD itemKeys="GOLD"/>
+					<ITEM_ADD itemKeys="HEADDRESS,ROD"/>
 					<RANK_UP/>
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
 		
+		<ENCOUNTER key="SNAKE" title="Attacked By Snake!" >
+			<TEXT body="Whilst walking along the road, a poisonous snake suddenly slithers out in front of you!"/>
+			<CHOICE>
+			<TEXT description="Run Away!" />
+				<RESULT>
+					<TEXT body="You bravely run away. Nobody is impressed." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Capture It! It might be useful" />
+				<HEALTH value="60" />
+				<RESULT>
+					<TEXT body="Throwing all caution to the wind you wrangel the snake into your bag. Why do you WANT a snake?" />
+					<ITEM_ADD itemKeys="ASP"/>
+					<HEALTH_CHANGE value="-25" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Snaaaake? Snaaaaaaaaaaaake!" />
+				<RESULT>
+					<TEXT body="I don't think you'are playing the right game, you know." />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
 		
 		<ENCOUNTER key="PLOT" title="Take Revenge" >
 			<TEXT body="A powerful group in the government are plotting to murder you, what will you do?"/>
@@ -191,40 +214,37 @@
 		</ENCOUNTER>
 		
 		<ENCOUNTER key="SHOP_1" title="Buy some stuff" >
-			<TEXT body="An important merchent offers you a good deal on his wears"/>
+			<TEXT body="A lowly merchent offers you a good deal on his wears"/>
 			<CHOICE>
-				<TEXT description="Buy a Quiver with coins" />
+				<TEXT description="Buy nothing, you like your money" />
+				<RESULT>
+					<TEXT body="You refuse to buy anything and even go as far as to comment on the tackyness of the merchant wares" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Buy a dagger with coins" />
 				<REQUIRES itemKeys="COINS" />
 				<RESULT>
 					<TEXT body="You make your purchase" />
 					<ITEM_REMOVE itemKeys="COINS"/>
-					<ITEM_ADD itemKeys="QUIVER"/>
-				</RESULT>
-			</CHOICE>
-			<CHOICE>
-				<TEXT description="Buy a dagger with a moneybag" />
-				<REQUIRES itemKeys="DAGGER" />
-				<RESULT>
-					<TEXT body="You make your purchase" />
-					<ITEM_REMOVE itemKeys="MONEYBAG"/>
 					<ITEM_ADD itemKeys="DAGGER"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-			<TEXT description="Buy a Bow with a moneybag" />
-				<REQUIRES itemKeys="MONEYBAG" />
+			<TEXT description="Buy a Bow with coins" />
+				<REQUIRES itemKeys="COINS" />
 				<RESULT>
 					<TEXT body="You make your purchase" />
-					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_REMOVE itemKeys="COINS"/>
 					<ITEM_ADD itemKeys="BOW"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-			<TEXT description="Buy a Book of the Dead with gold" />
-				<REQUIRES itemKeys="GOLD" />
+			<TEXT description="Buy a Book of the Dead with bag of gold" />
+				<REQUIRES itemKeys="MONEYBAG" />
 				<RESULT>
 					<TEXT body="You pay a band of mecernaries to do your dirty work for you. They are VERY efficient. You get the bow they where going to kill you with" />
-					<ITEM_REMOVE itemKeys="GOLD"/>
+					<ITEM_REMOVE itemKeys="MONEYBAG"/>
 					<ITEM_ADD itemKeys="BOOKOFTHEDEAD"/>
 				</RESULT>
 			</CHOICE>
@@ -233,12 +253,9 @@
 		<ENCOUNTER key="SHOP_2" title="Buy some stuff" >
 			<TEXT body="An important merchent offers you a good deal on his wears"/>
 			<CHOICE>
-				<TEXT description="Buy a Key with moneybag" />
-				<REQUIRES itemKeys="COINS" />
+				<TEXT description="Buy nothing, you like your money" />
 				<RESULT>
-					<TEXT body="You make your purchase" />
-					<ITEM_REMOVE itemKeys="COINS"/>
-					<ITEM_ADD itemKeys="KEY"/>
+					<TEXT body="You refuse to buy anything and even go as far as to comment on the tackyness of the merchant wares" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
@@ -246,7 +263,7 @@
 				<REQUIRES itemKeys="GOLD" />
 				<RESULT>
 					<TEXT body="You make your purchase" />
-					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_REMOVE itemKeys="GOLD"/>
 					<ITEM_ADD itemKeys="CHARIOT"/>
 				</RESULT>
 			</CHOICE>
@@ -255,17 +272,54 @@
 				<REQUIRES itemKeys="GOLD" />
 				<RESULT>
 					<TEXT body="You make your purchase" />
-					<ITEM_REMOVE itemKeys="MONEYBAG"/>
+					<ITEM_REMOVE itemKeys="GOLD"/>
 					<ITEM_ADD itemKeys="SWORD"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-			<TEXT description="Buy a Scarab with jewel" />
+			<TEXT description="Buy a Ankh with jewel" />
 				<REQUIRES itemKeys="JEWEL" />
 				<RESULT>
 					<TEXT body="You pay a band of mecernaries to do your dirty work for you. They are VERY efficient. You get the bow they where going to kill you with" />
 					<ITEM_REMOVE itemKeys="JEWEL"/>
-					<ITEM_ADD itemKeys="SCARAB"/>
+					<ITEM_ADD itemKeys="ANKH"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="BANK" title="Change Money" >
+			<TEXT body="You find a moneychanger willing to change up your money"/>
+			<CHOICE>
+				<TEXT description="I'm happy with my money the way it is" />
+				<RESULT>
+					<TEXT body="You don't change anything at all." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Change two coins for a moneybag" />
+				<REQUIRES itemKeys="COINS,COINS" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="COINS,COINS"/>
+					<ITEM_ADD itemKeys="MONEYBAG"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Change two moneybags for a gold" />
+				<REQUIRES itemKeys="MONEYBAG,MONEYBAG" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="MONEYBAG,MONEYBAG"/>
+					<ITEM_ADD itemKeys="GOLD"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Change two coins for a jewel" />
+				<REQUIRES itemKeys="GOLD,GOLD" />
+				<RESULT>
+					<TEXT body="You make your purchase" />
+					<ITEM_REMOVE itemKeys="GOLD,GOLD"/>
+					<ITEM_ADD itemKeys="JEWEL"/>
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
@@ -370,11 +424,11 @@
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Chaaaarge!" />
-				<REQUIRES itemKeys="BOW"/>
+				<TEXT description="Get them drunk!" />
+				<REQUIRES itemKeys="BEER"/>
 				<RESULT>
-					<TEXT body="Since you have no arrows you beat the bandits with your unstrung bow. Whilst effective it destroys the bow." />
-					<ITEM_REMOVE itemKeys="BOW"/>
+					<TEXT body="By a weird twist of fate you instead end up drinking with the bandits and partying through till the morning light" />
+					<ITEM_REMOVE itemKeys="BEER"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
@@ -397,11 +451,12 @@
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Trade for an embalmingkit" />
+				<TEXT description="Trade for an STAFF" />
 				<REQUIRES itemKeys="DATES"/>
 				<RESULT>
-					<TEXT body="You trade your dates with the priest for an EMBALMING TOOLS" />
-					<ITEM_ADD itemKeys="EMBALMINGTOOLS"/>
+					<TEXT body="You trade your dates with the priest for an STAFF" />
+					<ITEM_ADD itemKeys="STAFF"/>
+					<ITEM_REMOVE itemKeys="DATES"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
@@ -703,8 +758,8 @@
 				<TEXT description="Use the TORCH to light your way through the cave" />
 				<REQUIRES itemKeys="TORCH"/>
 				<RESULT>
-					<TEXT body="Deep in the cave you discover a golden Ankh. Good job you went there with light, or you might have been hurt" />
-					<ITEM_ADD itemKeys="ANKH"/>
+					<TEXT body="Deep in the cave you discover a jeweled Scarab. Good job you went there with light, or you might have been hurt" />
+					<ITEM_ADD itemKeys="SCARAB"/>
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
@@ -769,7 +824,7 @@
 	</ENCOUNTERS>
 	<ITEM_SPAWNS>
 		<RANK>BEER,BEER,COINS,BREAD,DATES</RANK>
-		<RANK>CAT,WATER,DATES,TORCH,QUIVER,REEDS</RANK>
+		<RANK>CAT,WATER,DATES,TORCH,QUIVER,REEDS,MONEYBAG</RANK>
 		<RANK>DAGGER,RUDDER,MONEYBAG,KEY,INK</RANK>
 		<RANK>SWORD,GOLD,JEWEL,SLAVE,QUIVER</RANK>
 		<RANK>SCARAB,GOLD,JEWEL,BOOKOFTHEDEAD,CHARIOT</RANK>
