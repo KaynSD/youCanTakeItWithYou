@@ -69,6 +69,7 @@ package base.components
 		}
 		public function getAsset($path:String):*
 		{
+
 			//if ($path.indexOf("mp3") != -1) trace("get asset " + $path);
 			if (_zip && _zip.hasAsset($path))
 			{

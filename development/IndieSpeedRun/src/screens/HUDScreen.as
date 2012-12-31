@@ -38,6 +38,8 @@ package screens
 			_graphics.mc_healthBar.mc_fill.width = (250 / 100) * player.health;
 			_graphics.mc_healthBar.txt_value.text = player.health.toString() + "/100";
 			_graphics.txt_rank.text = "Rank : " + player.rank;
+			//visible = true
+			//trace("HUD PARENT" + parent)
 		}
 		
 		public function destroy():void 

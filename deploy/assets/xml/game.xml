@@ -114,8 +114,10 @@
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
+		
+		
 		<!-- END CAREERS -->
-		<!-- UNFINIDHED! -->
+		<!-- UNFINIDHED
 		<ENCOUNTER key="PHAROAH" title="Top of the pile" >
 			<TEXT body="A strange twist of fate gives you are rare one time chance to regain your rightful place as Pharoah. But the question is, how are you going to do it?"/>
 			<CHOICE>
@@ -158,8 +160,138 @@
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
+		! -->
 		<!-- UNFINIDHED! -->
-		
+		<!-- RANDOM EVENTS-->
+		<!-- THIRST-->
+		<ENCOUNTER key="THIRST" title="Lost in the Desert" >
+			<TEXT body="You get lost in the endless sands of the desert. Dehydration starts to set in, what will you do."/>
+			<CHOICE>
+			<TEXT description="Die of thirst, duh" />
+				<RESULT>
+					<TEXT body="Despite your best attempts to die of thirst you manage to stumble back to civilisation" />
+					<HEALTH_CHANGE value="-60" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Drink your delicious cooling beer" />
+				<REQUIRES itemKeys="BEER"/>
+				<RESULT>
+					<TEXT body="The Beer quenchest your thirst perfectly, unfortunatly due to your lack of nourishment it goes directly to your head. You trip, fall and roll into an oasis" />
+					<HEALTH_CHANGE value="-15" />
+					<ITEM_REMOVE itemKeys="BEER"/>
+					<ITEM_ADD itemKeys="WATER"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Guzzle some of the water you've been carrying" />
+				<REQUIRES itemKeys="WATER"/>
+				<RESULT>
+					<TEXT body="The water quenches your thirst perfectly; in fact you even draw a little strength from the smug self satisfaction of how pepared you where." />
+					<HEALTH_CHANGE value="15" />
+					<ITEM_REMOVE itemKeys="WATER"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+			<TEXT description="Attempt to draw moisture from the sand using your lips" />
+				<RESULT>
+					<TEXT body="You die alone in the desert. Thank god you never made it back to breed." />
+					<HEALTH_CHANGE value="-100" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		<!-- HUNGER-->
+		<ENCOUNTER key="HUNGER" title="A Test Event" >
+			<TEXT body="After several days of wandering you find yourself starving. Hope you packed food."/>
+			<CHOICE>
+				<TEXT description="Die of hunger, duh" />
+				<RESULT>
+					<TEXT body="Despite your best attempts to die of hunger you manage to stumble back to civilisation" />
+					<HEALTH_CHANGE value="-40" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Eat that brilliant looking bread" />
+				<REQUIRES itemKeys="BREAD"/>
+				<RESULT>
+					<TEXT body="That hit the spot." />
+					<HEALTH_CHANGE value="15" />
+					<ITEM_REMOVE itemKeys="BREAD"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Eat those delicious looking dates" />
+				<REQUIRES itemKeys="DATES"/>
+				<RESULT>
+					<TEXT body="They tasted great!" />
+					<HEALTH_CHANGE value="25" />
+					<ITEM_REMOVE itemKeys="DATES"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Eat those wonderful looking watermelon" />
+				<REQUIRES itemKeys="WATERMELON"/>
+				<RESULT>
+					<TEXT body="Water delicious meal!" />
+					<HEALTH_CHANGE value="35" />
+					<ITEM_REMOVE itemKeys="WATERMELON"/>
+				</RESULT>
+			</CHOICE>			
+		</ENCOUNTER>
+		<!-- BANDITS-->
+		<ENCOUNTER key="BANDITS" title="A Test Event" >
+			<TEXT body="You are attacked by a group of Bandits. I hope you brought a weapon."/>
+			<CHOICE>
+				<TEXT description="But I don't have a weapon..." />
+				<RESULT>
+					<TEXT body="The Bandits beat you savagely" />
+					<HEALTH_CHANGE value="-75" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Chaaaaaaaaarge!" />
+				<REQUIRES itemKeys="BOW,QUIVER"/>
+				<REQUIRES itemKeys="SWORD"/>
+				<REQUIRES itemKeys="DAGGER"/>
+				<REQUIRES itemKeys="STAFF"/>
+				<REQUIRES health="25"/>
+				<RESULT>
+					<TEXT body="You kill them all easily. You discover they have kidnapped a slave who you 'free' into your own service " />
+					<ITEM_ADD itemKeys="SLAVE"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Chaaaarge!" />
+				<REQUIRES itemKeys="BOW"/>
+				<RESULT>
+					<TEXT body="Since you have no arrows you beat the bandits with your unstrung bow. Whilst effective it destroys the bow." />
+					<ITEM_REMOVE itemKeys="BOW"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Bribe the Bandits!" />
+				<REQUIRES itemKeys="MONEYBAG,GOLD"/>
+				<RESULT>
+					<TEXT body="You pay them off with cash." />
+					<ITEM_REMOVE itemKeys="MONEYBAG,GOLD"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		<!-- RANDOM EVENTS-->
+		<ENCOUNTER key="TEST" title="A Test Event" >
+			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
+			<CHOICE>
+				<TEXT description="This option has a health requirement" />
+				<REQUIRES health="25"/>
+				<RESULT>
+					<TEXT body="The Grue is not amused" />
+					<HEALTH_CHANGE value="-25" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+	
+		<!-- END RANDOM EVENTS-->
+		<!-- AFTERLIFE -->
 		<ENCOUNTER key="TEST" title="A Test Event" >
 			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
 			<CHOICE>
@@ -170,7 +302,7 @@
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Give the Grue an Ankh" />
-				<REQUIRES itemKeys="ANKH"/>
+				
 				<RESULT>
 					<ITEM_REMOVE itemKeys="ANKH"/>
 					<TEXT body="Your rank was increased by one" />

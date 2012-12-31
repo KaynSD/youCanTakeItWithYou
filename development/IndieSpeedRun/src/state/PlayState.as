@@ -49,8 +49,10 @@ package state
 			Core.control.addEventListener(GameEvent.LEVEL_RESTART, onLevelRestart);
 			Core.control.addEventListener(GameEvent.LEVEL_QUIT, onLevelQuit);
 			Core.control.addEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
+			//Core.control.addEventListener(UIEvent.UPDATE_AREA, onChangeArea);
 		}
 		
+	
 		private function onGainPoints(e:ISRGameEvent):void 
 		{
 			Core.control.score += e.data;
@@ -63,7 +65,8 @@ package state
 			if (!_hud)
 			{
 				_hud = new HUDScreen();
-				Core.screen_manager.addScreen(_hud, {});
+				Core.screen_manager.addScreen(_hud, {replace:false } );
+				//_hud.y -= 100 + Math.random() * 10;
 			}
 			
 			
@@ -165,9 +168,9 @@ package state
 			}
 			if (_hud)
 			{
-				_hud.destroy();
-				Core.screen_manager.removeScreen(_hud);
-				_hud = null;
+				//_hud.destroy();
+				//Core.screen_manager.removeScreen(_hud);
+				//_hud = null;
 			}
 			if (_inventory)
 			{

@@ -220,7 +220,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_TELEPORT>
-			<START x="3456.000" y="416.000"/>
+			<START x="3424.000" y="416.000"/>
 			<ID link_id="null" guid="476330A0-D2F2-8061-213A-697636BAFD56"/>
 			<CLASS name="MARKER_TELEPORT"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -232,6 +232,20 @@
 			<PROPS>				
 			</PROPS>
 		</MARKER_TELEPORT>
+		<MARKER_ENCOUNTER>
+			<START x="576.000" y="416.000"/>
+			<ID link_id="null" guid="3E86ABF7-D8C2-5F75-0813-2089523FE9B3"/>
+			<CLASS name="MARKER_ENCOUNTER"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_encounterList>TEST_DAMAGE</p_encounterList>
+			</PROPS>
+		</MARKER_ENCOUNTER>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

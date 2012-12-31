@@ -22,6 +22,20 @@
 		</LAYER>
 	</LAYERS>
 	<OBJECTS>
+		<MARKER_ENCOUNTER>
+			<START x="544.000" y="416.000"/>
+			<ID link_id="null" guid="C54ADF1E-AB52-557D-81F7-09608FC9B0A1"/>
+			<CLASS name="MARKER_ENCOUNTER"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_encounterList>TEST_RANK</p_encounterList>
+			</PROPS>
+		</MARKER_ENCOUNTER>
 		<PLAYER>
 			<START x="448.000" y="384.000"/>
 			<ID link_id="null" guid="3E0FFA10-A4E6-F4BC-AD17-F7CA6225C6EC"/>
@@ -48,6 +62,19 @@
 			<PROPS>				
 			</PROPS>
 		</MARKER_START>
+		<MARKER_FINISH>
+			<START x="3456.000" y="416.000"/>
+			<ID link_id="null" guid="403C25F5-DC2F-2434-8C72-01EFAEF825E3"/>
+			<CLASS name="MARKER_FINISH"/>
+			<SIZE width="16.000" height="16.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+			</PROPS>
+		</MARKER_FINISH>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>
