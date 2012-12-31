@@ -81,19 +81,19 @@
 			<PROPS>				
 			</PROPS>
 		</MARKER_START>
-		<REEDS>
-			<START x="3456.000" y="416.000"/>
-			<ID link_id="null" guid="403C25F5-DC2F-2434-8C72-01EFAEF825E3"/>
-			<CLASS name="PICKUP_ITEM"/>
-			<SIZE width="32.000" height="32.000"/>
+		<MARKER_FINISH>
+			<START x="3392.000" y="416.000"/>
+			<ID link_id="null" guid="C9865F90-BBE1-3FA9-A7B9-EE16673C37E1"/>
+			<CLASS name="MARKER_FINISH"/>
+			<SIZE width="16.000" height="16.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="32" height="32"/>
+			<BOUNDS x="0" y="0"  width="16" height="16"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</REEDS>
+		</MARKER_FINISH>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

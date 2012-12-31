@@ -92,8 +92,8 @@ package base.structs.encounters
 				{
 					if ($player.invView)
 					{
-					_matchedItems = $player.invView.hasItem(rec.itemKeys);
-					checkItems = (_matchedItems && _matchedItems.length > 0);
+						_matchedItems = $player.invView.hasItem(rec.itemKeys);
+						checkItems = (_matchedItems && _matchedItems.length > 0);
 					}
 					else
 					{

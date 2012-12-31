@@ -164,6 +164,7 @@
 		<!-- UNFINIDHED! -->
 		<!-- RANDOM EVENTS-->
 		<!-- THIRST-->
+		
 		<ENCOUNTER key="THIRST" title="Lost in the Desert" >
 			<TEXT body="You get lost in the endless sands of the desert. Dehydration starts to set in, what will you do."/>
 			<CHOICE>
@@ -314,17 +315,8 @@
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
-
-		<ENCOUNTER key="TEST_PHAR" title="A Test Event" >
-			<TEXT body="You find a dead pharoa, woot woot"/>
-			<CHOICE>
-				<TEXT description="Loot his body like it's going out of fasion" />
-				<RESULT>
-					<TEXT body="You get loads of phat loot" />
-					<ITEM_ADD itemKeys="ROD,STAFF,HEADDRESS,CROOK" />
-				</RESULT>
-			</CHOICE>
-		</ENCOUNTER>
+		
+		
 		
 		<ENCOUNTER key="TEST" title="A Test Event" >
 			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
@@ -340,54 +332,260 @@
 	
 		<!-- END RANDOM EVENTS-->
 		<!-- AFTERLIFE -->
-		<ENCOUNTER key="TEST" title="A Test Event" >
-			<TEXT body="A wild grue appears, you wonder why since they aren't native to egypt"/>
+		<ENCOUNTER key="STYX" title="Styx and Stones" >
+			<TEXT body="You find yourself on the banks of the River Styx, dark and fast flowing, it is unlikely you will be able to cross by yourself. The ferryman is here."/>
 			<CHOICE>
-				<TEXT description="Ignore this and carry on" />
+				<TEXT description="Try to swim across" />
 				<RESULT>
-					<TEXT body="Nothing happens" />
+					<TEXT body="You nearly drown trying to swim across the river, it's a mirical you even made it to the other side." />
+					<HEALTH_CHANGE value="-60" />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Give the Grue an Ankh" />
-				
+				<TEXT description="Pay the ferry man some coins" />
+				<REQUIRES itemKeys="COINS"/>
+				<REQUIRES itemKeys="MONEYBAG"/>
 				<RESULT>
-					<ITEM_REMOVE itemKeys="ANKH"/>
-					<TEXT body="Your rank was increased by one" />
-					<ITEM_ADD itemKeys="CRYSTALSKULL"/>
-					<RANK_UP/>
+					<TEXT body="You pay the ferry man a few coins to take you across the river, he gladly oblighes you." />
+					<ITEM_REMOVE itemKeys="COINS,MONEYBAG"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="Use either a SKULL or a JEWEL & KEY to escape to the grue" />
-				<REQUIRES itemKeys="CRYSTALSKULL"/>
-				<REQUIRES itemKeys="JEWEL,KEY"/>
+				<TEXT description="Fasion a raft out REEDS and an RUDDER" />
+				<REQUIRES itemKeys="OAR,RUDDER"/>
 				<RESULT>
-					<TEXT body="The text that appears after you have confirmed your choice" />
-					<ITEM_REMOVE itemKeys="JEWEL"/>
+					<TEXT body="You build a craft out of the REEDS you where carrying and the RUDDER (man, I bet you thought they where useless). It's a bit leaky but you make it." />
+					<ITEM_REMOVE itemKeys="RUDDER"/>
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
-				<TEXT description="This option has a health requirement" />
-				<REQUIRES health="25"/>
+				<TEXT description="Use your PHAROAH SUPER POWERS to fly across" />
+				<REQUIRES itemKeys="CROOK, ROD,HEADDRESS"/>
 				<RESULT>
-					<TEXT body="The Grue is not amused" />
-					<HEALTH_CHANGE value="-25" />
+					<TEXT body="Pharoah powers AWAY! You woosh off over the river. Walking is for chumps." />
 				</RESULT>
 			</CHOICE>
 		</ENCOUNTER>
+
+		<ENCOUNTER key="HEART" title="Test of Anubis" >
+			<TEXT body="You reach your final desination, judgement by Anubis. How will your heart weight up."/>
+			<CHOICE>
+				<TEXT description="Test of Endurance" />
+				<RESULT>
+					<TEXT body="Having shown no other redeeming qualitys (seriously, what have you been doing with your life) the only way to prove your worth is with endurance against a crippling assault" />
+					<HEALTH_CHANGE value="-95" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Worth. Warefare, Architecture and Maths or Religion" />
+				<REQUIRES itemKeys="SWORD,DAGGER,BOW,QUIVER"/>
+				<REQUIRES itemKeys="GEOMETRY,ABACUS"/>
+				<REQUIRES itemKeys="STAFF"/>
+				<RESULT>
+					<TEXT body="Anubis Judges you worthy, given your dedication to your career" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Leadership. Become the leader of the Egyptian People" />
+				<REQUIRES itemKeys="CROOK, ROD,HEADDRESS"/>
+				<RESULT>
+					<TEXT body="Pharoah powers go! Even Anubis can't stop a man in such an awesome outfit." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Test of Bribery. What?! Anubis want's to get paid too..." />
+				<REQUIRES itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
+				<RESULT>
+					<TEXT body="You bribe Anubis outrageously. It works too." />
+					<ITEM_REMOVE itemKeys="COINS,MONEYBAG,GOLD,JEWEL"/>
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="TALK_AFTER" title="Lonlieness Sets In..." >
+			<TEXT body="After a hours of walking through desolate cold wastes you start to feel quite alone. If only there where someone to talk to"/>
+			<CHOICE>
+				<TEXT description="Talk to yourself" />
+				<RESULT>
+					<TEXT body="You spend some time talking to yourself, eventually agreeing with yourself that all it achieves is further detriment to your sanity" />
+					<HEALTH_CHANGE value="-15" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Talk to your cat" />
+				<REQUIRES itemKeys="CAT"/>
+				<RESULT>
+					<TEXT body="You decide to talk to your cat. This turns out to be a purrfect idea since it can now speak and relates to you many interesting and useful things about the afterlife" />
+					<HEALTH_CHANGE value="15" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Talk to your slave" />
+				<REQUIRES itemKeys="EMBALMEDSLAVE"/>
+				<RESULT>
+					<TEXT body="You talk to your slave companion. He doesn't have much more to say in death than he did in life. Still, better than no-one." />
+					<HEALTH_CHANGE value="5" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Talk to Yorik the Crystal Skull" />
+				<REQUIRES itemKeys="CRYSTALSKULL"/>
+				<RESULT>
+					<TEXT body="You have a chat with the Crystal Skull. He relates to you many interesting about what it's like to look like a tacky paperweight and what it was like working with Harrison Ford and Shaia Leboueff" />
+					<HEALTH_CHANGE value="25" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="SOULS" title="The Souls of the Damned">
+			<TEXT body="Howls fill you ears and ghostly shapes crawl from the ground. The spirits of other souls have come to tear away your life force"/>
+			<CHOICE>
+				<TEXT description="Run Away!" />
+				<RESULT>
+					<TEXT body="You flee as quickly as you can, not before several of the attacking souls tear some deep rents in your flesh." />
+					<HEALTH_CHANGE value="-35" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Banish them back to whence the came." />
+				<REQUIRES itemKeys="STAFF"/>
+				<RESULT>
+					<TEXT body="The blessed power of the staff you have give you the ability to banish the souls back to the misery they came from. They quickly retreat leaving silence to reign once again." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Sacrafice your slave to get rid of them" />
+				<REQUIRES itemKeys="EMBALMEDSLAVE"/>
+				<RESULT>
+					<TEXT body="With a choice of either you or him, you chose you leave your companion slave to be mobbed by the angry spritits whilst you make your escape." />
+					<REMOVE_ITEM itemKeys="EMBALMEDSLAVE"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use your preserved STOMACH to consume them" />
+				<REQUIRES itemKeys="STOMACH"/>
+				<RESULT>
+					<TEXT body="The preserved spirit of your STOMACH to consume the other souls, strengthening your own." />
+					<HEALTH_CHANGE value="35" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="SMOG" title="The Smog of the Underworld" >
+			<TEXT body="Small whisps of mist quickly form around you to become a thick impententrable fog. You find it hard to breath with it smothering you. Best find a way out quickly"/>
+			<CHOICE>
+				<TEXT description="Struggle out on foot" />
+				<RESULT>
+					<TEXT body="You stagger helplessly around in the smog for what seems like hours. It's chilling you to the bone and almost impossible to breath. Eventually you pass out." />
+					<HEALTH_CHANGE value="-35" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use the Torch to find a way out." />
+				<REQUIRES itemKeys="TORCH"/>
+				<RESULT>
+					<TEXT body="With the torch in hand it's much easier to navigate your way out of the unnatural smog and you eventually escape, with just a little wheeze to remeber it by. Unfortunatly the moisture was too much for the torch and it goes out." />
+					<REMOVE_ITEM itemKeys="TORCH"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Trust to luck" />
+				<REQUIRES itemKeys="SCARAB"/>
+				<RESULT>
+					<TEXT body="You decide to put it down to luck to get out and just head of straight in a single direction. Amazingly you make out fairly quickly" />
+					<HEALTH_CHANGE value="5" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use your preserved LUNGS" />
+				<REQUIRES itemKeys="LUNGS"/>
+				<RESULT>
+					<TEXT body="The preserved spirit of your LUNGS let you blow the smog away and you pass easily through the area." />
+					<HEALTH_CHANGE value="15" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+
+		<ENCOUNTER key="MAZE" title="Puzzlemurder Deathmaze" >
+			<TEXT body="You come across a giantic maze, certainly too big to walk around. Based on it's sheer size it will take a few days to walk through assuming your don't get lost. Think fast!"/>
+			<CHOICE>
+				<TEXT description="I can't think fast" />
+				<RESULT>
+					<TEXT body="You are stuck in the maze for nearly two months before you find your way out. You feel broken" />
+					<HEALTH_CHANGE value="-45" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use the Ink and Papyrus to solve the mazed" />
+				<REQUIRES itemKeys="INK,PAPYRUS"/>
+				<RESULT>
+					<TEXT body="Using the ink and papyrus you are able to take detailed notes on the maze layout. With this information you are able to conquere it in a few days" />
+					<REMOVE_ITEM itemKeys="INK,PAPYRUS"/>
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use the Key to Unlock the Maze" />
+				<REQUIRES itemKeys="KEY"/>
+				<RESULT>
+					<TEXT body="Pretty abstract but then again the key has been pretty much useless for everything else. It easily unlocks the secrets of the maze and you breeze right through. Amazing" />
+					<HEALTH_CHANGE value="15" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use your preserved INTESTINES" />
+				<REQUIRES itemKeys="INTESTINES"/>
+				<RESULT>
+					<TEXT body="Well it's kind of like string. A lot more digusting, but it certainly does the job. By rolling out behind you to see where you've been you manage to solve the maze quite quickly." />
+					<HEALTH_CHANGE value="5" />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<ENCOUNTER key="FIRE_RIVER" title="River of Fire" >
+			<TEXT body="A sprawing river of fire is ahead of you, it pop's hisses and steams hatred. By the lay of the land you are going to have to cross it at it's narrowest point. Dotted around the banks are huge stone pillers going up into the sky. What do you do?"/>
+			<CHOICE>
+				<TEXT description="I can jump this!" />
+				<RESULT>
+					<TEXT body="You can jump this, just not without setting yourself on fire. You end up burning for a while, it burns and it stings." />
+					<HEALTH_CHANGE value="-45" />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="I can jump that (in my Chariot)" />
+				<REQUIRES itemKeys="CHARIOT"/>
+				<RESULT>
+					<TEXT body="You urge the horses in to a gallop and jump the small gap with such amazing grace that it should have been filmed in slow motion." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Apply the power of geometry and maths" />
+				<REQUIRES itemKeys="ABACUS,GEOMETRY"/>
+				<RESULT>
+					<TEXT body="Using your knowledge of angles and leveerage you manage to knock of the pillars down in such a way that it makes a new bridge across the river." />
+				</RESULT>
+			</CHOICE>
+			<CHOICE>
+				<TEXT description="Use your preserved LIVER" />
+				<REQUIRES itemKeys="LIVER"/>
+				<RESULT>
+					<TEXT body="Your preserved LIVER is so powerful that you just walk through the lava. No problem." />
+				</RESULT>
+			</CHOICE>
+		</ENCOUNTER>
+		
+		<!-- END AFTERLIFE -->
 		<ENCOUNTER key="CAVE" title="A Spooooky Cave" >
 			<TEXT body="You discover a dark cave, what could be hidden deep inside"/>
 			<CHOICE>
-				<TEXT description="Nothing but junk, lets keep walking" />
+				<TEXT description="Just keep walking" />
 				<RESULT>
-					<TEXT body="Nothing happens" />
+					<TEXT body="Obviously there could be nothing useful or valuable in such a prominant obvious looking cave. You just walk on by." />
 				</RESULT>
 			</CHOICE>
 			<CHOICE>
 				<TEXT description="Explore the dark cave" />
 				<RESULT>
-					<TEXT body="You are attacked by a grue" />
+					<TEXT body="You fumble, stumble and fall around in the pitch dark achiveing nothing but a bunch of deep cuts and embaressment" />
 					<HEALTH_CHANGE value="-25" />
 				</RESULT>
 			</CHOICE>
