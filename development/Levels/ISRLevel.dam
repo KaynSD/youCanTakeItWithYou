@@ -2,12 +2,12 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-1096" y="166"/>
+  <viewPos x="240" y="166"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
     <group name="area_life" id="0" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
-      <maplayer name="Parralaxing_Far" id="0" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+      <maplayer name="Parralaxing_Far" id="0" xScroll="0.1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71</row>
         <row>87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87</row>
@@ -19,7 +19,7 @@
         <row>0,0,33,34,35,36,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0</row>
         <row>0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
       </maplayer>
-      <maplayer name="BGTiles" id="2" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
+      <maplayer name="BGTiles" id="2" xScroll="1" yScroll="1" x="256" y="0" width="80" height="4" tileset="../../deploy/assets/graphics/tileset/tiling.png" tileWidth="128" tileHeight="128" visible="true" hasHits="false" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="128" tileSpacingY="128" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
         <row>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,8,11,10,9,10,11,14,0,0,0,0,0,0,0,0,0,8,12,12,14,0,0,0,0,0,0,0,0,63,15,0,0,65,66,67,0,0,0,8,9,10,11,12,13,14,0,63,15,0,0,0,0,0,0,0,0</row>
         <row>0,0,0,0,0,0,0,42,0,31,0,39,0,0,0,0,0,0,0,0,0,0,0,0,24,27,26,26,26,27,30,0,0,0,0,0,0,0,0,0,24,28,29,30,0,0,0,0,0,0,0,0,0,0,0,80,81,82,83,0,0,0,24,25,26,27,28,29,30,0,0,0,0,0,0,0,0,0,0,0</row>
