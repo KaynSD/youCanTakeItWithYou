@@ -15,7 +15,7 @@
 					 description="Your guidebook to the world after this one" />
 	</BOOKOFTHEDEAD>
 	<CRYSTALSKULL>
-		<DIMENSIONS>XX,XX,OX</DIMENSIONS>
+		<DIMENSIONS>XX,XX,XO</DIMENSIONS>
 		<POINTS MINIMUM="800"
 				MAXIMUM="900" />
 		<DESCRIPTION name="Crystal Skull"

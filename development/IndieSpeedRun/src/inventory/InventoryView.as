@@ -19,8 +19,8 @@ package inventory
 		protected var _inventory:Inventory;
 		protected var _grid:FlxGroup;
 		
-		protected var _rows:int = 8;
-		protected var _cols:int = 12;
+		protected var _rows:int = 5;
+		protected var _cols:int = 9;
 		protected var _cellWidth:int = 32;
 		
 		protected var _gridData:Vector.<Vector.<InventoryCell>>
