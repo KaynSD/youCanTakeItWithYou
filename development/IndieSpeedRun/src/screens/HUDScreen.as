@@ -1,6 +1,5 @@
 package screens 
 {
-	import base.events.GameEvent;
 	import base.events.ISRGodSpeaksEvent;
 	import base.events.UIEvent;
 	import com.greensock.plugins.AutoAlphaPlugin;
@@ -8,14 +7,11 @@ package screens
 	import com.greensock.TweenLite;
 	import com.p3.utils.functions.P3FormatNumber;
 	import entities.Player;
-	import flash.display.Graphics;
 	import flash.display.MovieClip;
 	import flash.events.Event;
-	import flash.events.MouseEvent;
 	import gfx.ClipHUD;
-	import gfx.HUDScreenClip;
+	import helpers.NameGenerator;
 	import inventory.elements.InventoryISREvent;
-	import org.flixel.FlxG;
 	import screens.basic.BasicScreen;
 	
 	/**
@@ -24,6 +20,7 @@ package screens
 	 */
 	public class HUDScreen extends BasicScreen 
 	{
+		private var generatedName:String;
 		
 		protected var _mouseArea:MovieClip;
 		protected var _graphics:ClipHUD = new ClipHUD ();
@@ -53,6 +50,14 @@ package screens
 			godSays();
 			
 			_currentScore = 0;
+		}
+		
+		override public function load():void 
+		{
+			var k:NameGenerator = new NameGenerator();
+			
+			generatedName = k.generateName();
+			super.load();
 		}
 		
 		override public function unload():void 
@@ -147,6 +152,7 @@ package screens
 			
 			_graphics.mc_healthBar.txt_value.text = player.health.toString() + "/100";
 			_graphics.txt_rank.text = "Rank : " + player.rank;
+			_graphics.txt_name.text = "Name: "+generatedName;
 			//visible = true
 			//trace("HUD PARENT" + parent)
 		}

@@ -14,6 +14,8 @@ package inventory
 	import org.flixel.FlxGroup;
 	import org.flixel.FlxPoint;
 	import org.flixel.FlxSprite;
+	import world.engine.Level;
+	import world.World;
 	
 	/**
 	 * ...
@@ -67,7 +69,12 @@ package inventory
 		}
 		private function handleSwitchToDeath(e:UIEvent):void 
 		{
-			switchExistence(false);
+			if(e.dispatcher is World){
+			var level:Level = World(e.dispatcher).level
+			switchExistence(level.area.key == "area_life");
+			} else {
+				trace("Bad dispatch?");
+			}
 		}
 		
 		
