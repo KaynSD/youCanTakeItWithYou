@@ -88,7 +88,7 @@
 		<DIMENSIONS>XX,OX,XX</DIMENSIONS>
 		<POINTS MINIMUM="100"
 				MAXIMUM="230" />
-		<DESCRIPTION name="Asp"
+		<DESCRIPTION name="Cobra"
 					 description="You have a cobra. Why do you have a cobra?" />
 	</COBRA>
 	<AXE>

@@ -89,7 +89,7 @@ package screens
 				case ISRGodSpeaksEvent.ANUBIS_SAYS:
 				case ISRGodSpeaksEvent.SET_SAYS:
 					_graphics.god_mc.alpha = 0.5;
-					_graphics.god_mc.gotoAndStop(e.type == ISRGodSpeaksEvent.OSIRIS_SAYS ? "osiris" : ISRGodSpeaksEvent.ANUBIS_SAYS ? "anubis" : "set");
+					_graphics.god_mc.gotoAndStop(e.type == ISRGodSpeaksEvent.OSIRIS_SAYS ? "osiris" : e.type ==  ISRGodSpeaksEvent.ANUBIS_SAYS ? "anubis" : "set");
 					TweenLite.to(_graphics.god_mc, 0.5, { autoAlpha:1 } );
 					_graphics.god_mc.text_txt.text = e.message;
 					TweenLite.delayedCall(5.0, stopGodSays);
