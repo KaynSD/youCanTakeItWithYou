@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
   <spriteEntries currentId="53">
-    <group name="Pickups" idx="2" open="true">
+    <group name="Pickups" idx="2" open="false">
       <group name="In Progress" idx="3" open="true">
         <tileEntry name="ABACUS" idx="4" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/abacus.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
         <tileEntry name="AXE" idx="5" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/axe.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
@@ -48,7 +48,7 @@
       <tileEntry name="CROOK" idx="48" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/crook.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
       <tileEntry name="CHARIOT" idx="49" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/chariot.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
       <tileEntry name="UFO" idx="50" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/ufo.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
-      <tileEntry name="EMBALMINGTOOLS" idx="52" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/embalmingtools.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false" selected="true"/>
+      <tileEntry name="EMBALMINGTOOLS" idx="52" className="PICKUP_ITEM" image="../../deploy/assets/graphics/pickups/entity/embalmingtools.png" offsetX="0" offsetY="0" width="32" height="32" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
     </group>
     <group name="Background" idx="38" open="false">
       <tileEntry name="BG_PLACEHOLDER" idx="39" className="BACKGROUND" image="../../deploy/assets/graphics/background/background_back.png" offsetX="0" offsetY="0" width="128" height="128" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="128" boundsHeight="128" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>

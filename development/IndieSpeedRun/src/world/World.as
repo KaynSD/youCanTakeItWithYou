@@ -409,7 +409,7 @@ package world
 			else if ($area.key == "area_death")  
 			{
 				_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
-			FlxG.playMusic(Core.lib.int.snd_mus_dead)
+				FlxG.playMusic(Core.lib.int.snd_mus_dead)
 			}
 			if (!_player) _player = new Player ()
 			deserializeTiles($area.xml.LAYERS.*)
@@ -434,7 +434,7 @@ package world
 				
 				var new_tiles:DynamicTilemap = new DynamicTilemap ();		
 				isCollision = item.@collide == "true"
-				//new_tiles.scrollFactor = new FlxPoint(item.@sf_x, item.@sf_y);
+				new_tiles.scrollFactor = new FlxPoint(item.@scroll_x, item.@scroll_y);
 				_tilemaps.push(new_tiles);
 				if (item.@collide == "true")
 				{
