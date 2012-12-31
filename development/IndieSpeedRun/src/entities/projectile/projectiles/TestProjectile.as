@@ -4,7 +4,7 @@ package entities.projectile.projectiles
 	
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class TestProjectile extends Projectile 
 	{

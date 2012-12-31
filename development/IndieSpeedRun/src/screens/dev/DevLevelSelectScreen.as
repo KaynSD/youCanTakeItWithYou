@@ -1,6 +1,5 @@
 package screens.dev 
 {
-	import base.events.DataEvent;
 	import base.events.LibraryEvent;
 	import flash.display.MovieClip;
 	import flash.events.Event;
@@ -52,13 +51,10 @@ package screens.dev
 			var levels:Vector.<Level> = Core.control.getLevelList();
 			for each (var item:Level in levels)
 			{
-				if (!button)
-				{
-					button = new LevelIconClip ();
-					button.y = next_button_y;
-					button.x = next_button_x;
-					addChild(button);
-				}
+				button = new LevelIconClip ();
+				button.y = next_button_y;
+				button.x = next_button_x;
+				addChild(button);
 				button.txt_author.text = item.header.author;
 				button.txt_index.text = item.header.index.toString();
 				button.txt_key.text = item.header.key;

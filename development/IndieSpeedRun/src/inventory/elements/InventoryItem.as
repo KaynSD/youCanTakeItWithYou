@@ -54,6 +54,11 @@ package inventory.elements
 			return _identifierS;
 		}
 		
+		override public function destroy():void 
+		{
+			super.destroy();
+			removeEventListeners();
+		}
 		
 		override public function update():void 
 		{

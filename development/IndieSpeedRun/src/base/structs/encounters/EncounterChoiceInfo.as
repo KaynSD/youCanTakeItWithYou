@@ -1,5 +1,8 @@
 package base.structs.encounters 
 {
+	import base.events.EntityEvent;
+	import base.events.GameEvent;
+	import entities.pickups.PickupItem;
 	import entities.Player;
 	import inventory.elements.InventoryISREvent;
 	import inventory.elements.InventoryItem;
@@ -7,7 +10,7 @@ package base.structs.encounters
 	import state.PlayState;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EncounterChoiceInfo 
 	{
@@ -102,6 +105,7 @@ package base.structs.encounters
 					
 				}
 			}
+			
 			return _isPossible;
 		}
 		
@@ -119,6 +123,17 @@ package base.structs.encounters
 			if (_resultHealthChange < 0)
 			{
 				$player.hurt( -_resultHealthChange);
+			}
+			if (_resultItemAddKeys && _resultItemAddKeys.length > 0)
+			{
+				for each (var key:String in _resultItemAddKeys)
+				{
+					var pickupItem:PickupItem = new PickupItem ()
+					pickupItem.setItem(Core.items.createItem(key));
+					pickupItem.reset($player.x, $player.y);
+					$player.dropPickup(pickupItem)
+					Core.control.dispatchEvent(new EntityEvent(EntityEvent.ADD_TO_WORLD, pickupItem));
+				}
 			}
 			 //+= _resultHealthChange;
 		}

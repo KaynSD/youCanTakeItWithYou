@@ -68,7 +68,7 @@ package state
 			if (P3Globals.localMode) bindCheats();
 
 			FlxG.addPlugin(Core.cheats);
-			FlxG.switchState(new MenuState(InitScreen));
+			FlxG.switchState(new MenuState(TitleScreen));
 		}
 		
 		private function bindCheats ():void {
@@ -98,6 +98,8 @@ package state
 			Core.registry.registerClass(PickupItem, "PICKUP_ITEM");
 			
 			Core.registry.registerClass(MarkerEncounter, "MARKER_ENCOUNTER");
+			Core.registry.registerClass(MarkerTeleport, "MARKER_TELEPORT");
+			Core.registry.registerClass(MarkerFinish, "MARKER_FINISH");
 		}
 		
 		//TODO - wrap this function inside the Library.

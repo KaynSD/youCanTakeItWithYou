@@ -1,7 +1,6 @@
 package base.components 
 {
 	import assets.InternalAssets;
-	import base.events.DataEvent;
 	import base.events.LibraryEvent;
 	import base.events.UIEvent;
 	import base.structs.assets.GraphicAsset;

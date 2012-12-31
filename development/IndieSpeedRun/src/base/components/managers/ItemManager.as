@@ -3,7 +3,7 @@ package base.components.managers
 	import inventory.elements.InventoryItem;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class ItemManager 
 	{

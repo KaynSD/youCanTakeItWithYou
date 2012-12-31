@@ -9,7 +9,7 @@ package entities.pickups
 	import world.World;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class PickupItem extends Pickup
 	{
@@ -23,19 +23,27 @@ package entities.pickups
 			super();
 			_mousePos = new FlxPoint ();
 			_isCollision = false;
-			
+			immovable = false;
+		}
+		
+		override public function deserialize($xml:XML):void 
+		{
+			super.deserialize($xml);
+			_invItem =  Core.items.createItem(_xml_name);
 		}
 		
 		override public function init($world:World):void 
 		{
+			
 			super.init($world); 
 			loadNativeGraphics(false, false);
-			_invItem =  Core.items.createItem(_xml_name);
+			acceleration.y = 500;
 		}
 		
 		public function setItem ($invItem:InventoryItem):void
 		{
 			_invItem = $invItem;
+			_xml_name = String($invItem.identifier.split("_")[0]).toUpperCase();
 		}
 		
 		override public function onCollect($player:Player):void 
@@ -43,6 +51,7 @@ package entities.pickups
 			super.onCollect($player);
 			if (Core.control.isCollectAllowed)
 			{
+				_invItem.reset(x,y);
 				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.COLLECT_ITEM, _invItem));
 			}
 			
@@ -64,6 +73,11 @@ package entities.pickups
 			{
 				color = 0xFFFFFF;
 			}
+		}
+		
+		public function get invItem():InventoryItem 
+		{
+			return _invItem;
 		}
 		
 	}

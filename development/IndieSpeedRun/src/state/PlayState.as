@@ -1,6 +1,5 @@
 package state 
 {
-	import base.events.DataEvent;
 	import base.events.GameEvent;
 	import base.events.ISRGameEvent;
 	import base.events.UIEvent;
@@ -49,6 +48,7 @@ package state
 			Core.control.addEventListener(UIEvent.SHOW_DEBUG, onShowDebug);
 			Core.control.addEventListener(GameEvent.LEVEL_RESTART, onLevelRestart);
 			Core.control.addEventListener(GameEvent.LEVEL_QUIT, onLevelQuit);
+			Core.control.addEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
 		}
 		
 		private function onGainPoints(e:ISRGameEvent):void 
@@ -60,12 +60,16 @@ package state
 		{
 			trace("create play state");
 			_levelStarted = false;
-			if (!_hud) _hud = new HUDScreen();
+			if (!_hud)
+			{
+				_hud = new HUDScreen();
+				Core.screen_manager.addScreen(_hud, {});
+			}
 			
-			Core.screen_manager.addScreen(_hud, {});
+			
 		
 			// The Inventory!!
-			_inventory = new InventoryView(0,0) ;// add(new InventoryView());
+			if (!_inventory) _inventory = new InventoryView(0,0) ;// add(new InventoryView());
 			add(_inventory);
 			
 			if (!_world) _world = new World ();
@@ -79,7 +83,7 @@ package state
 			
 			
 			
-			Core.control.addEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
+			
 			
 			super.create();
 		}
@@ -101,17 +105,17 @@ package state
 		
 		private function removeItemFromInventory(e:InventoryISREvent):void 
 		{
-			_inventory.removeItem(e.item);
+			if (_inventory) _inventory.removeItem(e.item);
 		}
 		
 		private function positionItemInInventory(e:InventoryISREvent):void 
 		{
-			_inventory.addItem(e.item);
+			if (_inventory) _inventory.addItem(e.item);
 		}
 		
 		private function checkSpacesInInventory(e:InventoryISREvent):void 
 		{
-			_inventory.checkItemPositions(e.item);
+			if (_inventory) _inventory.checkItemPositions(e.item);
 		}
 		
 		override public function update():void 
@@ -132,7 +136,16 @@ package state
 			Core.control.removeEventListener(UIEvent.SHOW_DEBUG, onShowDebug);
 			Core.control.removeEventListener(GameEvent.LEVEL_RESTART, onLevelRestart);
 			Core.control.removeEventListener(GameEvent.LEVEL_QUIT, onLevelQuit);
-			Core.control.removeEventListener(ISRGameEvent.GAIN_POINTS, onGainPoints);
+			Core.control.removeEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
+			//Core.control.removeEventListener(GameEvent.LEVEL_END, onLevelEnd);
+			//Core.control.removeEventListener(GameEvent.GAME_PAUSE, onGamePause);
+			//Core.control.removeEventListener(GameEvent.GAME_RESUME, onGameResume);
+			//Core.control.removeEventListener(GameEvent.GAME_END, onGameEnd);
+			//Core.control.removeEventListener(UIEvent.SHOW_DEBUG, onShowDebug);
+			//Core.control.removeEventListener(GameEvent.LEVEL_RESTART, onLevelRestart);
+			//Core.control.removeEventListener(GameEvent.LEVEL_QUIT, onLevelQuit);
+			//Core.control.removeEventListener(ISRGameEvent.GAIN_POINTS, onGainPoints);
+			//Core.control.removeEventListener(InventoryISREvent.COLLECT_ITEM, createNewItem);
 		}
 		
 		override public function destroy():void 
@@ -147,14 +160,24 @@ package state
 			if (_world)
 			{
 				remove(_world);
-				_world.destroy();			
+				_world.destroy();	
+				_world = null;
 			}
 			if (_hud)
 			{
 				_hud.destroy();
+				Core.screen_manager.removeScreen(_hud);
+				_hud = null;
 			}
-			Core.screen_manager.removeScreen(_hud);
-			_hud = null;
+			if (_inventory)
+			{
+				_inventory.kill();
+				_inventory.destroy();
+				_inventory = null;
+			}
+			
+			remove(_inventory);
+			
 			//destroy();
 		}
 		

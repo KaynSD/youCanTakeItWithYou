@@ -2,7 +2,7 @@ package base.structs.encounters
 {
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class EncounterRequiresInfo 
 	{

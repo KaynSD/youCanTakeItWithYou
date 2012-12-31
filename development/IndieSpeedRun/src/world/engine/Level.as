@@ -58,7 +58,7 @@ package world.engine
 		
 		public function destroy():void 
 		{
-			
+			Core.control.removeEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
 		}
 		
 		public function setArea($key:String):void 

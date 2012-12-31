@@ -1,6 +1,5 @@
 package world 
 {
-	import base.events.DataEvent;
 	import base.events.EmitterEvent;
 	import base.events.EntityEvent;
 	import base.events.GameEvent;
@@ -9,6 +8,7 @@ package world
 	import base.events.UIEvent;
 	import base.interfaces.ISerializedObject;
 	import base.structs.encounters.EncounterChoiceInfo;
+	import com.greensock.TweenMax;
 	import com.p3.datastructures.P3FileBrowser;
 	import effects.EmitterEffect;
 	import effects.filters.PostProcess;
@@ -29,6 +29,7 @@ package world
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
+	import flash.media.Camera;
 	import flash.utils.ByteArray;
 	import flash.utils.Dictionary;
 	import inventory.elements.InventoryISREvent;
@@ -141,8 +142,12 @@ package world
 			addListeners();
 			init();
 			_pickupItems = new Dictionary ();
-			if (_level&& _level.isLoaded) onLevelLoaded();
-			else Core.control.addEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
+			if (_level)
+			{
+				if ( _level.isLoaded) onLevelLoaded();
+				else Core.control.addEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
+			}
+			
 		}
 		
 		override public function draw():void 
@@ -254,6 +259,40 @@ package world
 			
 			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, onItemDroppedInWorld);
 			Core.control.addEventListener(ISRGameEvent.EVENT_RESULT, onEventResult);
+			Core.control.addEventListener(EntityEvent.JUST_DIED, onPlayerJustDied);
+		}
+		
+		private function onPlayerJustDied(e:EntityEvent):void 
+		{
+			var player:Player = e.entity as Player;
+			if (player)
+			{
+				//advanceArea();
+				FlxG.fade(0xff000000, 0.5, onDeathFadeComplete, false)
+			}
+		}
+		
+		private function onDeathFadeComplete():void 
+		{
+			advanceArea();
+			FlxG.camera.stopFX();
+			FlxG.flash(0xff000000, 0.2, null, false)
+		}
+		
+
+		
+		private function advanceArea():void
+		{
+			if (_level.area.key == "area_life")
+			{
+				
+				switchArea("area_death", -1);
+				Core.control.playerLifeEnd();
+			}
+			else
+			{
+				Core.control.endLevel(false);
+			}
 		}
 		
 		private function onEventResult(e:ISRGameEvent):void 
@@ -264,7 +303,22 @@ package world
 		
 		private function onItemDroppedInWorld(e:InventoryISREvent):void 
 		{
-			//var pickup:PickupItem = _pickupItems[e.item]
+			var pickup:PickupItem = _pickupItems[e.item]
+			if (pickup)
+			{
+				pickup.invItem.kill();
+				pickup.reset(_player.x, player.y);
+				_player.dropPickup(pickup);
+			}
+			else
+			{
+				pickup = new PickupItem ();
+				pickup.setItem(pickup.invItem);
+				_player.dropPickup(pickup);
+				
+			}
+			addEntity(pickup);
+			
 		}
 		
 		private function onLevelRestart(e:GameEvent):void 
@@ -279,7 +333,7 @@ package world
 		
 		private function onSetCameraFocus(e:EntityEvent):void 
 		{
-			FlxG.camera.follow(e.entity);
+			FlxG.camera.follow(e.entity,FlxCamera.STYLE_PLATFORMER);
 		}
 		
 		private function onAddEntity(e:EntityEvent):void 
@@ -290,6 +344,7 @@ package world
 		private function onRemoveEmitter(e:EmitterEvent):void 
 		{
 			var emitter:FlxEmitter = e.emmitter;
+			_group_effects.remove(emitter, true)
 			_group_effects.remove(emitter, true)
 			emitter.destroy();
 		}
@@ -316,7 +371,7 @@ package world
 		}
 		
 		
-		private function onLevelLoaded ($e:DataEvent = null):void
+		private function onLevelLoaded ($e:LibraryEvent = null):void
 		{
 			if (!_level.area) 
 			{
@@ -445,10 +500,9 @@ package world
 			else if (e is Volume) _group_volumes.add(e);
 			else if (e is Background) target_group = _group_parallax;
 			else if (e.isForceBack) target_group = _group_bg;
-			
 			if (e is PickupItem)
 			{
-				//_pickupItems[
+				_pickupItems[(e as PickupItem).invItem] = e;
 			}
 			//else if (e.isForceFront)
 			//{
@@ -601,13 +655,16 @@ package world
 			switchArea(m.target , m.linked_id);
 		}
 		
+		
 		public function switchArea($key:String, $linked_id:int):void 
 		{
 			_isSwitchingAreas = true;
 			clearGroups();
-			_last_link_id = $linked_id;
+			//_last_link_id = $linked_id;
 			_level.setArea($key);
-			
+			initGroups();
+			addArea(_level.area);
+			//Core.control.dispatchEvent(new LibraryEvent(LibraryEvent.LEVEL_LOADED,null));
 		}
 		
 		override public function destroy():void 
@@ -621,8 +678,9 @@ package world
 			Core.control.removeEventListener(EntityEvent.SET_PLAYER_AREA, onSetPlayerArea);
 			Core.control.removeEventListener(EntityEvent.SET_PLAYER_START, onSetPlayerStart);
 			
-
+			Core.control.removeEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
 			_level.destroy();
+			if (_level) _level = null;
 			if (_player) _player.destroy();
 		}
 		

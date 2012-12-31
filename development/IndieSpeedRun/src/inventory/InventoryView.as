@@ -11,7 +11,7 @@ package inventory
 	import org.flixel.FlxPoint;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class InventoryView extends FlxGroup
 	{
@@ -222,6 +222,8 @@ package inventory
 			if (returns.length == 1) return returns;
 			return null;
 		}
+		
+
 	}
 
 }

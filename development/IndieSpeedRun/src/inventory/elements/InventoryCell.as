@@ -5,7 +5,7 @@ package inventory.elements
 	import org.flixel.FlxSprite;
 	/**
 	 * ...
-	 * @author Duncan Saunders - PlayerThree 2012
+	 * @author Duncan Saunders 
 	 */
 	public class InventoryCell extends FlxSprite
 	{

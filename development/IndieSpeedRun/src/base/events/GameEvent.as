@@ -21,6 +21,8 @@ package base.events
 		static public const LEVEL_RESTART:String = "levelRestart";
 		static public const LEVEL_QUIT:String = "levelQuit";
 		
+		static public const PLAYER_DIED:String = "playerDied";
+		
 		public function GameEvent($type:String) 
 		{ 
 			super($type, false, false);

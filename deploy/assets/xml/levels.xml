@@ -2,7 +2,7 @@
 <data>
 		<EXAMPLE_LEVEL>
 		   <!-- key refeances the unique name of the levels main XML document and the folder of it's included assets -->
-			  <ID key="test" index="1" />
+			  <ID key="the_prince" index="1" />
 			  <COPY name="A Cool Level Name"/>
 			  <THEME />
 			  <DEV author="Duncan" development="greybox"/>
