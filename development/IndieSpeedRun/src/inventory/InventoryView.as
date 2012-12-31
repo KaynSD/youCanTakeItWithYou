@@ -205,7 +205,7 @@ package inventory
 		public function hasItem(items:String):Vector.<InventoryItem>
 		{
 			
-			var input:Vector.<Array> = items.toLowerCase().split(",");
+			var input:Array = items.toLowerCase().split(",");
 			var returns:Vector.<InventoryItem> = new Vector.<InventoryItem>();
 			
 			if (input.length == 0) return null;
@@ -220,6 +220,7 @@ package inventory
 			
 			if (returns.length == 0) return null;
 			if (returns.length == 1) return returns;
+			return null;
 		}
 	}
 

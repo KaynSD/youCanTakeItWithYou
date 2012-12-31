@@ -60,14 +60,16 @@ package state
 		{
 			trace("create play state");
 			_levelStarted = false;
-			//if (!_hud) _hud = new HUDScreen();
-			if (!_world) _world = new World ();
-			add(_world); 
-			//Core.screen_manager.addScreen(_hud, {});
+			if (!_hud) _hud = new HUDScreen();
+			
+			Core.screen_manager.addScreen(_hud, {});
 		
 			// The Inventory!!
 			_inventory = new InventoryView(0,0) ;// add(new InventoryView());
 			add(_inventory);
+			
+			if (!_world) _world = new World ();
+			add(_world); 
 			//
 			//var inventoryItem:InventoryItem = new InventoryItem("key", [[1,0,1],[1,1,1]]);
 			//inventoryItem.x = 0;
@@ -200,6 +202,11 @@ package state
 		public function get world():World { return _world; }
 		
 		public function get hud():HUDScreen { return _hud; }
+		
+		public function get inventory():InventoryView 
+		{
+			return _inventory;
+		}
 		
 	}
 

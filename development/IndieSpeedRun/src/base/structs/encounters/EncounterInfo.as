@@ -1,5 +1,6 @@
 package base.structs.encounters 
 {
+	import entities.Player;
 	/**
 	 * ...
 	 * @author Duncan Saunders - PlayerThree 2012
@@ -29,6 +30,14 @@ package base.structs.encounters
 				var newChoice:EncounterChoiceInfo = new EncounterChoiceInfo ();
 				newChoice.deserialize(choice);
 				_choices.push(newChoice);
+			}
+		}
+		
+		public function validate($player:Player):void 
+		{
+			for each (var choice:EncounterChoiceInfo in _choices)
+			{
+				choice.validate($player);
 			}
 		}
 		

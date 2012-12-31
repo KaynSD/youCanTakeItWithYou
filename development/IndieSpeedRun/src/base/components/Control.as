@@ -49,19 +49,19 @@ package base.components
 		protected var _level_hashmap:HashmapSerialized;
 		protected var _level_list:Vector.<Level>;
 		
-		protected var _encounterManager:EncounterManager;
+		protected var _encManager:EncounterManager;
 		
 		public function Control(target:IEventDispatcher = null) 
 		{
 			_script_queue = new Vector.<String>()
-			_encounterManager = new EncounterManager ();
+			_encManager = new EncounterManager ();
 			super(target);
 		}
 		
 		public function init():void 
 		{
 			initLevelData();
-			_encounterManager.init(Core.xml.game.ENCOUNTERS[0]);
+			_encManager.init(Core.xml.game.ENCOUNTERS[0]);
 		}
 		
 		public function switchScreen ($new_screen:IP3Screen, $replace:Boolean = true, $transition:IP3Transition = null):void
@@ -231,12 +231,11 @@ package base.components
 			//_level.loadRemote($key);
 		}
 		
-		public function startEncounter($key:String):void 
+		public function startEncounter($enc:EncounterInfo):void 
 		{
-			var enc:EncounterInfo = _encounterManager.getEncounter($key);
 			pause();
 			var encScreen:EncounterChoiceScreen = new EncounterChoiceScreen ();
-			encScreen.initEncounter(enc);
+			encScreen.initEncounter($enc);
 			Core.screen_manager.addScreen(encScreen, { replace:false } );
 		}
 		
@@ -252,6 +251,11 @@ package base.components
 		public function get level():Level { return _level; }
 		
 		public function get level_hashmap():HashmapSerialized{ return _level_hashmap; }
+		
+		public function get encManager():EncounterManager 
+		{
+			return _encManager;
+		}
 
 		
 	}

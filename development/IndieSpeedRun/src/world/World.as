@@ -4,9 +4,11 @@ package world
 	import base.events.EmitterEvent;
 	import base.events.EntityEvent;
 	import base.events.GameEvent;
+	import base.events.ISRGameEvent;
 	import base.events.LibraryEvent;
 	import base.events.UIEvent;
 	import base.interfaces.ISerializedObject;
+	import base.structs.encounters.EncounterChoiceInfo;
 	import com.p3.datastructures.P3FileBrowser;
 	import effects.EmitterEffect;
 	import effects.filters.PostProcess;
@@ -251,6 +253,13 @@ package world
 			Core.control.addEventListener(GameEvent.MOUSE_CLICKED, onMousePressed);
 			
 			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, onItemDroppedInWorld);
+			Core.control.addEventListener(ISRGameEvent.EVENT_RESULT, onEventResult);
+		}
+		
+		private function onEventResult(e:ISRGameEvent):void 
+		{
+			var choice:EncounterChoiceInfo = e.data;
+			choice.triggerResult(player);
 		}
 		
 		private function onItemDroppedInWorld(e:InventoryISREvent):void 

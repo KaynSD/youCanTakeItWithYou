@@ -16,6 +16,7 @@ package base.events
 		static public const UI_UPDATE_INVENTORY:String = "uiUpdateInventory";
 		static public const GET_INVENTORY_ITEM:String = "getInventoryItem";
 		static public const GAIN_POINTS:String = "gainPoints";
+		static public const EVENT_RESULT:String = "eventResult";
 		
 		protected var _data:*
 		

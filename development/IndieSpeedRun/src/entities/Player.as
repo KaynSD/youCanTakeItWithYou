@@ -9,9 +9,12 @@ package entities
 	import entities.marker.MarkerCameraFocus;
 	import entities.Pickup;
 	import flash.events.Event;
+	import gui.popup.HUDEventPopup;
+	import inventory.InventoryView;
 	import org.flixel.FlxG;
 	import org.flixel.FlxTimer;
 	import org.flixel.system.input.Keyboard;
+	import state.PlayState;
 	import world.World;
 	/**
 	 * ...
@@ -28,6 +31,7 @@ package entities
 		
 		protected var _action:Action;
 		protected var _isAction:Boolean;
+		protected var _invView:InventoryView;
 
 		protected var _camera_focus:MarkerCameraFocus;
 		private var _ftx_control_lock:FlxTimer;
@@ -39,6 +43,7 @@ package entities
 			_action = new Action ();
 			_keys = FlxG.keys;
 			_xml_name = "PLAYER";
+			health = 100;
 			//Stats
 		}
 
@@ -90,6 +95,7 @@ package entities
 		{
 			super.init($world);
 			loadNativeGraphics(true, true);
+			_invView = PlayState(FlxG.state).inventory;
 			//makeGraphic(16, 32, 0xFFFF0000);
 		}
 		
@@ -163,6 +169,17 @@ package entities
 			super.update();
 		}
 		
+		override public function hurt(value:Number):void
+		{
+			super.hurt(value);
+			//health -= value;
+			Core.control.dispatchEvent(new UIEvent(UIEvent.UPDATE_PLAYER, this));
+			if (health < 0)
+			{
+				Core.control.endLevel(false)
+			}
+		}
+		
 		private function updateDeathBehavior():void 
 		{
 			
@@ -197,6 +214,11 @@ package entities
 		public function get isAction():Boolean { return _isAction; }
 		
 		public function get isInteract ():Boolean { return _isInteract; }
+		
+		public function get invView():InventoryView 
+		{
+			return _invView;
+		}
 		
 
 		

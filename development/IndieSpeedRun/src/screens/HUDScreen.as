@@ -1,9 +1,14 @@
 package screens 
 {
 	import base.events.GameEvent;
+	import base.events.UIEvent;
+	import entities.Player;
+	import flash.display.Graphics;
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import gfx.ClipHUD;
+	import gfx.HUDScreenClip;
 	import org.flixel.FlxG;
 	import screens.basic.BasicScreen;
 	
@@ -15,56 +20,45 @@ package screens
 	{
 		
 		protected var _mouseArea:MovieClip;
+		protected var _graphics:ClipHUD = new ClipHUD ();
 
 		public function HUDScreen() 
 		{
 			super();	
-			drawMouseArea();
+			addChild(_graphics);
+			//drawMouseArea();
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+			Core.control.addEventListener(UIEvent.UPDATE_PLAYER, onUpdatePlayer);
+			
+		}
+		
+		private function onUpdatePlayer(e:UIEvent):void 
+		{
+			var player:Player = e.dispatcher;
+			_graphics.mc_healthBar.mc_fill.width = (250 / 100) * player.health;
+			_graphics.mc_healthBar.txt_value.text = player.health.toString() + "/100";
+		}
+		
+		public function destroy():void 
+		{
 			
 		}
 		
 		private function onAddedToStage(e:Event):void 
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
-			if (_mouseArea)
-			{
-				_mouseArea.addEventListener(MouseEvent.CLICK, dispatchCoreEvent);
-				_mouseArea.addEventListener(MouseEvent.MOUSE_DOWN, dispatchCoreEvent);
-				_mouseArea.addEventListener(MouseEvent.MOUSE_UP, dispatchCoreEvent);
-				stage.addEventListener(MouseEvent.MOUSE_WHEEL, dispatchCoreEvent);
-			}
 		}
 		
 		private function dispatchCoreEvent (e:Event):void
 		{
 			Core.control.dispatchEvent(e);
 		}
-		
-		private function drawMouseArea():void 
-		{
-			_mouseArea = new MovieClip ();
-			_mouseArea.graphics.beginFill(0xFF0000, 0.5);
-			_mouseArea.graphics.drawRect(0, 0, FlxG.width, FlxG.height);
-			addChild(_mouseArea);
-		}
 
 		//private function onGameClicked($e:MouseEvent):void 
 		//{
 			//trace("game clicked");
 		//}
-		
-		public function destroy():void
-		{
-			if (_mouseArea)
-			{
-				//_mouseArea.removeEventListener(MouseEvent.CLICK, onGameClicked);
-				_mouseArea.removeEventListener(MouseEvent.CLICK, dispatchCoreEvent);
-				_mouseArea.removeEventListener(MouseEvent.MOUSE_DOWN, dispatchCoreEvent);
-				_mouseArea.removeEventListener(MouseEvent.MOUSE_UP, dispatchCoreEvent);
-				stage.removeEventListener(MouseEvent.MOUSE_WHEEL, dispatchCoreEvent);
-			}
-		}
+
 
 		
 	}

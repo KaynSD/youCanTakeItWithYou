@@ -1,8 +1,10 @@
 package screens 
 {
 	import base.events.GameEvent;
+	import base.events.ISRGameEvent;
 	import base.structs.encounters.EncounterChoiceInfo;
 	import base.structs.encounters.EncounterInfo;
+	import entities.Player;
 	import flash.display.MovieClip;
 	import gfx.ClipPanelButton;
 	import gfx.ClipPanelEncounter;
@@ -38,8 +40,16 @@ package screens
 				var choice:EncounterChoiceInfo =  $encounter.choices[i];
 				if (choice)
 				{
+					
 					button.txt_copy.text = choice.buttonText;
-					addButton(button, onClickChoiceButton);
+					if (!choice.isPossible)
+					{
+						button.txt_copy.textColor = 0x626262;
+					}
+					else
+					{
+						addButton(button, onClickChoiceButton);
+					}
 					button.choice = choice;
 				}
 				else
@@ -72,6 +82,7 @@ package screens
 			removeButton(_graphics.btn_choice_1);
 			addButton(_graphics.btn_choice_1, onClickCloseButton);
 			_graphics.btn_choice_1.visible = true;
+			Core.control.dispatchEvent(new ISRGameEvent(ISRGameEvent.EVENT_RESULT, $choice));
 			//_resultMode = true;
 		}
 		
