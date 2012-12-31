@@ -1,8 +1,10 @@
 package inventory
 {
 	import base.events.EntityEvent;
+	import base.events.UIEvent;
 	import base.structs.Inventory;
 	import flash.display.BitmapData;
+	import flash.events.Event;
 	import gfx.SarcDay;
 	import gfx.SarcNight;
 	import inventory.elements.InventoryCell;
@@ -54,10 +56,10 @@ package inventory
 			makeGrid();
 			
 			_inventoryItems = new Vector.<InventoryItem>();
-			Core.control.addEventListener(EntityEvent.REMOVE_FROM_WORLD, handleSwitchToDeath)
+			Core.control.addEventListener(UIEvent.UPDATE_AREA, handleSwitchToDeath)
 		}
 		
-		private function handleSwitchToDeath(e:EntityEvent):void 
+		private function handleSwitchToDeath(e:UIEvent):void 
 		{
 			switchExistence(false);
 		}
@@ -67,10 +69,9 @@ package inventory
 			trace("AH! I AM " + isLife);
 			var sarcophagus:BitmapData = isLife ? new SarcDay() : new SarcNight();
 			
-			FlxExternal.setData(sarcophagus, "sarc");
+			FlxExternal.setData(sarcophagus, "sarc_"+new Date().getTime());
 			sprite.loadGraphic(FlxExternal);
 			
-			add(sprite);
 		}
 		
 		public function get value():int {
@@ -78,6 +79,7 @@ package inventory
 			for (var i:int = 0; i < _inventoryItems.length; i++) {
 				cash += _inventoryItems[i].points;
 			}
+			trace("SCORE IS: " + cash);
 			return cash;
 		}
 		
@@ -111,18 +113,22 @@ package inventory
 				_inventoryItems.push(item);
 				trace("Item:", item.identifier, "added");
 				trace(_inventoryItems.length, "items in inventory");
-				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.ACCEPT_ITEM, item));
+				
+				
 				
 				item.assignedX = (item.x - x) / _cellWidth;
 				item.assignedY = (item.y - y) / _cellWidth;
 				
 				updateAllCurrentItems();
 				
+				Core.control.score = value;
+				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.ACCEPT_ITEM, item));
+				
 			}
 			else
 			{
+				Core.control.score = value;
 				Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.REJECT_ITEM, item))
-				item.y += 200;
 			}
 			
 			for (i = 0; i < _cols; i++)
@@ -166,7 +172,6 @@ package inventory
 				
 			}
 			
-			trace("INVENTORY VALUE IS : " + value);
 		}
 		
 		public function checkItemPositions(item:InventoryItem):Boolean
@@ -248,10 +253,14 @@ package inventory
 							
 						}
 					}
+					Core.control.score = value;
+					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.PICKUP_ITEM, item));
 					break;
 				}
 				
 			}
+			
+			
 		}
 		
 		public function hasItem(items:String):Vector.<InventoryItem>
