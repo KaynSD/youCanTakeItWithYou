@@ -92,7 +92,7 @@
 					 description="You have a cobra. Why do you have a cobra?" />
 	</COBRA>
 	<AXE>
-		<DIMENSIONS>X</DIMENSIONS>r
+		<DIMENSIONS>XX,XX,OX</DIMENSIONS>
 		<POINTS MINIMUM="0"
 				MAXIMUM="0" />
 		<DESCRIPTION name="Axe"

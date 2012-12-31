@@ -27,7 +27,7 @@ package screens
 			addButton(_graphics.btn_replay, onClickRetry);
 			_graphics.btn_replay.txt_copy.text = "Begin Life Anew!";
 			//addButton(_graphics.btn_level_select, onClickLevelSelect);
-			_graphics.txt_score.text = "Final Score: " + P3FormatNumber(Core.control.score) + " Sehk"; 
+			_graphics.txt_score.text = "Final Score: " + P3FormatNumber(Core.control.score) + " DEBEN"; 
 			if (Core.control.isWon)
 			{
 				_graphics.txt_body.text = "Congradulations on besting the underworld. But perhaps you could take one more little thing?";
