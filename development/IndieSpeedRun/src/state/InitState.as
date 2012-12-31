@@ -91,7 +91,7 @@ package state
 			Core.registry.registerClass(MarkerCheckpoint, "CHECKPOINT");
 			Core.registry.registerClass(ConvayerVolume, "CONVAYER_VOLUME_LEFT");
 			Core.registry.registerClass(ConvayerVolume, "CONVAYER_VOLUME_RIGHT");
-			Core.registry.registerClass(MarkerHelp, "MARKER_HELP");
+			//Core.registry.registerClass(MarkerHelp, "MARKER_HELP");
 			Core.registry.registerClass(DestructorVolume, "DESTRUCTOR_VOLUME");			
 			Core.registry.registerClass(TriggerVolume, "TRIGGER_VOLUME");
 			
@@ -101,6 +101,7 @@ package state
 			Core.registry.registerClass(MarkerTeleport, "MARKER_TELEPORT");
 			Core.registry.registerClass(MarkerFinish, "MARKER_FINISH");
 			Core.registry.registerClass(MarkerItemSpawn, "MARKER_ITEM_SPAWNER");
+			Core.registry.registerClass(MarkerTutorial, "MARKER_TUTORIAL");
 		}
 		
 		//TODO - wrap this function inside the Library.

@@ -295,12 +295,12 @@ package inventory
 			return returns;
 			//return null;
 		}
-		
-		override public function destroy():void 
-		{
-			Core.control.removeEventListener(UIEvent.UPDATE_AREA, handleSwitchToDeath)
-			super.destroy();
-		}
+		//
+		//override public function destroy():void 
+		//{
+			//Core.control.removeEventListener(UIEvent.UPDATE_AREA, handleSwitchToDeath)
+			//super.destroy();
+		//}
 		
 	}
 	

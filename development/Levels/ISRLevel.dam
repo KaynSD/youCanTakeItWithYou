@@ -2,7 +2,7 @@
 <project>
   <version>3.1.0</version>
   <bgColor>0xffffff</bgColor>
-  <viewPos x="-4577" y="229"/>
+  <viewPos x="-2193" y="229"/>
   <firstLayersTop>false</firstLayersTop>
   <spriteEntriesFile>ISRSprites.dsf</spriteEntriesFile>
   <layers>
@@ -80,11 +80,11 @@
           </properties>
         </sprite>
         <sprite guid="E2BAB642-56C1-C283-ADE9-EA428C854B76" x="1504" y="-288" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8"/>
-        <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="1888" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
-        <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="1888" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
+        <sprite guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D" x="1600" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="42"/>
+        <sprite guid="F9384995-E098-8CD1-E721-05469ABE8F05" x="1600" y="384" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="45"/>
         <sprite guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30" x="3904" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
-        <sprite guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD" x="2112" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="30"/>
-        <sprite guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98" x="2528" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
+        <sprite guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD" x="1984" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="30"/>
+        <sprite guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98" x="2496" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
         <sprite guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527" x="3168" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="44"/>
         <sprite guid="476330A0-D2F2-8061-213A-697636BAFD56" x="5600" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="46"/>
         <sprite guid="4805F286-3F5B-A3E5-68B8-4BB1D51D37B3" x="4416" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="43">
@@ -133,6 +133,26 @@
           <properties>
             <dataOverride name="p_encounterList" typeof="String" value="PLOT" idx="0"/>
           </properties>
+        </sprite>
+        <sprite guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6" x="1824" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51">
+          <properties>
+            <dataOverride name="p_tutorialText" typeof="String" value="Blah woot hehey" idx="0"/>
+            <dataOverride name="p_godName" typeof="Custom" value="ANUBIS" idx="1"/>
+          </properties>
+        </sprite>
+        <sprite guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A" x="2208" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51">
+          <properties>
+            <dataOverride name="p_tutorialText" typeof="String" value="set says some stuff" idx="0"/>
+          </properties>
+        </sprite>
+        <sprite guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF" x="2560" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51">
+          <properties>
+            <dataOverride name="p_tutorialText" typeof="String" value="Yo I'm Osiris" idx="0"/>
+            <dataOverride name="p_godName" typeof="Custom" value="OSIRIS" idx="1"/>
+          </properties>
+        </sprite>
+        <sprite guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D" x="3040" y="416" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="51">
+          <properties/>
         </sprite>
       </spritelayer>
       <spritelayer name="Forground" id="3" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false"/>
@@ -505,7 +525,13 @@
     <setting name="AssetsDir">D:\Git Repos\youCanTakeItWithYou\deploy\assets</setting>
     <setting name="DeployDir">D:\Git Repos\youCanTakeItWithYou\deploy</setting>
   </projectExporter>
-  <customPropertyTypes/>
+  <customPropertyTypes>
+    <type name="p_godName" isString="true" exportedType="string">
+      <item label="SET" exported="SET_SAYS"/>
+      <item label="ANUBIS" exported="ANUBIS_SAYS"/>
+      <item label="OSIRIS" exported="OSIRIS_SAYS"/>
+    </type>
+  </customPropertyTypes>
   <guides>
     <snap>true</snap>
     <visible>true</visible>

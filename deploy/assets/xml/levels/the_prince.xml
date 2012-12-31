@@ -1,4 +1,4 @@
-<INDEX key="the_prince" source="the_prince" date="12/31/12 18:45:59" >
+<INDEX key="the_prince" source="the_prince" date="12/31/12 18:58:40" >
 	<AREAS>
 		<AREA>area_life</AREA>
 		<AREA>area_death</AREA>
@@ -259,6 +259,11 @@
 			<BOUNDS x="0" y="0" width="16" height="16"/>
 			<ANCHOR x="0" y="0"/>
 		</MARKER_FINISH>
+		<MARKER_TUTORIAL path="graphics/built_in/help_sign.png">
+			<SIZE width="21" height="30"/>
+			<BOUNDS x="0" y="0" width="21" height="30"/>
+			<ANCHOR x="0" y="0"/>
+		</MARKER_TUTORIAL>
 		<PLAYER path="graphics/player.png">
 			<SIZE width="64" height="64"/>
 			<BOUNDS x="12" y="0" width="32" height="64"/>

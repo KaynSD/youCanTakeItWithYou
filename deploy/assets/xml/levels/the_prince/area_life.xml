@@ -139,7 +139,7 @@
 			</PROPS>
 		</CARPENTRY>
 		<MARKER_START>
-			<START x="1888.000" y="384.000"/>
+			<START x="1600.000" y="384.000"/>
 			<ID link_id="null" guid="B63EA9E0-71C5-D036-20D6-528D4A130C1D"/>
 			<CLASS name="MARKER_START"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -152,7 +152,7 @@
 			</PROPS>
 		</MARKER_START>
 		<PLAYER>
-			<START x="1888.000" y="384.000"/>
+			<START x="1600.000" y="384.000"/>
 			<ID link_id="null" guid="F9384995-E098-8CD1-E721-05469ABE8F05"/>
 			<CLASS name="PLAYER"/>
 			<SIZE width="64.000" height="64.000"/>
@@ -178,7 +178,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<WATER>
-			<START x="2112.000" y="416.000"/>
+			<START x="1984.000" y="416.000"/>
 			<ID link_id="null" guid="FCA16D9A-19E7-3ABC-3BF0-E851365475BD"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
@@ -191,7 +191,7 @@
 			</PROPS>
 		</WATER>
 		<BREAD>
-			<START x="2528.000" y="416.000"/>
+			<START x="2496.000" y="416.000"/>
 			<ID link_id="null" guid="4128643E-FC5F-9F0A-EC0F-D07742CE8E98"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
@@ -439,19 +439,19 @@
 					<p_encounterList>CAVE,PRIEST</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
-		<MARKER_TELEPORT>
+		<BREAD>
 			<START x="10400.000" y="416.000"/>
 			<ID link_id="null" guid="24CBAB92-E365-CDE6-34D2-4CA9DBA1750B"/>
-			<CLASS name="MARKER_TELEPORT"/>
-			<SIZE width="16.000" height="16.000"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</MARKER_TELEPORT>
+		</BREAD>
 		<MARKER_ITEM_SPAWNER>
 			<START x="9184.000" y="416.000"/>
 			<ID link_id="null" guid="D06DEBC1-8ADC-AF0F-A30F-081A374C7D3E"/>
@@ -585,6 +585,66 @@
 					<p_encounterList>PLOT</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
+		<MARKER_TUTORIAL>
+			<START x="1824.000" y="416.000"/>
+			<ID link_id="null" guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="21.000" height="30.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_tutorialText>Blah woot hehey</p_tutorialText>
+					<p_godName>ANUBIS_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
+		<MARKER_TUTORIAL>
+			<START x="2208.000" y="416.000"/>
+			<ID link_id="null" guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="21.000" height="30.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_tutorialText>set says some stuff</p_tutorialText>
+					<p_godName>SET_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
+		<MARKER_TUTORIAL>
+			<START x="2560.000" y="416.000"/>
+			<ID link_id="null" guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="21.000" height="30.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_tutorialText></p_tutorialText>
+					<p_godName>OSIRIS_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
+		<MARKER_TUTORIAL>
+			<START x="3040.000" y="416.000"/>
+			<ID link_id="null" guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="21.000" height="30.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="0" y="0"/>
+			<PROPS>				
+					<p_tutorialText></p_tutorialText>
+					<p_godName>SET_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

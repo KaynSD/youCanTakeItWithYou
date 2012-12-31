@@ -179,19 +179,19 @@
 					<p_encounterList>HEART</p_encounterList>
 			</PROPS>
 		</MARKER_ENCOUNTER>
-		<MARKER_FINISH>
+		<REEDS>
 			<START x="4160.000" y="416.000"/>
 			<ID link_id="null" guid="2FF17944-B636-DE23-BEDE-031F0F850D07"/>
-			<CLASS name="MARKER_FINISH"/>
-			<SIZE width="16.000" height="16.000"/>
+			<CLASS name="PICKUP_ITEM"/>
+			<SIZE width="32.000" height="32.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="32"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
 			<PROPS>				
 			</PROPS>
-		</MARKER_FINISH>
+		</REEDS>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>
