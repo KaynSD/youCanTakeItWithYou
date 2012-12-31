@@ -1,6 +1,7 @@
 package screens 
 {
 	import base.events.GameEvent;
+	import base.events.ISRGodSpeaksEvent;
 	import base.events.UIEvent;
 	import com.greensock.plugins.AutoAlphaPlugin;
 	import com.greensock.plugins.TweenPlugin;
@@ -42,9 +43,51 @@ package screens
 			Core.control.addEventListener(InventoryISREvent.MOVING_ITEM, showItemInfo);
 			Core.control.addEventListener(InventoryISREvent.ACCEPT_ITEM, hideItemInfo);
 			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, hideItemInfo);
+			
+			Core.control.addEventListener(ISRGodSpeaksEvent.ANUBIS_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.OSIRIS_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.SET_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.QUIET_ALL_GODS, godSays);
+			
 			hideItemInfo();
+			godSays();
 			
 			_currentScore = 0;
+		}
+		
+		override public function unload():void 
+		{
+			
+			Core.control.addEventListener(UIEvent.UPDATE_PLAYER, onUpdatePlayer);
+			
+			Core.control.addEventListener(InventoryISREvent.MOVING_ITEM, showItemInfo);
+			Core.control.addEventListener(InventoryISREvent.ACCEPT_ITEM, hideItemInfo);
+			Core.control.addEventListener(InventoryISREvent.REJECT_ITEM, hideItemInfo);
+			
+			Core.control.addEventListener(ISRGodSpeaksEvent.ANUBIS_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.OSIRIS_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.SET_SAYS, godSays);
+			Core.control.addEventListener(ISRGodSpeaksEvent.QUIET_ALL_GODS, godSays);
+			
+			super.unload();
+		}
+		
+		private function godSays(e:ISRGodSpeaksEvent = null):void 
+		{
+			if (e == null) {
+				_graphics.god_mc.visible = false;
+				_graphics.god_mc.alpha = 0;
+			} else switch(e.type) {
+				case ISRGodSpeaksEvent.OSIRIS_SAYS:
+				case ISRGodSpeaksEvent.ANUBIS_SAYS:
+				case ISRGodSpeaksEvent.SET_SAYS:
+					_graphics.god_mc.alpha = 0.5;
+					TweenLite.to(_graphics.god_mc, 0.5, { autoAlpha:1 } );
+					_graphics.god_mc.text_txt.text = e.message
+					break;
+				default:
+					TweenLite.to(_graphics.god_mc, 0.5, { autoAlpha:0 } );
+			}
 		}
 		
 		private function hideItemInfo(e:InventoryISREvent = null):void 
