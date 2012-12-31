@@ -679,6 +679,10 @@ package world
 			Core.control.removeEventListener(EntityEvent.SET_PLAYER_START, onSetPlayerStart);
 			
 			Core.control.removeEventListener(LibraryEvent.LEVEL_LOADED, onLevelLoaded);
+			
+			Core.control.removeEventListener(InventoryISREvent.REJECT_ITEM, onItemDroppedInWorld);
+			Core.control.removeEventListener(ISRGameEvent.EVENT_RESULT, onEventResult);
+			Core.control.removeEventListener(EntityEvent.JUST_DIED, onPlayerJustDied);
 			_level.destroy();
 			if (_level) _level = null;
 			if (_player) _player.destroy();

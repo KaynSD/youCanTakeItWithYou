@@ -120,7 +120,7 @@ package base.structs.encounters
 					item.kill();
 				}
 			}
-			if (_resultHealthChange < 0)
+			if (_resultHealthChange != 0)
 			{
 				$player.hurt( -_resultHealthChange);
 			}

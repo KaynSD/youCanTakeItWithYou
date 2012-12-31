@@ -61,6 +61,7 @@ package entities
 		{
 			super.reset(X, Y);
 			health = 100;
+			hurt(0);
 		}
 		
 		public function setState($flag:uint):void
@@ -200,8 +201,14 @@ package entities
 			}
 			else
 			{
-				if (value > 0) FlxG.flash(0xFFFF0000, 0.05 * value, null, false);
-				if (value < 0) FlxG.flash(0xFF00FF00, 0.05 * value, null, false);
+				if (value > 0) 
+				{
+					FlxG.flash(0xFFFF0000, 0.025 * value, null, false);
+				}
+				if (value < 0) 
+				{
+					FlxG.flash(0xFF00FF00, 0.025 * -value, null, false);
+				}
 			}
 		}
 		
