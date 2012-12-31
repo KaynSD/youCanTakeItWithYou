@@ -1,4 +1,4 @@
-package  
+package helpers
 {
 	/**
 	 * ...
@@ -65,7 +65,12 @@ package
 				
 			}
 			
-			return generated;
+			
+			if (generated.length > 10 || generated.length < 5) return generateName();
+			else {
+				generated = generated.charAt(0).toUpperCase() + generated.substr(1);
+				return generated;
+			}
 		}
 		
 	}
