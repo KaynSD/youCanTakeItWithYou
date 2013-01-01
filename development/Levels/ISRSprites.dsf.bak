@@ -54,9 +54,9 @@
       <tileEntry name="BG_PLACEHOLDER" idx="39" className="BACKGROUND" image="../../deploy/assets/graphics/background/background_back.png" offsetX="0" offsetY="0" width="128" height="128" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="128" boundsHeight="128" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
       <tileEntry name="BG_FRONT" idx="40" className="BACKGROUND" image="../../deploy/assets/graphics/background/background_floor.png" offsetX="0" offsetY="0" width="128" height="128" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="128" boundsHeight="128" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false"/>
     </group>
-    <group name="Markers" idx="41" open="false">
+    <group name="Markers" idx="41" open="true">
       <sprite name="MARKER_START" idx="42" className="MARKER_START" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_start.png" width="16" height="16" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" canEditFrames="true" lockRotation="false"/>
-      <tileEntry name="MARKER_ENCOUNTER" idx="43" className="MARKER_ENCOUNTER" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false">
+      <tileEntry name="MARKER_ENCOUNTER" idx="43" className="MARKER_ENCOUNTER" image="../../deploy/assets/graphics/built_in/marker_tiles/mt_template.png" offsetX="0" offsetY="0" width="16" height="16" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="16" boundsHeight="16" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" lockRotation="false" selected="true">
         <properties>
           <type typeof="String" name="p_encounterList" value="TEST_RANK" hidden="false"/>
         </properties>

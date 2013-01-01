@@ -23,6 +23,7 @@ package entities.marker
 		{
 			super.deserialize($xml);
 			_encounterList = p_encounterList.split(",");
+			loadNativeGraphics(false);
 		}
 		
 		override protected function onTouch($player:Player):void 

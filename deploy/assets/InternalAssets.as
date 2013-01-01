@@ -28,8 +28,6 @@ package assets
 		[Embed(source = 'graphics/entities/plants/corrupt_creep.png')]			public var img_corrupt_creep:Class
 		[Embed(source = 'graphics/entities/plants/corrupt_plant.png')]			public var img_corrupt_plant:Class
 		
-		[Embed(source="graphics/tileset/defense_zone.png")]						public var img_defense_zone:Class
-		[Embed(source="graphics/tileset/grass_tiles.png")]						public var img_grass_tiles:Class
 		
 		[Embed(source = 'graphics/entities/selection_icon.png')]					public var img_selection_icon:Class
 		
@@ -59,8 +57,6 @@ package assets
 		[Embed(source = 'graphics/built_in/tileset_base.png')]							public var img_tileset_base:Class;
 		
 		[Embed(source = "graphics/tileset/tileset_base.png")] 				public var img_tileset_base2:Class;		
-		[Embed(source = "graphics/tileset/sand_tiles.png")]						public var img_tileset_sand:Class;
-		[Embed(source = "graphics/tileset/afterlife_tiles.png")]						public var img_afterlife_tiles:Class;
 		
 		[Embed(source = "xml/levels/the_prince/area_death.xml", mimeType='application/octet-stream')]	public var bytes_area_death:Class;		
 		[Embed(source = "xml/levels/the_prince/area_life.xml", mimeType='application/octet-stream')]	public var bytes_area_life:Class;	

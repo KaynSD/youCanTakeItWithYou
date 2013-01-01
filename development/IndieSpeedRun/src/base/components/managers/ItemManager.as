@@ -83,6 +83,12 @@ package base.components.managers
 			return createItem(key);
 		}
 		
+		public function getItemName($identifier:String):String 
+		{
+			var node:XML = XML(Core.xml.items.child($identifier.toUpperCase()))
+			return node.DESCRIPTION.@name.toString();
+		}
+		
 	}
 
 }

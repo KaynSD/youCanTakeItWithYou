@@ -19,6 +19,8 @@ package entities.marker
 		{
 			super(Core.lib.int.img_mt_teleport);
 			name = "Teleport";
+			visible = false;
+			//Core.control.isWon
 		}
 		
 		override protected function onTouch($player:Player):void 

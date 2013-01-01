@@ -171,6 +171,26 @@ package base.structs.encounters
 			return _isPossible;
 		}
 		
+		public function get resultHealthChange():int 
+		{
+			return _resultHealthChange;
+		}
+		
+		public function get resultIsRankUp():Boolean 
+		{
+			return _resultIsRankUp;
+		}
+		
+		public function get resultItemAddKeys():Array 
+		{
+			return _resultItemAddKeys;
+		}
+		
+		public function get resultItemRemoveKeys():Array 
+		{
+			return _resultItemRemoveKeys;
+		}
+		
 
 		
 	}

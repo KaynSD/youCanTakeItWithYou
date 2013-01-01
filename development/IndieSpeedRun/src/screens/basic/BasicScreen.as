@@ -16,8 +16,6 @@ package screens.basic
 	import org.flixel.FlxG;
 	import org.flixel.system.input.Keyboard;
 	import screens.elements.SelectionMenu;
-	import sfx.UIConfirm;
-	import sfx.UISelect;
 	
 	/**
 	 * ...
@@ -56,8 +54,8 @@ package screens.basic
 		
 		private function onMenuClickItem():void 
 		{
-			Core.screen_manager
-			FlxG.play(UIConfirm);
+			//Core.screen_manager
+			//FlxG.play(UIConfirm);
 		}
 		
 		private function onMenuSelectItem():void 

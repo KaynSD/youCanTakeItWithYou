@@ -13,6 +13,7 @@ package entities.marker
 		public function MarkerFinish() 
 		{
 			super(Core.lib.int.img_mt_fin);
+			visible = false;
 		}
 		
 		override protected function onTouch($player:Player):void 

@@ -68,7 +68,6 @@ package inventory.elements
 			if (_isDragging) {
 				if (FlxG.mouse.justReleased()) {
 					_isDragging = false;
-					
 					super.update();
 					Core.control.dispatchEvent(new InventoryISREvent(InventoryISREvent.DROP_ITEM, this));
 				} else {

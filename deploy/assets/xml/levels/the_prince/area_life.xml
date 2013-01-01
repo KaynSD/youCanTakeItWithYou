@@ -1,17 +1,17 @@
 <AREA>
 	<INFO key="area_life" />
 	<LAYERS>
-		<LAYER depth="0" name="Parralaxing_Far" tile_width="128" tile_height="128" rows="4" cols="80" x="-128" y="0" x_unit="-1" y_unit="0" scroll_x="0.1" scroll_y="1" tile_path="graphics/tileset/tiling.png" >
-			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-			68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71
-			87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87
-			87,87,87,87,87,87,87,87,87,87,87,87,17,87,22,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87
+		<LAYER depth="0" name="Parralaxing_Far" tile_width="128" tile_height="128" rows="4" cols="66" x="-128" y="0" x_unit="-1" y_unit="0" scroll_x="0.1" scroll_y="1" tile_path="graphics/tileset/tiling.png" >
+			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69,70,71,68,69
+			87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85,86,87,87,85
+			87,87,87,87,87,87,87,87,87,87,87,87,17,87,22,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87,87
 		</LAYER>
 		<LAYER depth="1" name="ParralaxNear" tile_width="128" tile_height="128" rows="4" cols="80" x="-128" y="0" x_unit="-1" y_unit="0" scroll_x="0.4" scroll_y="1" tile_path="graphics/tileset/tiling.png" >
-			0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-			0,0,0,18,19,20,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,0,0
-			0,0,33,34,35,36,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0
-			0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			0,0,0,18,19,20,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0,0,0,0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			0,0,33,34,35,36,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,21,0,0,0,0,0,0,0,0,33,34,35,36,37,38,0,0,0,0,0,18,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,49,50,51,52,53,54,55,0,0,0,0,0,0,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 		</LAYER>
 		<LAYER depth="2" name="BGTiles" tile_width="128" tile_height="128" rows="4" cols="80" x="-128" y="0" x_unit="-1" y_unit="0" scroll_x="1" scroll_y="1" tile_path="graphics/tileset/tiling.png" >
 			0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -28,26 +28,12 @@
 	</LAYERS>
 	<OBJECTS>
 		<MARKER_ENCOUNTER>
-			<START x="544.000" y="352.000"/>
-			<ID link_id="null" guid="FDF9B987-D679-3DF7-55F0-174CFD1A18CD"/>
-			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
-			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
-			<SCROLL x="1" y="1"/>
-			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
-			<PROPS>				
-					<p_encounterList>TEST_DAMAGE</p_encounterList>
-			</PROPS>
-		</MARKER_ENCOUNTER>
-		<MARKER_ENCOUNTER>
-			<START x="9312.000" y="352.000"/>
+			<START x="9312.000" y="320.000"/>
 			<ID link_id="null" guid="B503ECF3-CAD3-75D6-555D-82F3CA6CE9FB"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -56,12 +42,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="6944.000" y="352.000"/>
+			<START x="6944.000" y="320.000"/>
 			<ID link_id="null" guid="2C5963A2-8E63-292F-EFDC-08D254E83500"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -70,12 +56,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="3648.000" y="352.000"/>
+			<START x="3872.000" y="320.000"/>
 			<ID link_id="null" guid="51A96EE4-425E-1929-3E03-A7E6056F2E86"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -84,12 +70,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="9760.000" y="352.000"/>
+			<START x="9760.000" y="320.000"/>
 			<ID link_id="null" guid="87C2DE37-90F3-CF11-BC5F-00649C0EEB22"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -98,12 +84,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="5088.000" y="352.000"/>
+			<START x="5088.000" y="320.000"/>
 			<ID link_id="null" guid="6472FB25-B712-BD21-6CEB-694D93CE65E7"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -112,12 +98,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="6240.000" y="352.000"/>
+			<START x="6240.000" y="320.000"/>
 			<ID link_id="null" guid="52300956-9E88-C4EE-7DCA-A6DE09F7981D"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -126,12 +112,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="4512.000" y="352.000"/>
+			<START x="4736.000" y="320.000"/>
 			<ID link_id="null" guid="AA4F0DF9-E239-103A-B91D-D42BAD0647E7"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -140,12 +126,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="2144.000" y="352.000"/>
+			<START x="2240.000" y="320.000"/>
 			<ID link_id="null" guid="5FD5BFDA-DF59-D88C-EF77-D3D86C94C8FE"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -180,7 +166,7 @@
 			</PROPS>
 		</PLAYER>
 		<MARKER_ITEM_SPAWNER>
-			<START x="2752.000" y="352.000"/>
+			<START x="2976.000" y="352.000"/>
 			<ID link_id="null" guid="162B4CA9-2D27-C5C9-552C-EAD7E45F9E30"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -219,7 +205,7 @@
 			</PROPS>
 		</BREAD>
 		<MARKER_ITEM_SPAWNER>
-			<START x="2016.000" y="352.000"/>
+			<START x="1600.000" y="352.000"/>
 			<ID link_id="null" guid="26F80FD1-F7CA-50B0-5E29-F8C9CC168527"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -232,12 +218,12 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_ENCOUNTER>
-			<START x="3808.000" y="352.000"/>
+			<START x="4032.000" y="320.000"/>
 			<ID link_id="null" guid="4805F286-3F5B-A3E5-68B8-4BB1D51D37B3"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -246,7 +232,7 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ITEM_SPAWNER>
-			<START x="3520.000" y="352.000"/>
+			<START x="3744.000" y="352.000"/>
 			<ID link_id="null" guid="CF2C9C0F-0C55-E4BA-8CA7-B34E395E724E"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -259,7 +245,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_ITEM_SPAWNER>
-			<START x="3040.000" y="352.000"/>
+			<START x="3264.000" y="352.000"/>
 			<ID link_id="null" guid="EECEA758-3C46-3373-7FAD-4BF39A97B41C"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -272,7 +258,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_ITEM_SPAWNER>
-			<START x="2336.000" y="352.000"/>
+			<START x="2528.000" y="352.000"/>
 			<ID link_id="null" guid="7C11D81E-6109-A92B-17BA-038D1B9213CD"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -376,7 +362,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_ITEM_SPAWNER>
-			<START x="4448.000" y="352.000"/>
+			<START x="4672.000" y="352.000"/>
 			<ID link_id="null" guid="25065ACB-8E55-B8AD-B2BC-4353CD63FD60"/>
 			<CLASS name="MARKER_ITEM_SPAWNER"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -389,7 +375,7 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<REDHERRING>
-			<START x="2464.000" y="352.000"/>
+			<START x="2848.000" y="352.000"/>
 			<ID link_id="null" guid="1C761744-8F8A-D412-7921-5AC9DE5A4AFE"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
@@ -402,12 +388,12 @@
 			</PROPS>
 		</REDHERRING>
 		<MARKER_ENCOUNTER>
-			<START x="3136.000" y="352.000"/>
+			<START x="3360.000" y="320.000"/>
 			<ID link_id="null" guid="AC87FB85-334F-FF88-D938-618651313994"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -442,12 +428,12 @@
 			</PROPS>
 		</MARKER_ITEM_SPAWNER>
 		<MARKER_ENCOUNTER>
-			<START x="7072.000" y="352.000"/>
+			<START x="7072.000" y="320.000"/>
 			<ID link_id="null" guid="45686F8A-9C87-8EF4-5BC3-545681B765BB"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -456,12 +442,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="5728.000" y="352.000"/>
+			<START x="5728.000" y="320.000"/>
 			<ID link_id="null" guid="BC453113-54A5-B3DD-9CBD-D141560CBC0D"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -470,7 +456,7 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<COINS>
-			<START x="2848.000" y="352.000"/>
+			<START x="3072.000" y="352.000"/>
 			<ID link_id="null" guid="C103D2E2-2722-77D3-2BF3-DE0CC6C5AA68"/>
 			<CLASS name="PICKUP_ITEM"/>
 			<SIZE width="32.000" height="32.000"/>
@@ -535,12 +521,12 @@
 			</PROPS>
 		</INTESTINES>
 		<MARKER_ENCOUNTER>
-			<START x="6656.000" y="352.000"/>
+			<START x="6656.000" y="320.000"/>
 			<ID link_id="null" guid="1CF89682-DED8-6BBE-D328-B5069DF34EC0"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -549,72 +535,72 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_TUTORIAL>
-			<START x="672.000" y="352.000"/>
+			<START x="544.000" y="320.000"/>
 			<ID link_id="null" guid="11107E4F-B17B-71B5-10E5-9D12C11CC9A6"/>
 			<CLASS name="MARKER_TUTORIAL"/>
-			<SIZE width="21.000" height="30.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
+			<ANCHOR x="2" y="0"/>
 			<PROPS>				
-					<p_tutorialText></p_tutorialText>
-					<p_godName>SET_SAYS</p_godName>
+					<p_tutorialText>Welcome to the banks of the Nile. Attempt to lead a good life, and you will be looked after in the next world</p_tutorialText>
+					<p_godName>ANUBIS_SAYS</p_godName>
 			</PROPS>
 		</MARKER_TUTORIAL>
 		<MARKER_TUTORIAL>
-			<START x="1056.000" y="352.000"/>
+			<START x="928.000" y="320.000"/>
 			<ID link_id="null" guid="0117A1C9-8113-CD33-C83E-2EEC08716E3A"/>
 			<CLASS name="MARKER_TUTORIAL"/>
-			<SIZE width="21.000" height="30.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
+			<ANCHOR x="2" y="0"/>
 			<PROPS>				
-					<p_tutorialText></p_tutorialText>
-					<p_godName>SET_SAYS</p_godName>
+					<p_tutorialText>Use your MOUSE to pick up ITEMS from the ground in. DROP them in the sarcophagus at the top right to store them.</p_tutorialText>
+					<p_godName>ANUBIS_SAYS</p_godName>
 			</PROPS>
 		</MARKER_TUTORIAL>
 		<MARKER_TUTORIAL>
-			<START x="1408.000" y="352.000"/>
+			<START x="1408.000" y="320.000"/>
 			<ID link_id="null" guid="5AB5DB40-74B2-9061-8DD1-1BFCCF6467FF"/>
 			<CLASS name="MARKER_TUTORIAL"/>
-			<SIZE width="21.000" height="30.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
+			<ANCHOR x="2" y="0"/>
 			<PROPS>				
-					<p_tutorialText></p_tutorialText>
-					<p_godName>SET_SAYS</p_godName>
+					<p_tutorialText>ITEMS are needed both in THIS WORLD and the NEXT. Your total worth is displayed below to the right --></p_tutorialText>
+					<p_godName>OSIRIS_SAYS</p_godName>
 			</PROPS>
 		</MARKER_TUTORIAL>
 		<MARKER_TUTORIAL>
-			<START x="1888.000" y="352.000"/>
+			<START x="1664.000" y="320.000"/>
 			<ID link_id="null" guid="E1E33E99-F77E-1BC4-9DC8-C3E94483600D"/>
 			<CLASS name="MARKER_TUTORIAL"/>
-			<SIZE width="21.000" height="30.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="21" height="30"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
-			<ANCHOR x="0" y="0"/>
+			<ANCHOR x="2" y="0"/>
 			<PROPS>				
-					<p_tutorialText></p_tutorialText>
-					<p_godName>SET_SAYS</p_godName>
+					<p_tutorialText>You will have many CHALLENGES ahead of you. Trust your instincts and use your ITEMS to help you</p_tutorialText>
+					<p_godName>OSIRIS_SAYS</p_godName>
 			</PROPS>
 		</MARKER_TUTORIAL>
 		<MARKER_ENCOUNTER>
-			<START x="4064.000" y="352.000"/>
+			<START x="4288.000" y="320.000"/>
 			<ID link_id="null" guid="E010222D-E97D-3AED-7BAE-17A78E367CB0"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -623,12 +609,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="8288.000" y="352.000"/>
+			<START x="8288.000" y="320.000"/>
 			<ID link_id="null" guid="8DC1F080-7804-1553-1C96-A3BC801F073E"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -637,7 +623,7 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_TELEPORT>
-			<START x="10176.000" y="352.000"/>
+			<START x="10048.000" y="352.000"/>
 			<ID link_id="null" guid="D283A0F9-F261-EA17-8DBF-E9CBF637BB97"/>
 			<CLASS name="MARKER_TELEPORT"/>
 			<SIZE width="16.000" height="16.000"/>
@@ -650,12 +636,12 @@
 			</PROPS>
 		</MARKER_TELEPORT>
 		<MARKER_ENCOUNTER>
-			<START x="7840.000" y="352.000"/>
+			<START x="7840.000" y="320.000"/>
 			<ID link_id="null" guid="EBC1D2AF-920F-917B-D0F8-41395C72E43A"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -664,12 +650,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="3328.000" y="352.000"/>
+			<START x="3648.000" y="320.000"/>
 			<ID link_id="null" guid="73BEB855-48B9-32FD-EC13-31275617F5D8"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -678,12 +664,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="5952.000" y="352.000"/>
+			<START x="5952.000" y="320.000"/>
 			<ID link_id="null" guid="DBFDA59E-33A6-56CB-BBBB-977D3176F6EB"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -704,6 +690,51 @@
 			<PROPS>				
 			</PROPS>
 		</ANKH>
+		<MARKER_TUTORIAL>
+			<START x="1952.000" y="320.000"/>
+			<ID link_id="null" guid="4037279B-C778-9D20-5663-7E83CBCB0715"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="32.000" height="64.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="2" y="0"/>
+			<PROPS>				
+					<p_tutorialText>Here is a challenge now, asking you what you wish to be in this life. Answer the question to proceed</p_tutorialText>
+					<p_godName>ANUBIS_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
+		<MARKER_TUTORIAL>
+			<START x="2496.000" y="320.000"/>
+			<ID link_id="null" guid="562704AC-AA73-AFBC-3360-1F4CFFCB08DB"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="32.000" height="64.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="2" y="0"/>
+			<PROPS>				
+					<p_tutorialText>YOU CAN ONLY WIN if you get through the Afterlife. But YOU CAN ONLY SCORE POINTS in THIS world...</p_tutorialText>
+					<p_godName>SET_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
+		<MARKER_TUTORIAL>
+			<START x="3520.000" y="320.000"/>
+			<ID link_id="null" guid="C597F9D3-3180-2149-2049-06158CF38215"/>
+			<CLASS name="MARKER_TUTORIAL"/>
+			<SIZE width="32.000" height="64.000"/>
+			<ROTATION deg="0.000" rad="0.000"/>
+			<BOUNDS x="6" y="0"  width="18" height="64"/>
+			<SCROLL x="1" y="1"/>
+			<SCALE x="1.000" y="1.000" />
+			<ANCHOR x="2" y="0"/>
+			<PROPS>				
+					<p_tutorialText>Remember. You Can Take It With You. Have Fun</p_tutorialText>
+					<p_godName>ANUBIS_SAYS</p_godName>
+			</PROPS>
+		</MARKER_TUTORIAL>
 	</OBJECTS>
 	<SHAPES>
 	</SHAPES>

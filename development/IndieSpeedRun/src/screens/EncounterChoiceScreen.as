@@ -6,6 +6,7 @@ package screens
 	import base.structs.encounters.EncounterInfo;
 	import entities.Player;
 	import flash.display.MovieClip;
+	import flash.text.TextFormat;
 	import gfx.ClipPanelButton;
 	import gfx.ClipPanelEncounter;
 	import screens.basic.BasicScreen;
@@ -79,8 +80,31 @@ package screens
 		
 		private function showResult($choice:EncounterChoiceInfo):void 
 		{
+			var appText:String;
 			_choice = $choice;
-			_graphics.mc_panel.txt_body.text = $choice.resultText;
+			_graphics.mc_panel.txt_body.htmlText = $choice.resultText + "<br>";
+			//_graphics.mc_panel.txt_body.appendText()
+			if ($choice.resultHealthChange > 0)
+			{
+				_graphics.mc_panel.txt_body.htmlText += (" <font color='#00C100'>Health +" + $choice.resultHealthChange + "</font>")
+			}
+			if ($choice.resultHealthChange < 0)
+			{
+				_graphics.mc_panel.txt_body.htmlText += ("<font color='#B00000'>Health " + $choice.resultHealthChange + "</font>")
+			}
+			if ($choice.resultIsRankUp)
+			{
+				_graphics.mc_panel.txt_body.htmlText += ("<font color='#CACA00'>Rank Up - get better items" + "</font>")
+			}
+			if ($choice.resultItemAddKeys)
+			{
+				var namesList:Array = [];
+				for each (var key:String in $choice.resultItemAddKeys)
+				{
+					namesList.push(Core.items.getItemName(key));
+				}
+				_graphics.mc_panel.txt_body.htmlText += ("<font color='#0C9FBE'>" + namesList.join(", ") + "</font>");
+			}
 			_graphics.btn_choice_1.txt_copy.text = "So be it...";
 			for each (var button:MovieClip in _buttons)
 			{

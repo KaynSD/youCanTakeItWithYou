@@ -453,7 +453,6 @@
 				<REQUIRES itemKeys="SWORD"/>
 				<REQUIRES itemKeys="DAGGER"/>
 				<REQUIRES itemKeys="STAFF"/>
-				<REQUIRES health="25"/>
 				<RESULT>
 					<TEXT body="You kill them all easily. You discover they have kidnapped a slave who you 'free' into your own service " />
 					<ITEM_ADD itemKeys="SLAVE"/>

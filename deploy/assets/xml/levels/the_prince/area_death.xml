@@ -22,12 +22,12 @@
 	</LAYERS>
 	<OBJECTS>
 		<MARKER_ENCOUNTER>
-			<START x="3264.000" y="352.000"/>
+			<START x="3264.000" y="320.000"/>
 			<ID link_id="null" guid="D8545D93-2A73-01ED-7E4E-0E8147DD85A2"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -36,12 +36,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="1504.000" y="352.000"/>
+			<START x="1504.000" y="320.000"/>
 			<ID link_id="null" guid="829CC41A-73D6-DA66-B09B-F8F2DA9D9B33"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -76,12 +76,12 @@
 			</PROPS>
 		</MARKER_START>
 		<MARKER_ENCOUNTER>
-			<START x="800.000" y="352.000"/>
+			<START x="832.000" y="320.000"/>
 			<ID link_id="null" guid="3DB4B356-D154-12C9-3CA5-B7100FAF581E"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -90,12 +90,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="2080.000" y="352.000"/>
+			<START x="2080.000" y="320.000"/>
 			<ID link_id="null" guid="0F775557-6967-DEE7-1AF6-2123BFF56C59"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -104,12 +104,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="2336.000" y="352.000"/>
+			<START x="2336.000" y="320.000"/>
 			<ID link_id="null" guid="42B2C9B6-970C-F97A-09AE-CB40CE106E38"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -118,12 +118,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="2720.000" y="352.000"/>
+			<START x="2720.000" y="320.000"/>
 			<ID link_id="null" guid="48215CE7-BF5E-8DC6-CAF0-83912356DFBA"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>
@@ -132,12 +132,12 @@
 			</PROPS>
 		</MARKER_ENCOUNTER>
 		<MARKER_ENCOUNTER>
-			<START x="3840.000" y="352.000"/>
+			<START x="3840.000" y="320.000"/>
 			<ID link_id="null" guid="A70943AC-0BA5-0516-7B48-434444B61322"/>
 			<CLASS name="MARKER_ENCOUNTER"/>
-			<SIZE width="16.000" height="16.000"/>
+			<SIZE width="32.000" height="64.000"/>
 			<ROTATION deg="0.000" rad="0.000"/>
-			<BOUNDS x="0" y="0"  width="16" height="16"/>
+			<BOUNDS x="0" y="0"  width="32" height="64"/>
 			<SCROLL x="1" y="1"/>
 			<SCALE x="1.000" y="1.000" />
 			<ANCHOR x="0" y="0"/>

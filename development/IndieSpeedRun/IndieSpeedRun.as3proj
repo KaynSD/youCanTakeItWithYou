@@ -59,7 +59,6 @@
     <element path="swc\menu.swc" />
     <element path="swc\miniclip\ActionSource.swc" />
     <element path="swc\ds\ds_debug_alchemy.swc" />
-    <element path="swc\audio.swc" />
     <element path="swc\ui_elements.swc" />
   </libraryPaths>
   <!-- External Libraries -->

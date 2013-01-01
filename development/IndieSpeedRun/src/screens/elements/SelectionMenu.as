@@ -9,8 +9,8 @@ package screens.elements
 	import flash.events.MouseEvent;
 	import gfx.PointerClip;
 	import org.flixel.FlxG;
-	import sfx.UILevelSelect;
-	import sfx.UISelect;
+	//import sfx.UILevelSelect;
+	//import sfx.UISelect;
 	/**
 	 * ...
 	 * @author Duncan Saunders
@@ -93,7 +93,7 @@ package screens.elements
 		private function onItemOver (e:MouseEvent):void
 		{
 			var new_targ:DisplayObject = DisplayObject(e.target)
-			if (_cur_item != new_targ) FlxG.play(UISelect);
+			//if (_cur_item != new_targ) FlxG.play(UISelect);
 			swapToItem(new_targ);
 		}
 		
