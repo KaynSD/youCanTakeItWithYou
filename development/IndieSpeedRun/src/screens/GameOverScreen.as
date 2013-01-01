@@ -27,14 +27,22 @@ package screens
 			addButton(_graphics.btn_replay, onClickRetry);
 			_graphics.btn_replay.txt_copy.text = "Begin Life Anew!";
 			//addButton(_graphics.btn_level_select, onClickLevelSelect);
-			_graphics.txt_score.text = "Final Score: " + P3FormatNumber(Core.control.score) + " DEBEN"; 
+			 
+			if (Core.control.isWon) {
+				// Tke screenshot here
+			} else {
+				Core.control.score = 0;
+			}
+			
 			if (Core.control.isWon)
 			{
+				_graphics.txt_score.text = "Final Score: " + P3FormatNumber(Core.control.score) + " DEBEN";
 				_graphics.txt_body.text = "Congradulations on besting the underworld. But perhaps you could take one more little thing?";
 			}
 			else
 			{
-				_graphics.txt_body.text = "Nice try, but you can't score anything unless you can escape the underworld. Perhaps you should plan a little more carefully next time...";
+				_graphics.txt_score.text = " >> YOU HAVE FAILED TO FIND PEACE << ";
+				_graphics.txt_body.text = "Nice try, but you can't score anything unless you can pass the challenges of the underworld. Perhaps you should plan a little more carefully next time...";
 			}
 		}
 		

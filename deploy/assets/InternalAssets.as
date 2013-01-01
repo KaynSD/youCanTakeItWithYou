@@ -164,13 +164,15 @@ package assets
     	[Embed(source="graphics/pickups/inventoryscreen/ufo.png",mimeType="image/png")] public var img_ufo_2:Class; 
     	[Embed(source="graphics/pickups/inventoryscreen/water.png",mimeType="image/png")] public var img_water_2:Class; 
     	[Embed(source="graphics/pickups/inventoryscreen/watermelon.png",mimeType="image/png")] public var img_watermelon_2:Class; 
-
+		
+		/*
 		[Embed(source = "music/levelalive.mp3")] public var snd_mus_alive:Class;
 		[Embed(source = "music/leveldead.mp3")]		public var snd_mus_dead:Class;
 		[Embed(source = "music/Dark Alley.mp3")]public var snd_amb_dead:Class;
 		[Embed(source = "music/Winds.mp3")]public var snd_amb_alive:Class;
 		
 		[Embed(source="music/Dead Sound.mp3")]public var snd_mus_player_died:Class;
+		*/
 		
 		//[Embed(source = 'graphics/particles/boulder_warning.png')]	public var img_boulder_warning:Class;
 

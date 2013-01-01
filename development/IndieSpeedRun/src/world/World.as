@@ -44,6 +44,11 @@ package world
 	import org.flixel.FlxSound;
 	import org.flixel.FlxSprite;
 	import org.flixel.plugin.TimerManager;
+	import sfx.AliveAmbi;
+	import sfx.AliveMusic;
+	import sfx.DeadAmbi;
+	import sfx.DeadMusic;
+	import sfx.Death;
 	import world.engine.Level;
 	import world.engine.LevelArea;
 	import world.info.InfoTileCheck;
@@ -270,7 +275,7 @@ package world
 			if (player)
 			{
 				//advanceArea();
-				FlxG.play(Core.lib.int.snd_mus_player_died);
+				FlxG.play(Death);
 				FlxG.fade(0xff000000, 0.5, onDeathFadeComplete, false)
 			}
 		}
@@ -402,14 +407,23 @@ package world
 			if (_ambSoundLoop) _ambSoundLoop.stop()
 			if ($area.key == "area_life") 
 			{
-				FlxG.playMusic(Core.lib.int.snd_mus_alive)
-				_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
+				//FlxG.playMusic(Core.lib.int.snd_mus_alive)
+				//_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
+				//_ambSoundLoop.volume = 0.4;
+				
+				FlxG.playMusic(AliveMusic);
+				_ambSoundLoop = FlxG.play(AliveAmbi, 0.4, true);
 				_ambSoundLoop.volume = 0.4;
 			}
 			else if ($area.key == "area_death")  
 			{
-				_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
-				FlxG.playMusic(Core.lib.int.snd_mus_dead)
+				//_ambSoundLoop = FlxG.play(Core.lib.int.snd_amb_alive,0.4,true)
+				//FlxG.playMusic(Core.lib.int.snd_mus_dead)
+				
+				FlxG.playMusic(DeadMusic);
+				_ambSoundLoop = FlxG.play(DeadAmbi, 0.4, true);
+				_ambSoundLoop.volume = 0.4;
+				
 			}
 			if (!_player) _player = new Player ()
 			deserializeTiles($area.xml.LAYERS.*)
